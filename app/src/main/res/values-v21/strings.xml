@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="tvAGaged">Are there any AG members over 65, blind, or disabled?</string>
+	<string name="app_name">Ohio Legal Aid Assistant</string>
+	<string name="add_cm">Add new case management site</string>
+	<string name="edit_cm">Edit case management sites</string>
+    <string name="AGSize">AG Size</string>
+	<string name="deemedIncome">Deemed/Allocable Income</string>
+	<string name="dependentCare">Dependent care</string>
+	<string name="grossEarnedIncome">Gross Earned Income</string>
+	<string name="hoursPerWeek">Hours per week</string>
+	<string name="OWFClear">Clear</string>
+	<string name="OWFSubmit">Submit</string>
+	<string name="unearnedIncome">Unearned Income</string>
+	<string name="tvAGSize">Assistance Group Size:</string>
+	<string name="tvDeemedIncome">Deemed/Allocable Income per Month</string>
+	<string name="tvGrossEarnedIncome">Gross Earned Income:</string>
+	<string name="tvHoursPerWeek">At how many hours per week?</string>
+	<string name="tvUnearnedIncome">Unearned Income per Month</string>
+	<string name="tvDependentCare">Monthly dependent care costs</string>
+	<string name="drawer_open">Open navigation drawer</string>
+	<string name="drawer_close">Close navigation drawer</string>
+	<string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin</string>
+	<string name="frequency">How frequently?</string>
+	<string name="household_information_heading">HOUSEHOLD INFORMATION</string>
+	<string name="tvAGDisabled">Are there disabled members in AG?</string>
+	<string name="tvAGSSI">Are there SSI, DFA, or PRC recipients in AG (categorical eligibility)? </string>
+	<string name="income_information_heading">INCOME INFORMATION</string>
+	<string name="tvEarnedIncome">Gross earned income of AG</string>
+	<string name="earnedIncome">Earned income</string>
+	<string name="headingMonthlyExpenses">MONTHLY EXPENSES</string>
+	<string name="tvRent">Rent or mortgage</string>
+	<string name="Rent">Rent/mortgage</string>
+	<string name="tvPropertyTaxes">Property Taxes</string>
+	<string name="tvPropertyInsurance">Property insurance</string>
+	<string name="tvChildSupportNonAG">Child support for non-AG member</string>
+	<string name="etChildSupport">Child support</string>
+	<string name="tvMedicalExpenses">Medical expenses</string>
+	<string name="headingUtilities">MONTHLY UTILITIES (check all that apply)</string>
+	<string name="clHomeless">Client is homeless</string>
+	<string name="heatingCooling">Heating and cooling costs</string>
+	<string name="electricGasOil">Electric/gas/oil (non-heating)</string>
+	<string name="waterSewer">Water or sewer</string>
+	<string name="garbageTrash">Garbage or trash</string>
+	<string name="phone">Telephone</string>
+	<string name="calculators">CALCULATORS</string>
+	<string name="add_court">Add new court</string>
+	<string name="edit_courts">Edit courts</string>
+	<string name="child_support_address">https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386</string>
+	
+
+	<string-array name="frequency">
+		<item>per hour</item>
+		<item>per week</item>
+		<item>every other week</item>
+		<item>twice per month</item>
+		<item>monthly</item>
+		<item>annually</item>
+	</string-array>
+	
+	<string-array name="Calculators">		
+		<item>OWF Calculator</item>
+		<item>Federal Poverty Calculator</item>
+		<item>Food Stamps</item>
+		<item>Child Support</item>
+		<item>APR</item>
+	</string-array>
+	
+	<string-array name="DrawerHeadings">
+		<item>Calculators</item>
+		<item>PIKA</item>
+		<item>Court Dockets</item>
+		<item>Forms</item>
+	</string-array>
+
+	<string-array name="yes_no">
+		<item>Yes</item>
+		<item>No</item>
+	</string-array>
+	
+</resources>

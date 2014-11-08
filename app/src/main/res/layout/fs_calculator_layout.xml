@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+     
+    <LinearLayout android:orientation="horizontal" android:layout_alignParentBottom="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/fsbutton">
+     
+        <Button android:id="@+id/fsSubmit" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="50" android:text="@string/OWFSubmit"/>
+         
+        <Button android:id="@+id/fsReset" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="50" android:text="@string/OWFClear"/>
+     
+    </LinearLayout>
+ 
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_above="@id/fsbutton">
+             
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:text="@string/household_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+     
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+             
+                <TextView android:text="@string/tvAGSize" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="50"/>
+                <EditText android:id="@+id/etAGSize" android:hint="@string/AGSize" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="50" android:inputType="number"/>
+             
+            </LinearLayout>
+			
+			<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+ 
+                <TextView android:text="@string/tvAGaged" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="80"/>
+                <Spinner android:id="@+id/AGagedSpinner" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="20"/>
+ 
+            </LinearLayout>
+         
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:text="@string/tvAGSSI" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="80"/>
+                <Spinner android:id="@+id/AGSSISpinner" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="20"/>
+            </LinearLayout>
+         
+            <TextView android:text="@string/income_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+ 
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvEarnedIncome"/>
+                <EditText android:id="@+id/etEarnedIncome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/earnedIncome" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frequency"/>
+                <Spinner android:id="@+id/frequencyEarnedSpinner" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+			
+			<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvEarnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvHoursPerWeek"/>
+                <EditText android:id="@+id/etEarnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/hoursPerWeek" android:visible="false" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvUnearnedIncome"/>
+                <EditText android:id="@+id/etUnearnedIncome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/unearnedIncome" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frequency"/>
+                <Spinner android:id="@+id/frequencyUnearnedSpinner" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+         
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvUnearnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvHoursPerWeek"/>
+                <EditText android:id="@+id/etUnearnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/hoursPerWeek" android:visible="false" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <TextView android:text="@string/headingMonthlyExpenses" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvRent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvRent"/>
+                <EditText android:id="@+id/etRent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/Rent" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvPropertyTaxes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvPropertyTaxes"/>
+                <EditText android:id="@+id/etPropertyTaxes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/tvPropertyTaxes" android:inputType="numberDecimal"/>
+            </LinearLayout>
+         
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvPropertyInsurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvPropertyInsurance"/>
+                <EditText android:id="@+id/etPropertyInsurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/tvPropertyInsurance" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvDependentCare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvDependentCare"/>
+                <EditText android:id="@+id/etDependentCare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/dependentCare" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvChildSupportNonAG" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvChildSupportNonAG"/>
+                <EditText android:id="@+id/etChildSupport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/etChildSupport" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:id="@+id/tvMedicalExpenses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvMedicalExpenses"/>
+                <EditText android:id="@+id/etMedicalExpenses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/tvMedicalExpenses" android:visible="false" android:inputType="numberDecimal"/>
+            </LinearLayout>
+             
+            <TextView android:text="@string/headingUtilities" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+             
+            <CheckBox android:id="@+id/clientHomeless" android:text="@string/clHomeless" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <CheckBox android:id="@+id/heatingCooling" android:text="@string/heatingCooling" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <CheckBox android:id="@+id/electricGasOil" android:text="@string/electricGasOil" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <CheckBox android:id="@+id/waterSewer" android:text="@string/waterSewer" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <CheckBox android:id="@+id/garbageTrash" android:text="@string/garbageTrash" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <CheckBox android:id="@+id/phone" android:text="@string/phone" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+         
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
