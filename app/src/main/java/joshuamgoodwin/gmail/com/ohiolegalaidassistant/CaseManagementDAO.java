@@ -1,15 +1,15 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.content.Context;
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.gmail.joshuamgoodwin.CaseManagementSQLHelper;
-import com.gmail.joshuamgoodwin.CaseManagementSites;
+import java.util.ArrayList;
+import java.util.List;
+
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CaseManagementSQLHelper;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CaseManagementSites;
 
 public class CaseManagementDAO {
 

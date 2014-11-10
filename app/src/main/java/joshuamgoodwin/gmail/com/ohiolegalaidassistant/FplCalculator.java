@@ -102,12 +102,12 @@ public class FplCalculator extends Fragment {
 		Button button = (Button)rootView.findViewById(R.id.FPLClear);
 
 		// set button's onClickListener
-		button.setOnClickListener(new OnClickListener() {
-
-				public void onClick(View v) {
-					resetAll();
-				}
-			});
+		button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resetAll();
+            }
+        });
 	}
 
 	private void resetAll() {
@@ -123,7 +123,7 @@ public class FplCalculator extends Fragment {
 	private void submitButton(View rootView) {
 
 		Button button = (Button) rootView.findViewById(R.id.FPLSubmit);
-		button.setOnClickListener(new OnClickListener() {
+		button.setOnClickListener(new View.OnClickListener() {
 
 				public void onClick(View v) {
 

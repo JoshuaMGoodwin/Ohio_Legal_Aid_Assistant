@@ -8,8 +8,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.gmail.joshuamgoodwin.CourtSitesSQLHelper;
-import com.gmail.joshuamgoodwin.CourtSites;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSitesSQLHelper;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSites;
 
 public class CourtSitesDAO {
 

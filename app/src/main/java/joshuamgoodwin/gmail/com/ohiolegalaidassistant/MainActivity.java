@@ -35,7 +35,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.graphics.Typeface;
 
-import com.gmail.joshuamgoodwin.CourtSitesDAO;
+import joshuamgoodwin.gmail.com.*;
 
 public class MainActivity extends Activity {
     
@@ -218,7 +218,7 @@ public class MainActivity extends Activity {
 	
 	private boolean welcomeVisible(){
 		Welcome welcome = (Welcome) getFragmentManager().findFragmentByTag("WELCOME");
-		if (welcome.isVisible()){
+		if (welcome != null && welcome.isVisible()){
 			return true;
 		} else {
 			return false;
@@ -227,7 +227,7 @@ public class MainActivity extends Activity {
 	
 	private boolean webviewVisible(){
 		WebViewFragment webFragment = (WebViewFragment) getFragmentManager().findFragmentByTag("WEBVIEW");
-		if (webFragment.isVisible()){
+		if (webFragment != null && webFragment.isVisible()){
 			return true;
 		} else {
 			return false;
@@ -241,9 +241,9 @@ public class MainActivity extends Activity {
 			Fragment fragmentName = new Welcome();
 			String tag = "WELCOME";
 			setFragment(fragmentName, tag);
-		}
-		
-		super.onBackPressed();
+		} else {
+            super.onBackPressed();
+        }
 	}
 
     @Override

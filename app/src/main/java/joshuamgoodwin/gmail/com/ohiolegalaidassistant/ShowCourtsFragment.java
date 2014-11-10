@@ -14,8 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.ListFragment;
 
-import com.gmail.joshuamgoodwin.CourtSites;
-import com.gmail.joshuamgoodwin.CourtSitesDAO;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSites;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSitesDAO;
 import java.security.*;
 
 public class ShowCourtsFragment extends ListFragment {

@@ -147,7 +147,7 @@ public class FsCalculator extends Fragment {
         frequencyEarnedSpinner.setSelection(4);
         frequencyUnearnedSpinner.setSelection(4);
          
-        frequencyEarnedSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+        frequencyEarnedSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
          
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -166,8 +166,8 @@ public class FsCalculator extends Fragment {
             public void onNothingSelected(AdapterView<?>arg0){}
         });
          
-        frequencyUnearnedSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-         
+        frequencyUnearnedSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 // if frequency spinner = hourly, show hourly texts
@@ -199,7 +199,7 @@ public class FsCalculator extends Fragment {
         AGSSISpinner.setSelection(1);
 		AGagedSpinner.setSelection(1);
          
-        AGagedSpinner.setOnItemSelectedListener(new OnItemSelectedListener(){
+        AGagedSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
              
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -221,8 +221,8 @@ public class FsCalculator extends Fragment {
     private void initializeClearButton(View rootView){
      
         Button button = (Button) rootView.findViewById(R.id.fsReset);
-        button.setOnClickListener(new OnClickListener() {
-         
+        button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v){
                 resetAll();
@@ -232,9 +232,9 @@ public class FsCalculator extends Fragment {
     }
      
     private void initializeSubmitButton(View rootView) {
-     
+
         Button button = (Button) rootView.findViewById(R.id.fsSubmit);
-        button.setOnClickListener(new OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
          
             @Override
             public void onClick(View v) {
@@ -546,7 +546,7 @@ public class FsCalculator extends Fragment {
      
     private void initializeHomelessCheck(View rootView) {
      
-        cbHomeless.setOnClickListener(new OnClickListener() {
+        cbHomeless.setOnClickListener(new View.OnClickListener() {
          
             @Override
             public void onClick(View v) {

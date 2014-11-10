@@ -1,7 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.EditText;
 import android.view.View;
 import android.app.Fragment;
@@ -13,20 +12,12 @@ import android.view.View.*;
 
 public class APRCalculator extends Fragment {
 
-	private Button submit;
-
-	private double amountBorrowed;
-	private double baseRate;
-	private double costs;
-
-	private EditText etAmountBorrowed;
+    private EditText etAmountBorrowed;
 	private EditText etBaseRate;
 	private EditText etCosts;
 	private EditText etNumberOfPayments;
-	
-	private int numberOfPayments;
 
-	@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.apr_calculator, container, false);
@@ -40,32 +31,32 @@ public class APRCalculator extends Fragment {
 		etBaseRate = (EditText) rootView.findViewById(R.id.baseRate);
 		etCosts = (EditText) rootView.findViewById(R.id.costs);
 		etNumberOfPayments = (EditText) rootView.findViewById(R.id.numberOfPayments);
-		
-		submit = (Button) rootView.findViewById(R.id.submit);
+
+        Button submit = (Button) rootView.findViewById(R.id.submit);
 		submit.setOnClickListener(new OnClickListener() {
-		
-			@Override
-			public void onClick(View v) {
-				
-				calculateAPR();
-			
-			}
-		});
+
+            @Override
+            public void onClick(View v) {
+
+                calculateAPR();
+
+            }
+        });
 	}
 	
 	private void calculateAPR() {
-	
-		baseRate = Double.parseDouble(etBaseRate.getText().toString());
-		amountBorrowed = Double.parseDouble(etAmountBorrowed.getText().toString());
-		costs = Double.parseDouble(etCosts.getText().toString());
-		numberOfPayments = Integer.parseInt(etNumberOfPayments.getText().toString());
+
+        double baseRate = Double.parseDouble(etBaseRate.getText().toString());
+        double amountBorrowed = Double.parseDouble(etAmountBorrowed.getText().toString());
+        double costs = Double.parseDouble(etCosts.getText().toString());
+        int numberOfPayments = Integer.parseInt(etNumberOfPayments.getText().toString());
 	
 		double rate = baseRate / 100 / 12;
 		double monthlyPayment = ((amountBorrowed + costs) * rate * Math.pow(1 + rate, numberOfPayments)) / (Math.pow(1 + rate, numberOfPayments)-1);
 		
 		double testrate = rate;
 		int iteration = 1;
-		double testresult = 0;
+		double testresult;
 		//iterate until result = 0
 		double testdiff = testrate;
 		while (iteration <= 100) {
