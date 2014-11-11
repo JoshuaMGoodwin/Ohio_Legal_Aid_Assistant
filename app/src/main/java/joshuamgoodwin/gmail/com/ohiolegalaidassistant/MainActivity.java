@@ -196,7 +196,12 @@ public class MainActivity extends Activity {
 					fragmentName.setArguments(bundle);
 				
 			}
-		}
+		} else if (groupName.equals("Rules")) {
+            if (childName.equals("Federal Rules of Evidence")) {
+                fragmentName = new RulesFragment();
+                tag = "RULES";
+            }
+        }
 		
 		setFragment(fragmentName, tag);
 		
@@ -319,10 +324,18 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		 List<String> forms = new ArrayList<String>();
 		 forms.add("Add form (under construction)");
 
+         // Adding data for rules
+         List<String> rules = new ArrayList<String>();
+         String[] rulesList = getResources().getStringArray(R.array.Rules);
+         for (int i = 0; i < rulesList.length; i++){
+             rules.add(rulesList[i]);
+         }
+
 		 listDataChild.put(listDataHeader.get(0), calculators); // add calculators
 		 listDataChild.put(listDataHeader.get(1), cmSites);// add cm sites
 		 listDataChild.put(listDataHeader.get(2), courtDockets); // add court dockets
 		 listDataChild.put(listDataHeader.get(3), forms); // add forms data
+         listDataChild.put(listDataHeader.get(4), rules); // add rules data
 	 }
 	 
 
