@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -147,6 +148,7 @@ public class MainActivity extends Activity {
         // update the main content by replacing fragments
 		Fragment fragmentName = new Welcome();
 		String tag = "WELCOME";
+        Bundle bundle = new Bundle();
 		boolean welcomeVisible = false;
 		// Welcome welcome = (Welcome)getFragmentManager().findFragmentByTag("WELCOME");
 		// if (welcome.isVisible()) welcomeVisible = true;
@@ -167,7 +169,7 @@ public class MainActivity extends Activity {
 				case 3:
 					fragmentName = new WebViewFragment();
 					tag = "WEBVIEW";
-					Bundle bundle = new Bundle();
+					bundle = new Bundle();
 					bundle.putString("address", getString(R.string.child_support_address));
 					fragmentName.setArguments(bundle);
 					break;
@@ -190,17 +192,22 @@ public class MainActivity extends Activity {
 					String address = dao.addressFromName(childName);
 					Toast toast = Toast.makeText(this, address + "is the address", Toast.LENGTH_LONG);
 					toast.show();
-					Bundle bundle = new Bundle();
+					bundle = new Bundle();
 					bundle.putString("address", address);
 					fragmentName = new WebViewFragment();
 					fragmentName.setArguments(bundle);
 				
 			}
 		} else if (groupName.equals("Rules")) {
+            fragmentName = new RulesFragment();
+            tag = "RULES";
             if (childName.equals("Federal Rules of Evidence")) {
-                fragmentName = new RulesFragment();
-                tag = "RULES";
+                bundle.putString("ruleSet", "fre_by_rule");
             }
+            if (childName.equals("Ohio Rules of Civil Procedure")) {
+                bundle.putString("ruleSet", "ohio_rules_cp");
+            }
+            fragmentName.setArguments(bundle);
         }
 		
 		setFragment(fragmentName, tag);
@@ -215,6 +222,7 @@ public class MainActivity extends Activity {
 	private void setFragment(Fragment fragmentName, String tag){
 		FragmentManager fragmentManager = getFragmentManager();
 		FragmentTransaction ft = fragmentManager.beginTransaction();
+
         ft.replace(R.id.content_frame, fragmentName, tag);
 
 		// if (welcomeVisible()) ft.addToBackStack(null);

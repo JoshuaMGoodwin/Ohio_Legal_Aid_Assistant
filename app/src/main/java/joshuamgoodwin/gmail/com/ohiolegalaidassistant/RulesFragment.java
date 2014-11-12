@@ -22,6 +22,7 @@ public class RulesFragment extends Fragment {
     private Spinner broadTopics;
     private Spinner narrowTopics;
     private TextView details;
+    private String ruleSet;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -39,6 +40,8 @@ public class RulesFragment extends Fragment {
         broadTopics = (Spinner) rootView.findViewById(R.id.broad_topic_spinner);
         narrowTopics = (Spinner) rootView.findViewById(R.id.narrow_topic_spinner);
         details = (TextView) rootView.findViewById(R.id.rules_text);
+        Bundle bundle = getArguments();
+        ruleSet = bundle.getString("ruleSet", "fre_by_rule");
 
     }
 
@@ -51,7 +54,7 @@ public class RulesFragment extends Fragment {
 
     private void setNarrowTopicsSpinner(int number) {
 
-        String[] narrowTopicString = getResources().getStringArray(getResources().getIdentifier("fre_by_rule_" + number, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+        String[] narrowTopicString = getResources().getStringArray(getResources().getIdentifier(ruleSet + "_" + number, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
         ArrayAdapter<CharSequence> narrowRulesAdapter = new ArrayAdapter<CharSequence>(getActivity(),
                 android.R.layout.simple_spinner_dropdown_item, narrowTopicString);
         narrowRulesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -63,8 +66,9 @@ public class RulesFragment extends Fragment {
 
     private void setBroadTopicsSpinner() {
 
-        ArrayAdapter<CharSequence> broadRulesAdapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.fre_by_rule, android.R.layout.simple_spinner_dropdown_item);
+        String[] broadTopicArray = getResources().getStringArray(getResources().getIdentifier(ruleSet, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+        ArrayAdapter<CharSequence> broadRulesAdapter = new ArrayAdapter<CharSequence>(getActivity(),
+                android.R.layout.simple_spinner_dropdown_item, broadTopicArray);
         broadRulesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         broadTopics.setAdapter(broadRulesAdapter);
 
@@ -93,7 +97,7 @@ public class RulesFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 String detail = position < 10 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
-                String string = "fre_by_rule_" + Integer.toString(narrowTopicSelected) + detail;
+                String string = ruleSet + "_" + Integer.toString(narrowTopicSelected) + detail;
                 Toast toast = Toast.makeText(getActivity(), string, Toast.LENGTH_LONG);
                 toast.show();
                 details.setText(Html.fromHtml(getResources().getString(getResources().getIdentifier(string, "string", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"))));

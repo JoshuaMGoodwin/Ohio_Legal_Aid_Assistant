@@ -67,15 +67,17 @@ public class APRCalculator extends Fragment {
 			testdiff = testdiff / 2;
 			iteration++;
 		}
-		testrate = (double)Math.round((testrate * 12 * 100) * 100000) / 100000;
+		testrate = (double)Math.round((testrate * 12 * 100) * 10000) / 10000;
+        monthlyPayment = (double)Math.round(monthlyPayment * 100) / 100;
+        double totalPayments = monthlyPayment * numberOfPayments;
+        double totalInterest = totalPayments - (amountBorrowed);
 		
-		
-		showDialog(testrate);
+		showDialog(testrate, monthlyPayment, totalPayments, totalInterest);
 	
 	}
-	private void showDialog(Double result) {
+	private void showDialog(Double result, Double monthlyPayment, Double totalPayments, Double totalInterest) {
 		
-		String text = "The APR is " + result + "%";
+		String text = "The APR is " + result + "% and the monthly payment is $" + monthlyPayment + ". Total paid is $" + totalPayments + ", of which, $" + totalInterest + " is interest.";
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 			builder.setMessage(text)
 				.setPositiveButton("OK", null)

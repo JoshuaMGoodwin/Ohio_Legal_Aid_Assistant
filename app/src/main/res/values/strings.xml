@@ -61,6 +61,7 @@
 
     <string-array name="Rules">
         <item>Federal Rules of Evidence</item>
+        <item>Ohio Rules of Civil Procedure</item>
     </string-array>
 
 	<string-array name="Calculators">		
@@ -256,4 +257,131 @@
     <string name="fre_by_rule_1102">&lt;b>RULE 1102. AMENDMENTS&lt;/b>&lt;br>&lt;br>These rules may be amended as provided in 28 U.S.C. \u00a7 2072.</string>
     <string name="fre_by_rule_1103">&lt;b>RULE 1103. TITLE&lt;/b>&lt;br>&lt;br>These rules may be cited as the Federal Rules of Evidence.</string>
 
+    <string-array name="ohio_rules_cp">
+        <item>I. SCOPE OF RULES-ONE FORM OF ACTION</item>
+        <item>II. COMMENCEMENT OF ACTION AND VENUE; SERVICE OF PROCESS; SERVICE AND FILING OF PLEADINGS AND OTHER PAPERS SUBSEQUENT TO THE ORIGINAL COMPLAINT; TIME</item>
+        <item>III. PLEADINGS AND MOTIONS</item>
+        <item>IV. PARTIES</item>
+        <item>V. DISCOVERY</item>
+        <item>VI. TRIALS</item>
+        <item>VII. JUDGMENT</item>
+        <item>VIII. PROVISIONAL AND FINAL REMEDIES</item>
+        <item>IX. PROBATE, JUVENILE, AND DOMESTIC RELATIONS PROCEEDINGS</item>
+        <item>X. GENERAL PROVISIONS</item>
+    </string-array>
+
+    <string-array name="ohio_rules_cp_0">
+        <item>1. Scope of rules: applicability; construction; exceptions</item>
+        <item>2. One form of action</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_1">
+        <item>3. Commencement of action; venue</item>
+        <item>4. Process: summons</item>
+        <item>4.1. Process: methods of service</item>
+        <item>4.2. Process: who may be served</item>
+        <item>4.3. Process: out-of-state service</item>
+        <item>4.4. Process: service by publication</item>
+        <item>4.5. Process: alternative provisions for service in a foreign country</item>
+        <item>4.6. Process: limits; amendments; service refused; service unclaimed</item>
+        <item>5. Service and filing of pleadings and other papers subsequent to the original complaint</item>
+        <item>6. Time</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_2">
+        <item>7. Pleadings and motions</item>
+        <item>8. General rules of pleading</item>
+        <item>9. Pleading special matters</item>
+        <item>10. Form of pleadings</item>
+        <item>11. Signing of pleadings, motions, or other documents</item>
+        <item>12. Defenses and objections-when and how presented-by pleadings or motion-motion for judgment on the pleadings</item>
+        <item>13. Counterclaim and cross-claim</item>
+        <item>14. Third-party practice</item>
+        <item>15. Amended and supplemental pleadings</item>
+        <item>16. Pretrial procedure</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_3">
+        <item>17. Parties plaintiff and defendant; capacity</item>
+        <item>18. Joinder of claims and remedies</item>
+        <item>19. Joinder of persons needed for just adjudication</item>
+        <item>19.1. Compulsory joinder</item>
+        <item>20. Permissive joinder of parties</item>
+        <item>21. Misjoinder and nonjoinder of parties</item>
+        <item>22. Interpleader</item>
+        <item>23. Class actions</item>
+        <item>23.1. Derivative actions by shareholders</item>
+        <item>24. Intervention</item>
+        <item>25. Substitution of parties</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_4">
+        <item>26. General provisions governing discovery</item>
+        <item>27. Perpetuation of testimony-depositions before action or pending appeal</item>
+        <item>28. Persons before whom depositions may be taken</item>
+        <item>29. Stipulations regarding discovery procedure</item>
+        <item>30. Depositions upon oral examination</item>
+        <item>31. Depositions of witnesses upon written questions</item>
+        <item>32. Use of depositions in court proceedings</item>
+        <item>33. Interrogatories to parties</item>
+        <item>34. Producing documents, electronically stored information, and tangible things, or entering onto land, for inspection and other purposes</item>
+        <item>35. Physical and mental examination of person</item>
+        <item>36. Requests for admission</item>
+        <item>37. Failure to make discovery: sanctions</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_5">
+        <item>38. Jury trial of right</item>
+        <item>39. Trial by jury or by the court</item>
+        <item>40. Pre-recorded testimony</item>
+        <item>41. Dismissal of actions</item>
+        <item>42. Consolidation; separate trials</item>
+        <item>43. [Reserved]</item>
+        <item>44. Proof of official record</item>
+        <item>44.1. Judicial notice of certain law; determination of foreign law</item>
+        <item>45. Subpoena</item>
+        <item>46. Exceptions unnecessary</item>
+        <item>47. Jurors</item>
+        <item>48. Juries: majority verdict; stipulation of number of jurors</item>
+        <item>49. Verdicts; interrogatories</item>
+        <item>50. Motion for a directed verdict and for judgment not-withstanding the verdict</item>
+        <item>51. Instructions to the jury; objection</item>
+        <item>52. Findings by the court</item>
+        <item>53. Magistrates</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_6">
+        <item>54. Judgments; costs</item>
+        <item>55. Default</item>
+        <item>56. Summary judgment</item>
+        <item>57. Declaratory judgments</item>
+        <item>58. Entry of judgment</item>
+        <item>59. New trials</item>
+        <item>60. Relief from judgment or order</item>
+        <item>61. Harmless error</item>
+        <item>62. Stay of proceedings to enforce a judgment</item>
+        <item>63. Disability of a judge</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_7">
+        <item>64. Seizure of person or property</item>
+        <item>65 Injunctions</item>
+        <item>65.1. Civil Protection Orders</item>
+        <item>66. Receivers</item>
+        <item>67. [Reserved]</item>
+        <item>68. Offer of judgment</item>
+        <item>69. Execution</item>
+        <item>70. Judgment for specific acts; vesting title</item>
+        <item>71. Process in behalf of and against persons not parties</item>
+        <item>72. [Reserved]</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_8">
+        <item>73. Probate division of the court of common pleas</item>
+        <item>74. [Reserved]</item>
+        <item>75. Divorce, annulment, and legal separation actions</item>
+        <item>76. [Reserved]</item>
+        <item>81. References to Ohio Revised Code</item>
+    </string-array>
+    <string-array name="ohio_rules_cp_9">
+        <item>82. Jurisdiction unaffected</item>
+        <item>83. Local rules of practice</item>
+        <item>84. Forms</item>
+        <item>85. Title</item>
+        <item>86. Effective date</item>
+    </string-array>
+    <string name="ohio_rules_cp_101">&lt;b>RULE 1. Scope of Rules: Applicability; Construction; Exceptions&lt;/b>&lt;br>&lt;br>&lt;b>(A) Applicability.&lt;/b> These rules prescribe the procedure to be followed in all courts of this state in the exercise of civil jurisdiction at law or in equity, with the exceptions stated in subdivision (C) of this rule.&lt;br>&lt;br>&lt;b>(B) Construction.&lt;/b> These rules shall be construed and applied to effect just results by eliminating delay, unnecessary expense and all other impediments to the expeditious administration of justice.&lt;br>&lt;br>&lt;b>(C) Exceptions.&lt;/b> These rules, to the extent that they would by their nature be clearly inapplicable, shall not apply to procedure (1) upon appeal to review any judgment, order or ruling, (2) in the appropriation of property, (3) in forcible entry and detainer, (4) in small claims matters under Chapter 1925, Revised Code, (5) in uniform reciprocal support actions, (6) in the commitment of the mentally ill, (7) in all other special statutory proceedings; provided, that where any statute provides for procedure by a general or specific reference to all the statutes governing procedure in civil actions such procedure shall be in accordance with these rules.&lt;br>&lt;br>[Effective: July 1, 1970; amended effective July 1, 1971; July 1, 1975.]</string>
+    <string name="ohio_rules_cp_102">&lt;b>RULE 2. One Form of Action&lt;/b>&lt;br>&lt;br>There shall be only one form of action, and it shall be known as a civil action.&lt;br>&lt;br>[Effective: July 1, 1970.]</string>
 </resources>
