@@ -153,32 +153,26 @@ public class MainActivity extends Activity {
 		// Welcome welcome = (Welcome)getFragmentManager().findFragmentByTag("WELCOME");
 		// if (welcome.isVisible()) welcomeVisible = true;
 		if (groupName.equals("Calculators")) {
-			switch (childPosition) {
-				case 0:
-					fragmentName = new OwfCalculator();
-					tag = "OWF_CALCULATOR";
-					break;
-				case 1:
-					fragmentName = new FplCalculator();
-					tag = "FPL_CALCULATOR";
-					break;
-				case 2:
-					fragmentName = new FsCalculator();
-					tag = "FS_CALCULATOR";
-					break;
-				case 3:
-					fragmentName = new WebViewFragment();
-					tag = "WEBVIEW";
-					bundle = new Bundle();
-					bundle.putString("address", getString(R.string.child_support_address));
-					fragmentName.setArguments(bundle);
-					break;
-				case 4:
-					fragmentName = new APRCalculator();
-					tag = "APR";
-					break;
-				default:
-					fragmentName = new Welcome();
+			if (childName.equals(getString(R.string.OWF_calculator))) {
+                fragmentName = new OwfCalculator();
+                tag = "OWF_CALCULATOR";
+            } else if (childName.equals(R.string.federal_poverty)) {
+                fragmentName = new FplCalculator();
+                tag = "FPL_CALCULATOR";
+            } else if (childName.equals(R.string.food_stamps)) {
+                fragmentName = new FsCalculator();
+                tag = "FS_CALCULATOR";
+            } else if (childName.equals(R.string.child_support)) {
+                fragmentName = new WebViewFragment();
+                tag = "WEBVIEW";
+                bundle = new Bundle();
+                bundle.putString("address", getString(R.string.child_support_address));
+                fragmentName.setArguments(bundle);
+            } else if (childName.equals(R.string.APR)) {
+                fragmentName = new APRCalculator();
+                tag = "APR";
+            } else {
+				fragmentName = new Welcome();
 			} 
 		} else if (groupName.equals("Court Dockets")){
 			tag = "WEBVIEW";
