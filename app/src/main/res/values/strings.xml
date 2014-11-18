@@ -21,7 +21,7 @@
     <string name="tvDependentCare">Monthly dependent care costs</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin</string>
+    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
     <string name="frequency">How frequently?</string>
     <string name="household_information_heading">HOUSEHOLD INFORMATION</string>
     <string name="tvAGDisabled">Are there disabled members in AG?</string>
@@ -47,7 +47,7 @@
     <string name="calculators">CALCULATORS</string>
     <string name="add_court">Add new court</string>
     <string name="edit_courts">Edit courts</string>
-    <string name="child_support_address">https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386</string>
+    <!--<string name="child_support_address">"https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en"</string>-->
 
 
     <string-array name="frequency">

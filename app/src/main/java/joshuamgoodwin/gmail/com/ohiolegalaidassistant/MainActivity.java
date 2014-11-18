@@ -160,7 +160,7 @@ public class MainActivity extends Activity {
                 fragmentName = new WebViewFragment();
                 tag = "WEBVIEW";
                 bundle = new Bundle();
-                bundle.putString("address", getString(R.string.child_support_address));
+                bundle.putString("address", "https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en");
                 fragmentName.setArguments(bundle);
             } else if (childName.equals(getString(R.string.APR))) {
                 fragmentName = new APRCalculator();
