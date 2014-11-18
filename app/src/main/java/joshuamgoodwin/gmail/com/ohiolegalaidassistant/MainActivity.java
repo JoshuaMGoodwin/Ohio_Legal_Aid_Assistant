@@ -33,7 +33,6 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.*;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.graphics.Typeface;
 
 import joshuamgoodwin.gmail.com.*;
@@ -87,9 +86,7 @@ public class MainActivity extends Activity {
 
 				@Override
 				public void onGroupExpand(int groupPosition) {
-					Toast.makeText(getApplicationContext(),
-								   listDataHeader.get(groupPosition) + " Expanded",
-								   Toast.LENGTH_SHORT).show();
+
 				}
 			});
 			
@@ -98,9 +95,6 @@ public class MainActivity extends Activity {
 
 				@Override
 				public void onGroupCollapse(int groupPosition) {
-					Toast.makeText(getApplicationContext(),
-								   listDataHeader.get(groupPosition) + " Collapsed",
-								   Toast.LENGTH_SHORT).show();
 
 				}
 			});
@@ -156,19 +150,19 @@ public class MainActivity extends Activity {
 			if (childName.equals(getString(R.string.OWF_calculator))) {
                 fragmentName = new OwfCalculator();
                 tag = "OWF_CALCULATOR";
-            } else if (childName.equals(R.string.federal_poverty)) {
+            } else if (childName.equals(getString(R.string.federal_poverty))) {
                 fragmentName = new FplCalculator();
                 tag = "FPL_CALCULATOR";
-            } else if (childName.equals(R.string.food_stamps)) {
+            } else if (childName.equals(getString(R.string.food_stamps))) {
                 fragmentName = new FsCalculator();
                 tag = "FS_CALCULATOR";
-            } else if (childName.equals(R.string.child_support)) {
+            } else if (childName.equals(getString(R.string.child_support))) {
                 fragmentName = new WebViewFragment();
                 tag = "WEBVIEW";
                 bundle = new Bundle();
                 bundle.putString("address", getString(R.string.child_support_address));
                 fragmentName.setArguments(bundle);
-            } else if (childName.equals(R.string.APR)) {
+            } else if (childName.equals(getString(R.string.APR))) {
                 fragmentName = new APRCalculator();
                 tag = "APR";
             } else {
@@ -184,8 +178,6 @@ public class MainActivity extends Activity {
 					CourtSitesDAO dao = new CourtSitesDAO(this);
 					
 					String address = dao.addressFromName(childName);
-					Toast toast = Toast.makeText(this, address + "is the address", Toast.LENGTH_LONG);
-					toast.show();
 					bundle = new Bundle();
 					bundle.putString("address", address);
 					fragmentName = new WebViewFragment();
@@ -315,7 +307,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		 courtDockets.add(getString(R.string.add_court));
 		 courtDockets.add(getString(R.string.edit_courts));
 		 
-		 // add data to the cm list
+		 /*// add data to the cm list
 		 List<String> cmSites = new ArrayList<String>();
 		 CaseManagementDAO cmDAO = new CaseManagementDAO(this);
 		 cmSites = cmDAO.caseManagementNamesList();
@@ -324,7 +316,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		 
 		 // add data to the forms list
 		 List<String> forms = new ArrayList<String>();
-		 forms.add("Add form (under construction)");
+		 forms.add("Add form (under construction)");*/
 
          // Adding data for rules
          List<String> rules = new ArrayList<String>();
@@ -334,10 +326,10 @@ public boolean onOptionsItemSelected(MenuItem item) {
          }
 
 		 listDataChild.put(listDataHeader.get(0), calculators); // add calculators
-		 listDataChild.put(listDataHeader.get(1), cmSites);// add cm sites
-		 listDataChild.put(listDataHeader.get(2), courtDockets); // add court dockets
-		 listDataChild.put(listDataHeader.get(3), forms); // add forms data
-         listDataChild.put(listDataHeader.get(4), rules); // add rules data
+		 //listDataChild.put(listDataHeader.get(1), cmSites);// add cm sites
+		 listDataChild.put(listDataHeader.get(1), courtDockets); // add court dockets
+		 //listDataChild.put(listDataHeader.get(3), forms); // add forms data
+         listDataChild.put(listDataHeader.get(2), rules); // add rules data
 	 }
 	 
 

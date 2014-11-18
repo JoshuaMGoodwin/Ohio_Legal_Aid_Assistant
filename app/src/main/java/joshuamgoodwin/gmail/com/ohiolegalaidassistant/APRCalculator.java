@@ -69,8 +69,8 @@ public class APRCalculator extends Fragment {
 		}
 		testrate = (double)Math.round((testrate * 12 * 100) * 10000) / 10000;
         monthlyPayment = (double)Math.round(monthlyPayment * 100) / 100;
-        double totalPayments = monthlyPayment * numberOfPayments;
-        double totalInterest = totalPayments - (amountBorrowed);
+        double totalPayments = (double)Math.round((monthlyPayment * numberOfPayments) * 100) / 100;
+        double totalInterest = (double)Math.round((totalPayments - amountBorrowed) * 100) /100;
 		
 		showDialog(testrate, monthlyPayment, totalPayments, totalInterest);
 	
