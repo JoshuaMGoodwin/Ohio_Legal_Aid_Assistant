@@ -157,8 +157,8 @@ public class FsCalculator extends Fragment {
                     etEarnedHoursPerWeek.setVisibility(View.VISIBLE);
                     tvHours.setVisibility(View.VISIBLE);
                 } else {
-                    etEarnedHoursPerWeek.setVisibility(View.INVISIBLE);
-                    tvHours.setVisibility(View.INVISIBLE);
+                    etEarnedHoursPerWeek.setVisibility(View.GONE);
+                    tvHours.setVisibility(View.GONE);
                 }
             }
              
@@ -173,11 +173,11 @@ public class FsCalculator extends Fragment {
                 // if frequency spinner = hourly, show hourly texts
                 TextView tvHours = (TextView) getView().findViewById(R.id.tvUnearnedHoursPerWeek);
                 if (position == 0) {
-                    etEarnedHoursPerWeek.setVisibility(View.VISIBLE);
+                    etUnearnedHoursPerWeek.setVisibility(View.VISIBLE);
                     tvHours.setVisibility(View.VISIBLE);
                 } else {
-                    etEarnedHoursPerWeek.setVisibility(View.INVISIBLE);
-                    tvHours.setVisibility(View.INVISIBLE);
+                    etUnearnedHoursPerWeek.setVisibility(View.GONE);
+                    tvHours.setVisibility(View.GONE);
                 }
             }
              

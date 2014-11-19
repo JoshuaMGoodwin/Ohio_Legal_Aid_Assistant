@@ -60,13 +60,11 @@ public class MainActivity extends Activity {
         mTitle = mDrawerTitle = getTitle();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ExpandableListView) findViewById(R.id.left_drawer);
-		createListsForDrawer();
+
 
         // set a custom shadow that overlays the main content when the drawer opens
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        // set up the drawer's list view with items and click listener
-        ExpandableListAdapter adapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);		
-		mDrawerList.setAdapter(adapter);
+        setDrawer();
 	
 		// Listview on child click listener
         mDrawerList.setOnChildClickListener(new OnChildClickListener() {
@@ -137,7 +135,7 @@ public class MainActivity extends Activity {
 		
     }
 
-	
+
     private void selectItem(String groupName,  int groupPosition, int childPosition, String childName) {
         // update the main content by replacing fragments
 		Fragment fragmentName = new Welcome();
@@ -193,6 +191,9 @@ public class MainActivity extends Activity {
             if (childName.equals("Ohio Rules of Civil Procedure")) {
                 bundle.putString("ruleSet", "ohio_rules_cp");
             }
+            if (childName.equals("Ohio Rules of Evidence")) {
+                bundle.putString("ruleSet", "ohio_rules_evidence");
+            }
             fragmentName.setArguments(bundle);
         }
 		
@@ -232,6 +233,12 @@ public class MainActivity extends Activity {
 			return false;
 		}
 	}
+    public void setDrawer(){
+        createListsForDrawer();
+        // set up the drawer's list view with items and click listener
+        ExpandableListAdapter adapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+        mDrawerList.setAdapter(adapter);
+    }
 	
 	@Override
 	public void onBackPressed(){
@@ -281,6 +288,8 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
      return super.onOptionsItemSelected(item);
 }
+
+
 
 	 private void createListsForDrawer(){
 		 

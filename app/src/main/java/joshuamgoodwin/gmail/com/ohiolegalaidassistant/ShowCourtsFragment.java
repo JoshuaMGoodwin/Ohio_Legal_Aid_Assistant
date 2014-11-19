@@ -38,11 +38,11 @@ public class ShowCourtsFragment extends ListFragment {
 	
 		CourtSites courtSites = (CourtSites)getListAdapter().getItem(position);
 		//int selected = courtSites.getId();
-		//dao.deleteCourt(courtSites.getId());
-		String address = dao.showAddress(courtSites.getId());
-		//setListAdapter(new CourtListAdapter(getActivity(), dao.getCourts()));
-		
-		Toast toast = Toast.makeText(getActivity(), address + "is the address", Toast.LENGTH_LONG);
+        String address = dao.showAddress(courtSites.getId());
+        dao.deleteCourt(courtSites.getId());
+		setListAdapter(new CourtListAdapter(getActivity(), dao.getCourts()));
+        ((MainActivity)getActivity()).setDrawer();
+		Toast toast = Toast.makeText(getActivity(), address + " was deleted", Toast.LENGTH_LONG);
 		toast.show();
 	
 	}

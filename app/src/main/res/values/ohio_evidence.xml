@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ohio_rules_evidence">
+        <item>I. General Provisions</item>
+        <item>II. Judicial Notice</item>
+        <item>III. Presumptions</item>
+        <item>IV. Relevancy and Its Limits</item>
+        <item>V. Privileges</item>
+        <item>VI. Witness</item>
+        <item>VII. Opinions and Expert Testimony</item>
+        <item>VIII. Hearsay</item>
+        <item>IX. Authentication and Identification</item>
+        <item>X. Contents of Writings, Recordings, and Photographs</item>
+        <item>XI. Miscellaneous Rules</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_0">
+        <item>101 Scope of rules: applicability; privileges; exceptions</item>
+        <item>102 Purpose and construction; supplementary principles</item>
+        <item>103 Rulings on evidence</item>
+        <item>104 Preliminary questions</item>
+        <item>105 Limited admissibility</item>
+        <item>106 Remainder of or related writings or recorded statements</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1">
+        <item>102 Judicial notice of adjudicative facts</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_2">
+        <item>301 Presumptions in general in civil actions and proceedings</item>
+        <item>302 [Reserved]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_3">
+        <item>401 Definition of “relevant evidence”</item>
+        <item>402 Relevant evidence generally admissible; irrelevant evidence inadmissible</item>
+        <item>403 Exclusion of relevant evidence on grounds of prejudice, confusion, or undue delay</item>
+        <item>404 Character evidence not admissible to prove conduct; exceptions; other crimes</item>
+        <item>405 Methods of proving character</item>
+        <item>406 Habit; routine practice</item>
+        <item>407 Subsequent remedial measures</item>
+        <item>408 Compromise and offers to compromise</item>
+        <item>409 Payment of medical and similar expenses</item>
+        <item>410 Inadmissibility of pleas, offers of pleas, and related statements</item>
+        <item>411 Liability insurance</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_4">
+        <item>501 General rule</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_5">
+        <item>601 General rule of competency</item>
+        <item>602 Lack of personal knowledge</item>
+        <item>603 Oath or affirmation</item>
+        <item>604 Interpreters</item>
+        <item>605 Competency of judge as witness</item>
+        <item>606 Competency of juror as witness</item>
+        <item>607 Impeachment</item>
+        <item>608 Evidence of character and conduct of witness</item>
+        <item>609 Impeachment by evidence of conviction of crime</item>
+        <item>610 Religious beliefs or opinions</item>
+        <item>611 Mode and order of interrogation and presentation</item>
+        <item>612 Writing used to refresh memory</item>
+        <item>613 Impeachment by self-contradiction</item>
+        <item>614 Calling and interrogation of witnesses by court</item>
+        <item>615 Separation and exclusion of witnesses</item>
+        <item>616 Methods of impeachment</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_6">
+        <item>701 Opinion testimony by lay witnesses</item>
+        <item>702 Testimony by experts</item>
+        <item>703 Bases of opinion testimony by experts</item>
+        <item>704 Opinion on ultimate issue</item>
+        <item>705 Disclosure of facts or data underlying expert opinion</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_7">
+        <item>801 Definitions</item>
+        <item>802 Hearsay rule</item>
+        <item>803 Hearsay exceptions; availability of declarant immaterial</item>
+        <item>804 Hearsay exceptions; declarant unavailable</item>
+        <item>805 Hearsay within hearsay</item>
+        <item>806 Attacking and supporting credibility of declarant</item>
+        <item>807 Hearsay exceptions; child statements in abuse cases</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_8">
+        <item>901 Requirement of authentication or identification</item>
+        <item>902 Self-authentication</item>
+        <item>903 Subscribing witness’ testimony unnecessary</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_9">
+        <item>1001 Definitions</item>
+        <item>1002 Requirement of original</item>
+        <item>1003 Admissibility of duplicates</item>
+        <item>1004 Admissibility of other evidence of contents</item>
+        <item>1005 Public records</item>
+        <item>1006 Summaries</item>
+        <item>1007 Testimony or written admission of party</item>
+        <item>1008 Functions of court and jury</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_10">
+        <item>1101 [Reserved]</item>
+        <item>1102 Effective date</item>
+        <item>1103 Title</item>
+    </string-array>
+
+    <string-array name="ohio_rules_evidence_101">
+        <item>1&lt;b>RULE 101. Scope of Rules: Applicability; Privileges; Exceptions&lt;/b></item>
+        <item>1&lt;b>(A) Applicability.&lt;/b> These rules govern proceedings in the courts of this state, subject to the exceptions stated in division (C) of this rule.</item>
+        <item>1&lt;b>(B) Privileges.&lt;/b> The rule with respect to privileges applies at all stages of all actions, cases, and proceedings conducted under these rules.</item>
+        <item>1&lt;b>(C) Exceptions.&lt;/b> These rules (other than with respect to privileges) do not apply in the following situations:</item>
+        <item>2&lt;b>(1) Admissibility determinations.&lt;/b> Determinations prerequisite to rulings on the admissibility of evidence when the issue is to be determined by the court under Evid.R. 104.</item>
+        <item>2&lt;b>(2) Grand jury.&lt;/b> Proceedings before grand juries.</item>
+        <item>2&lt;b>(3) Miscellaneous criminal proceedings.&lt;/b> Proceedings for extradition or rendition of fugitives; sentencing; granting or revoking probation; proceedings with respect to community control sanctions; issuance of warrants for arrest, criminal summonses and search warrants; and proceedings with respect to release on bail or otherwise.</item>
+        <item>2&lt;b>(4) Contempt.&lt;/b> Contempt proceedings in which the court may act summarily.</item>
+        <item>2&lt;b>(5) Arbitration.&lt;/b> Proceedings for those mandatory arbitrations of civil cases authorized by the rules of superintendence and governed by local rules of court.</item>
+        <item>2&lt;b>(6) Other rules.&lt;/b> Proceedings in which other rules prescribed by the Supreme Court govern matters relating to evidence.</item>
+        <item>2&lt;b>(7) Special non-adversary statutory proceedings.&lt;/b> Special statutory proceedings of a non-adversary nature in which these rules would by their nature be clearly inapplicable.</item>
+        <item>2&lt;b>(8) Small claims division.&lt;/b> Proceedings in the small claims division of a county or municipal court.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1990; July 1, 1996; July 1, 1999.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_102">
+        <item>1&lt;b>RULE 102. Purpose and Construction&lt;/b></item>
+        <item>1The purpose of these rules is to provide procedures for the adjudication of causes to the end that the truth may be ascertained and proceedings justly determined. The principles of the common law of Ohio shall supplement the provisions of these rules, and the rules shall be construed to state the principles of the common law of Ohio unless the rule clearly indicates that a change is intended. These rules shall not supersede substantive statutory provisions.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 1996.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_103">
+        <item>1&lt;b>RULE 103. Rulings on Evidence&lt;/b></item>
+        <item>1&lt;b>(A) Effect of erroneous ruling&lt;/b> Error may not be predicated upon a ruling which admits or excludes evidence unless a substantial right of the party is affected, and</item>
+        <item>2&lt;b>(1) Objection.&lt;/b> In case the ruling is one admitting evidence, a timely objection or motion to strike appears of record, stating the specific ground of objection, if the specific ground was not apparent from the context; or</item>
+        <item>2&lt;b>(2) Offer of proof.&lt;/b> In case the ruling is one excluding evidence, the substance of the evidence was made known to the court by offer or was apparent from the context within which questions were asked. Offer of proof is not necessary if evidence is excluded during crossexamination.</item>
+        <item>1&lt;b>(B) Record of offer and ruling.&lt;/b> At the time of making the ruling, the court may add any other or further statement which shows the character of the evidence, the form in which it was offered, the objection made, and the ruling thereon. It may direct the making of an offer in question and answer form.</item>
+        <item>1&lt;b>(C) Hearing of jury.&lt;/b> In jury cases, proceedings shall be conducted, to the extent practicable, so as to prevent inadmissible evidence from being suggested to the jury by any means, such as making statements or offers of proof or asking questions in the hearing of the jury.</item>
+        <item>1&lt;b>(D) Plain error.&lt;/b> Nothing in this rule precludes taking notice of plain errors affecting substantial rights although they were not brought to the attention of the court.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_104">
+        <item>1&lt;b>RULE 104. Preliminary Questions&lt;/b></item>
+        <item>1&lt;b>(A) Questions of admissibility generally.&lt;/b> Preliminary questions concerning the qualification of a person to be a witness, the existence of a privilege, or the admissibility of evidence shall be determined by the court, subject to the provisions of subdivision (B). In making its determination it is not bound by the rules of evidence except those with respect to privileges.</item>
+        <item>1&lt;b>(B) Relevancy conditioned on fact.&lt;/b> When the relevancy of evidence depends upon the fulfillment of a condition of fact, the court shall admit it upon, or subject to, the introduction of evidence sufficient to support a finding of the fulfillment of the condition.</item>
+        <item>1&lt;b>(C) Hearing of jury.&lt;/b> Hearings on the admissibility of confessions shall in all cases be conducted out of the hearing of the jury. Hearings on other preliminary matters shall also be conducted out of the hearing of the jury when the interests of justice require.</item>
+        <item>1&lt;b>(D) Testimony by accused.&lt;/b> The accused does not, by testifying upon a preliminary matter, become subject to cross-examination as to other issues in the case.</item>
+        <item>1&lt;b>(E) Weight and credibility.&lt;/b> This rule does not limit the right of a party to introduce before the jury evidence relevant to weight or credibility.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_105">
+        <item>1&lt;b>RULE 105. Limited Admissibility&lt;/b></item>
+        <item>1When evidence which is admissible as to one party or for one purpose but not admissible as to another party or for another purpose is admitted, the court, upon request of a party, shall restrict the evidence to its proper scope and instruct the jury accordingly.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_106">
+        <item>1&lt;b>RULE 106. Remainder of or Related Writings or Recorded Statements&lt;/b></item>
+        <item>1When a writing or recorded statement or part thereof is introduced by a party, an adverse party may require the introduction at that time of any other part or any other writing or recorded statement which is otherwise admissible and which ought in fairness to be considered contemporaneously with it.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_201">
+        <item>1&lt;b>RULE 201. Judicial Notice of Adjudicative Facts&lt;/b></item>
+        <item>1&lt;b>(A) Scope of rule.&lt;/b> This rule governs only judicial notice of adjudicative facts; i.e., the facts of the case.</item>
+        <item>1&lt;b>(B) Kinds of facts.&lt;/b> A judicially noticed fact must be one not subject to reasonable dispute in that it is either (1) generally known within the territorial jurisdiction of the trial court or (2) capable of accurate and ready determination by resort to sources whose accuracy cannot reasonably be questioned.</item>
+        <item>1&lt;b>(C) When discretionary.&lt;/b> A court may take judicial notice, whether requested or not.</item>
+        <item>1&lt;b>(D) When mandatory.&lt;/b> A court shall take judicial notice if requested by a party and supplied with the necessary information.</item>0
+        <item>1&lt;b>(E) Opportunity to be heard.&lt;/b> A party is entitled upon timely request to an opportunity to be heard as to the propriety of taking judicial notice and the tenor of the matter noticed. In the absence of prior notification, the request may be made after judicial notice has been taken.</item>
+        <item>1&lt;b>(F) Time of taking notice.&lt;/b> Judicial notice may be taken at any stage of the proceeding.</item>
+        <item>1&lt;b>(G) Instructing jury.&lt;/b> In a civil action or proceeding, the court shall instruct the jury to accept as conclusive any fact judicially noticed. In a criminal case, the court shall instruct the jury that it may, but is not required to, accept as conclusive any fact judicially noticed.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_301">
+        <item>1&lt;b>RULE 301. Presumptions in General in Civil Actions and Proceedings&lt;/b></item>
+        <item>1In all civil actions and proceedings not otherwise provided for by statute enacted by the General Assembly or by these rules, a presumption imposes on the party against whom it is directed the burden of going forward with evidence to rebut or meet the presumption, but does not shift to such party the burden of proof in the sense of the risk of non-persuasion, which remains throughout the trial upon the party on whom it was originally cast.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_302">
+        <item>1&lt;b>RULE 302. [RESERVED]&lt;/b></item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_401">
+        <item>1&lt;b>RULE 401. Definition of "Relevant Evidence"&lt;/b></item>
+        <item>1"Relevant evidence" means evidence having any tendency to make the existence of any fact that is of consequence to the determination of the action more probable or less probable than it would be without the evidence.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_402">
+        <item>1&lt;b>RULE 402. Relevant Evidence Generally Admissible; Irrelevant Evidence Inadmissible&lt;/b></item>
+        <item>1All relevant evidence is admissible, except as otherwise provided by the Constitution of the United States, by the Constitution of the State of Ohio, by statute enacted by the General Assembly not in conflict with a rule of the Supreme Court of Ohio, by these rules, or by other rules prescribed by the Supreme Court of Ohio. Evidence which is not relevant is not admissible.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_403">
+        <item>1&lt;b>RULE 403. Exclusion of Relevant Evidence on Grounds of Prejudice, Confusion, or Undue Delay&lt;/b></item>
+        <item>1&lt;b>(A) Exclusion mandatory.&lt;/b> Although relevant, evidence is not admissible if its probative value is substantially outweighed by the danger of unfair prejudice, of confusion of the issues, or of misleading the jury.</item>
+        <item>1&lt;b>(B) Exclusion discretionary.&lt;/b> Although relevant, evidence may be excluded if its probative value is substantially outweighed by considerations of undue delay, or needless presentation of cumulative evidence.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1996.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_404">
+        <item>1&lt;b>RULE 404. Character Evidence not Admissible to Prove Conduct; Exceptions; Other Crimes&lt;/b></item>
+        <item>1&lt;b>(A) Character evidence generally.&lt;/b> Evidence of a person\'s character or a trait of character is not admissible for the purpose of proving action in conformity therewith on a particular occasion, subject to the following exceptions:</item>
+        <item>2&lt;b>(1) Character of accused.&lt;/b> Evidence of a pertinent trait of character offered by an accused, or by the prosecution to rebut the same is admissible; however, in prosecutions for rape, gross sexual imposition, and prostitution, the exceptions provided by statute enacted by the General Assembly are applicable.</item>
+        <item>2&lt;b>(2) Character of victim.&lt;/b> Evidence of a pertinent trait of character of the victim of the crime offered by an accused, or by the prosecution to rebut the same, or evidence of a character trait of peacefulness of the victim offered by the prosecution in a homicide case to rebut evidence that the victim was the first aggressor is admissible; however, in prosecutions for rape, gross sexual imposition, and prostitution, the exceptions provided by statute enacted by the General Assembly are applicable.</item>
+        <item>2&lt;b>(3) Character of witness.&lt;/b> Evidence of the character of a witness on the issue of credibility is admissible as provided in Rules 607, 608, and 609.</item>
+        <item>1&lt;b>(B) Other crimes, wrongs or acts.&lt;/b> Evidence of other crimes, wrongs, or acts is not admissible to prove the character of a person in order to show action in conformity therewith. It may, however, be admissible for other purposes, such as proof of motive, opportunity, intent, preparation, plan, knowledge, identity, or absence of mistake or accident. In criminal cases, the proponent of evidence to be offered under this rule shall provide reasonable notice in advance of trial, or during trial if the court excuses pretrial notice on good cause shown, of the general nature of any such evidence it intends to introduce at trial.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007, July 1, 2012.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_405">
+        <item>1&lt;b>RULE 405. Methods of Proving Character&lt;/b></item>
+        <item>1&lt;b>(A) Reputation or opinion.&lt;/b> In all cases in which evidence of character or a trait of character of a person is admissible, proof may be made by testimony as to reputation or by testimony in the form of an opinion. On cross-examination, inquiry is allowable into relevant specific instances of conduct.</item>
+        <item>1&lt;b>(B) Specific instances of conduct.&lt;/b> In cases in which character or a trait of character of a person is an essential element of a charge, claim, or defense, proof may also be made of specific instances of his conduct.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_406">
+        <item>1&lt;b>RULE 406. Habit; Routine Practice&lt;/b></item>
+        <item>1Evidence of the habit of a person or of the routine practice of an organization, whether corroborated or not and regardless of the presence of eyewitnesses, is relevant to prove that the conduct of the person or organization on a particular occasion was in conformity with the habit or routine practice.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_407">
+        <item>1&lt;b>RULE 407. Subsequent Remedial Measures&lt;/b></item>
+        <item>1When, after an injury or harm allegedly caused by an event, measures are taken which, if taken previously, would have made the injury or harm less likely to occur, evidence of the subsequent measures is not admissible to prove negligence or culpable conduct in connection with the event. This rule does not require the exclusion of evidence of subsequent measures when offered for another purpose, such as proving ownership, control, or feasibility of precautionary measures, if controverted, or impeachment.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 2000.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_408">
+        <item>1&lt;b>RULE 408. Compromise and Offers to Compromise&lt;/b></item>
+        <item>1Evidence of (1) furnishing or offering or promising to furnish, or (2) accepting or offering or promising to accept, a valuable consideration in compromising or attempting to compromise a claim which was disputed as to either validity or amount, is not admissible to prove liability for or invalidity of the claim or its amount. Evidence of conduct or statements made in compromise negotiations is likewise not admissible. This rule does not require the exclusion of any evidence otherwise discoverable merely because it is presented in the course of compromise negotiations. This rule also does not require exclusion when the evidence is offered for another purpose, such as proving bias or prejudice of a witness, negativing a contention of undue delay, or proving an effort to obstruct a criminal investigation or prosecution.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_409">
+        <item>1&lt;b>RULE 409. Payment of Medical and Similar Expenses&lt;/b></item>
+        <item>1Evidence of furnishing or offering or promising to pay medical, hospital, or similar expenses occasioned by an injury is not admissible to prove liability for the injury.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_410">
+        <item>1&lt;b>RULE 410. Inadmissibility of Pleas, Offers of Pleas, and Related Statements&lt;/b></item>
+        <item>1(A) Except as provided in division (B) of this rule, evidence of the following is not admissible in any civil or criminal proceeding against the defendant who made the plea or who was a participant personally or through counsel in the plea discussions:</item>
+        <item>2(1) a plea of guilty that later was withdrawn;</item>
+        <item>2(2) a plea of no contest or the equivalent plea from another jurisdiction;</item>
+        <item>2(3) a plea of guilty in a violations bureau;</item>
+        <item>2(4) any statement made in the course of any proceedings under Rule 11 of the Rules of Criminal Procedure or equivalent procedure from another jurisdiction regarding the foregoing pleas;</item>
+        <item>2(5) any statement made in the course of plea discussions in which counsel for the prosecuting authority or for the defendant was a participant and that do not result in a plea of guilty or that result in a plea of guilty later withdrawn.</item>
+        <item>2(B) A statement otherwise inadmissible under this rule is admissible in either of the following:</item>
+        <item>2(1) any proceeding in which another statement made in the course of the same plea or plea discussions has been introduced and the statement should, in fairness, be considered contemporaneously with it;</item>
+        <item>2(2) a criminal proceeding for perjury or false statement if the statement was made by the defendant under oath, on the record, and in the presence of counsel.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1991.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_411">
+        <item>1&lt;b>RULE 411. Liability Insurance&lt;/b></item>
+        <item>1Evidence that a person was or was not insured against liability is not admissible upon the issue whether the person acted negligently or otherwise wrongfully. This rule does not require the exclusion of evidence of insurance against liability when offered for another purpose, such as proof of agency, ownership or control, if controverted, or bias or prejudice of a witness.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_501">
+        <item>1&lt;b>RULE 501. General Rule&lt;/b></item>
+        <item>1The privilege of a witness, person, state or political subdivision thereof shall be governed by statute enacted by the General Assembly or by principles of common law as interpreted by the courts of this state in the light of reason and experience.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_601">
+        <item>1&lt;b>RULE 601. General Rule of Competency&lt;/b></item>
+        <item>1Every person is competent to be a witness except:</item>
+        <item>1(A) Those of unsound mind, and children under ten years of age, who appear incapable of receiving just impressions of the facts and transactions respecting which they are examined, or of relating them truly.</item>
+        <item>1(B) A spouse testifying against the other spouse charged with a crime except when either of the following applies:</item>
+        <item>2(1) a crime against the testifying spouse or a child of either spouse is charged;</item>
+        <item>2(2) the testifying spouse elects to testify.</item>
+        <item>1(C) An officer, while on duty for the exclusive or main purpose of enforcing traffic laws, arresting or assisting in the arrest of a person charged with a traffic violation punishable as a misdemeanor where the officer at the time of the arrest was not using a properly marked motor vehicle as defined by statute or was not wearing a legally distinctive uniform as defined by statute.</item>
+        <item>1(D) A person giving expert testimony on the issue of liability in any claim asserted in any civil action against a physician, podiatrist, or hospital arising out of the diagnosis, care, or treatment of any person by a physician or podiatrist, unless the person testifying is licensed to  practice medicine and surgery, osteopathic medicine and surgery, or podiatric medicine and surgery by the state medical board or by the licensing authority of any state, and unless the person devotes at least one-half of his or her professional time to the active clinical practice in his or her field of licensure, or to its instruction in an accredited school. This division shall not prohibit other medical professionals who otherwise are competent to testify under these rules from giving expert testimony on the appropriate standard of care in their own profession in any claim asserted in any civil action against a physician, podiatrist, medical professional, or hospital arising out of the diagnosis, care, or treatment of any person.</item>
+        <item>1(E) As otherwise provided in these rules.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1991.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_602">
+        <item>1&lt;b>RULE 602. Lack of Personal Knowledge&lt;/b></item>
+        <item>1A witness may not testify to a matter unless evidence is introduced sufficient to support a finding that the witness has personal knowledge of the matter. Evidence to prove personal knowledge may, but need not, consist of the witness’ own testimony. This rule is subject to the provisions of Rule 703, relating to opinion testimony by expert witnesses.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_603">
+        <item>1&lt;b>RULE 603. Oath or Affirmation&lt;/b></item>
+        <item>1Before testifying, every witness shall be required to declare that the witness will testify truthfully, by oath or affirmation administered in a form calculated to awaken the witness’ conscience and impress the witness’ mind with the duty to do so.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_604">
+        <item>1&lt;b>RULE 604. Interpreters&lt;/b></item>
+        <item>1An interpreter is subject to the provisions of these rules relating to qualification as an expert and the administration of an oath or affirmation to make a true translation.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_605">
+        <item>1&lt;b>RULE 605. Competency of Judge as Witness&lt;/b></item>
+        <item>1The judge presiding at the trial may not testify in that trial as a witness. No objection need be made in order to preserve the point.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_606">
+        <item>1&lt;b>RULE 606. Competency of Juror as Witness&lt;/b></item>
+        <item>1&lt;b>(A) At the trial.&lt;/b> A member of the jury may not testify as a witness before that jury in the trial of the case in which the juror is sitting. If the juror is called so to testify, the opposing party shall be afforded an opportunity to object out of the presence of the jury.</item>
+        <item>1&lt;b>(B) Inquiry into validity of verdict or indictment.&lt;/b> Upon an inquiry into the validity of a verdict or indictment, a juror may not testify as to any matter or statement occurring during the course of the jury\'s deliberations or to the effect of anything upon that or any other juror\'s mind or emotions as influencing the juror to assent to or dissent from the verdict or indictment or concerning the juror’s mental processes in connection therewith. A juror may testify on the question whether extraneous prejudicial information was improperly brought to the jury\'s attention or whether any outside influence was improperly brought to bear on any juror, only after some outside evidence of that act or event has been presented. However a juror may testify without the presentation of any outside evidence concerning any threat, any bribe, any attempted threat or bribe, or any improprieties of any officer of the court. A juror’s affidavit or evidence of any statement by the juror concerning a matter about which the juror would be precluded from testifying will not be received for these purposes.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_607">
+        <item>1&lt;b>RULE 607. Impeachment&lt;/b></item>
+        <item>1&lt;b>(A) Who may impeach.&lt;/b> The credibility of a witness may be attacked by any party except that the credibility of a witness may be attacked by the party calling the witness by means of a prior inconsistent statement only upon a showing of surprise and affirmative damage. This exception does not apply to statements admitted pursuant to Evid.R. 801(D)(1)(A), 801(D)(2), or 803.</item>
+        <item>1&lt;b>(B) Impeachment: reasonable basis.&lt;/b> A questioner must have a reasonable basis for asking any question pertaining to impeachment that implies the existence of an impeaching fact.</item>
+        <item>2[Effective: July 1, 1980; amended July 1, 1998.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_608">
+        <item>1&lt;b>RULE 608. Evidence of Character and Conduct of Witness&lt;/b></item>
+        <item>1&lt;b>(A) Opinion and reputation evidence of character.&lt;/b> The credibility of a witness may be attacked or supported by evidence in the form of opinion or reputation, but subject to these limitations: (1) the evidence may refer only to character for truthfulness or untruthfulness, and (2) evidence of truthful character is admissible only after the character of the witness for truthfulness has been attacked by opinion or reputation evidence or otherwise.</item>
+        <item>1&lt;b>(B) Specific instances of conduct.&lt;/b> Specific instances of the conduct of a witness, for the purpose of attacking or supporting the witness\'s character for truthfulness, other than conviction of crime as provided in Evid. R. 609, may not be proved by extrinsic evidence. They may, however, in the discretion of the court, if clearly probative of truthfulness or untruthfulness, be inquired into on cross-examination of the witness (1) concerning the witness\'s character for truthfulness or untruthfulness, or (2) concerning the character for truthfulness or untruthfulness of another witness as to which character the witness being cross-examined has testified.</item>
+        <item>1The giving of testimony by any witness, including an accused, does not operate as a waiver of the witness\'s privilege against self-incrimination when examined with respect to matters that relate only to the witness\'s character for truthfulness.</item>
+        <item>2[Effective: July 1, 1980; July 1, 1992.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_609">
+        <item>1&lt;b>RULE 609. Impeachment by Evidence of Conviction of Crime&lt;/b></item>
+        <item>1&lt;b>(A) General rule.&lt;/b> For the purpose of attacking the credibility of a witness:</item>
+        <item>2(1) subject to Evid.R. 403, evidence that a witness other than the accused has been convicted of a crime is admissible if the crime was punishable by death or imprisonment in excess of one year pursuant to the law under which the witness was convicted.</item>
+        <item>2(2) notwithstanding Evid.R. 403(A), but subject to Evid.R. 403(B), evidence that the accused has been convicted of a crime is admissible if the crime was punishable by death or imprisonment in excess of one year pursuant to the law under which the accused was convicted and if the court determines that the probative value of the evidence outweighs the danger of unfair prejudice, of confusion of the issues, or of misleading the jury.</item>
+        <item>2(3) notwithstanding Evid.R. 403(A), but subject to Evid.R. 403(B), evidence that any witness, including an accused, has been convicted of a crime is admissible if the crime involved dishonesty or false statement, regardless of the punishment and whether based upon state or federal statute or local ordinance.</item>
+        <item>1&lt;b>(B) Time limit.&lt;/b> Evidence of a conviction under this rule is not admissible if a period of more than ten years has elapsed since the date of the conviction or of the release of the witness from the confinement, or the termination of community control sanctions, post-release control, or probation, shock probation, parole, or shock parole imposed for that conviction, whichever is the later date, unless the court determines, in the interests of justice, that the probative value of the conviction supported by specific facts and circumstances substantially outweighs its prejudicial effect. However, evidence of a conviction more than ten years old as calculated herein, is not admissible unless the proponent gives to the adverse party sufficient advance written notice of intent to use such evidence to provide the adverse party with a fair opportunity to contest the use of such evidence.</item>
+        <item>1&lt;b>(C) Effect of pardon, annulment, expungement, or certificate of rehabilitation.&lt;/b> Evidence of a conviction is not admissible under this rule if (1) the conviction has been the subject of a pardon, annulment, expungement, certificate of rehabilitation, or other equivalent procedure based on a finding of the rehabilitation of the person convicted, and that person has not been convicted of a subsequent crime which was punishable by death or imprisonment in excess of one year, or (2) the conviction has been the subject of a pardon, annulment, expungement, or other equivalent procedure based on a finding of innocence.</item>
+        <item>1&lt;b>(D) Juvenile adjudications.&lt;/b> Evidence of juvenile adjudications is not admissible except as provided by statute enacted by the General Assembly.</item>
+        <item>1&lt;b>(E) Pendency of appeal.&lt;/b> The pendency of an appeal therefrom does not render evidence of a conviction inadmissible. Evidence of the pendency of an appeal is admissible.</item>
+        <item>1&lt;b>(F) Methods of proof.&lt;/b> When evidence of a witness\'s conviction of a crime is admissible under this rule, the fact of the conviction may be proved only by the testimony of the witness on direct or cross-examination, or by public record shown to the witness during his or her examination. If the witness denies that he or she is the person to whom the public record refers, the court may permit the introduction of additional evidence tending to establish that the witness is or is not the person to whom the public record refers.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1991; July 1, 2003.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_610">
+        <item>1&lt;b>RULE 610. Religious Beliefs or Opinions&lt;/b></item>
+        <item>1Evidence of the beliefs or opinions of a witness on matters of religion is not admissible for the purpose of showing that by reason of their nature the witness’ credibility is impaired or enhanced.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_611">
+        <item>1&lt;b>RULE 611. Mode and Order of Interrogation and Presentation&lt;/b></item>
+        <item>1&lt;b>(A) Control by court.&lt;/b> The court shall exercise reasonable control over the mode and order of interrogating witnesses and presenting evidence so as to (1) make the interrogation and presentation effective for the ascertainment of the truth, (2) avoid needless consumption of time, and (3) protect witnesses from harassment or undue embarrassment.</item>
+        <item>1&lt;b>(B) Scope of cross-examination.&lt;/b> Cross-examination shall be permitted on all relevant matters and matters affecting credibility.</item>
+        <item>1&lt;b>(C) Leading questions.&lt;/b> Leading questions should not be used on the direct examination of a witness except as may be necessary to develop the witness’ testimony. Ordinarily leading questions should be permitted on cross-examination. When a party calls a hostile witness, an adverse party, or a witness identified with an adverse party, interrogation may be by leading questions.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_612">
+        <item>1&lt;b>RULE 612. Writing Used to Refresh Memory&lt;/b></item>
+        <item>1If a witness uses a writing to refresh memory for the purpose of testifying, either: (1) while testifying; or (2) before testifying, if the court in its discretion determines it is necessary in the interests of justice, an adverse party is entitled to have the writing produced at the hearing. The adverse party is also entitled to inspect it, to cross-examine the witness thereon, and to introduce in evidence those portions which relate to the testimony of the witness. If it is claimed that the writing contains matters not related to the subject matter of the testimony the court shall examine the writing in camera, excise any portions not so related, and order delivery of the remainder to the party entitled thereto. Any portion withheld over objections shall be preserved and made available to the appellate court in the event of an appeal. If a writing is not produced or delivered pursuant to order under this rule, the court shall make any order justice requires, except that in criminal cases when the prosecution elects not to comply, the order shall be one striking the testimony or, if the court in its discretion determines that the interests of justice so require, declaring a mistrial.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007; July 1, 2011.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_613">
+        <item>1&lt;b>RULE 613. Impeachment by self-contradiction&lt;/b></item>
+        <item>1&lt;b>(A) Examining witness concerning prior statement.&lt;/b> In examining a witness concerning a prior statement made by the witness, whether written or not, the statement need not be shown nor its contents disclosed to the witness at that time, but on request the same shall be shown or disclosed to opposing counsel.</item>
+        <item>1&lt;b>(B) Extrinsic evidence of prior inconsistent statement of witness.&lt;/b> Extrinsic evidence of a prior inconsistent statement by a witness is admissible if both of the following apply:</item>
+        <item>2(1) If the statement is offered solely for the purpose of impeaching the witness, the witness is afforded a prior opportunity to explain or deny the statement and the opposite party is afforded an opportunity to interrogate the witness on the statement or the interests of justice otherwise require;</item>
+        <item>2(2) The subject matter of the statement is one of the following:</item>
+        <item>3(a) A fact that is of consequence to the determination of the action other than the credibility of a witness;</item>
+        <item>3(b) A fact that may be shown by extrinsic evidence under Evid.R. 608(A), 609, 616(A), or 616(B);</item>
+        <item>3(c) A fact that may be shown by extrinsic evidence under the common law of impeachment if not in conflict with the Rules of Evidence.</item>
+        <item>1&lt;b>(C) Prior inconsistent conduct.&lt;/b> During examination of a witness, conduct of the witness inconsistent with the witness’s testimony may be shown to impeach. If offered for the sole purpose of impeaching the witness’s testimony, extrinsic evidence of the prior inconsistent conduct is admissible under the same circumstances as provided for prior inconsistent statements by Evid.R. 613(B)(2).</item>
+        <item>2[Effective: July 1, 1980; amended July 1, 1998; July 1, 2012.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_614">
+        <item>1&lt;b>RULE 614. Calling and Interrogation of Witnesses by Court&lt;/b></item>
+        <item>1&lt;b>(A) Calling by court.&lt;/b> The court may, on its own motion or at the suggestion of a party, call witnesses, and all parties are entitled to cross-examine witnesses thus called.</item>
+        <item>1&lt;b>(B) Interrogation by court.&lt;/b> The court may interrogate witnesses, in an impartial manner, whether called by itself or by a party.</item>
+        <item>1&lt;b>(C) Objections.&lt;/b> Objections to the calling of witnesses by the court or to interrogation by it may be made at the time or at the next available opportunity when the jury is not present.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_615">
+        <item>1&lt;b>RULE 615. Separation and Exclusion of Witnesses.&lt;/b></item>
+        <item>1(A) Except as provided in division (B) of this rule, at the request of a party the court shall order witnesses excluded so that they cannot hear the testimony of other witnesses, and it may make the order of its own motion. An order directing the “exclusion” or “separation” of witnesses or the like, in general terms without specification of other or additional limitations, iseffective only to require the exclusion of witnesses from the hearing during the testimony of other witnesses.</item>
+        <item>1(B) This rule does not authorize exclusion of any of the following persons from the hearing:</item>
+        <item>2(1) a party who is a natural person;</item>
+        <item>2(2) an officer or employee of a party that is not a natural person designated as its representative by its attorney;</item>
+        <item>2(3) a person whose presence is shown by a party to be essential to the presentation of the party’s cause;</item>
+        <item>2(4) in a criminal proceeding, a victim of the charged offense to the extent that the victim’s presence is authorized by statute enacted by the General Assembly. As used in this rule, “victim” has the same meaning as in the provisions of the Ohio Constitution providing rights for victims of crimes.</item>
+        <item>2[Effective: July 1, 1980; amended July 1, 2001; July 1, 2003.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_616">
+        <item>1&lt;b>RULE 616. Methods of impeachment&lt;/b></item>
+        <item>1In addition to other methods, a witness may be impeached by any of the following methods:</item>
+        <item>1&lt;b>(A) Bias.&lt;/b> Bias, prejudice, interest, or any motive to misrepresent may be shown to impeach the witness either by examination of the witness or by extrinsic evidence.</item>
+        <item>1&lt;b>(B) Sensory or mental defect.&lt;/b> A defect of capacity, ability, or opportunity to observe, remember, or relate may be shown to impeach the witness either by examination of the witness or by extrinsic evidence.</item>
+        <item>1&lt;b>(C) Specific contradiction.&lt;/b> Facts contradicting a witness’s testimony may be shown for the purpose of impeaching the witness’s testimony. If offered for the sole purpose of impeaching a witness’s testimony, extrinsic evidence of contradiction is inadmissible unless the evidence is one of the following:</item>
+        <item>2(1) Permitted by Evid.R. 608(A), 609, 613, 616(A), 616(B), or 706;</item>
+        <item>2(2) Permitted by the common law of impeachment and not in conflict with the Rules of Evidence.</item>
+        <item>2[Effective: July 1, 1991; amended July 1, 1998.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_701">
+        <item>1&lt;b>RULE 701. Opinion Testimony by Lay Witnesses&lt;/b></item>
+        <item>1If the witness is not testifying as an expert, the witness’ testimony in the form of opinions or inferences is limited to those opinions or inferences which are (1) rationally based on the perception of the witness and (2) helpful to a clear understanding of the witness’ testimony or the determination of a fact in issue.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_702">
+        <item>1&lt;b>RULE 702. Testimony by Experts&lt;/b></item>
+        <item>1A witness may testify as an expert if all of the following apply:</item>
+        <item>1(A) The witness\' testimony either relates to matters beyond the knowledge or experience possessed by lay persons or dispels a misconception common among lay persons;</item>
+        <item>1(B) The witness is qualified as an expert by specialized knowledge, skill, experience, training, or education regarding the subject matter of the testimony;</item>
+        <item>1(C) The witness\' testimony is based on reliable scientific, technical, or other specialized information. To the extent that the testimony reports the result of a procedure, test, or experiment, the testimony is reliable only if all of the following apply:</item>
+        <item>2(1) The theory upon which the procedure, test, or experiment is based is objectively verifiable or is validly derived from widely accepted knowledge, facts, or principles;</item>
+        <item>2(2) The design of the procedure, test, or experiment reliably implements the theory;</item>
+        <item>2(3) The particular procedure, test, or experiment was conducted in a way that will yield an accurate result.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 1994.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_703">
+        <item>1&lt;b>RULE 703. Bases of Opinion Testimony by Experts&lt;/b></item>
+        <item>1The facts or data in the particular case upon which an expert bases an opinion or inference may be those perceived by the expert or admitted in evidence at the hearing.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_704">
+        <item>1&lt;b>RULE 704. Opinion on Ultimate Issue&lt;/b></item>
+        <item>1Testimony in the form of an opinion or inference otherwise admissible is not objectionable solely because it embraces an ultimate issue to be decided by the trier of fact.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_705">
+        <item>1&lt;b>RULE 705. Disclosure of Facts or Data Underlying Expert Opinion&lt;/b></item>
+        <item>1The expert may testify in terms of opinion or inference and give the expert’s reasons therefor after disclosure of the underlying facts or data. The disclosure may be in response to a hypothetical question or otherwise.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_801">
+        <item>1&lt;b>RULE 801. Definitions&lt;/b></item>
+        <item>1The following definitions apply under this article:</item>
+        <item>1&lt;b>(A) Statement.&lt;/b> A "statement" is (1) an oral or written assertion or (2) nonverbal conduct of a person, if it is intended by the person as an assertion.</item>
+        <item>1&lt;b>(B) Declarant.&lt;/b> A "declarant" is a person who makes a statement.</item>
+        <item>1&lt;b>(C) Hearsay.&lt;/b> "Hearsay" is a statement, other than one made by the declarant while testifying at the trial or hearing, offered in evidence to prove the truth of the matter asserted.</item>
+        <item>1&lt;b>(D) Statements which are not hearsay.&lt;/b> A statement is not hearsay if:</item>
+        <item>2&lt;b>(1) Prior statement by witness.&lt;/b> The declarant testifies at trial or hearing and is subject to cross-examination concerning the statement, and the statement is (a) inconsistent with declarant’s testimony, and was given under oath subject to cross-examination by the party against whom the statement is offered and subject to the penalty of perjury at a trial, hearing, or other proceeding, or in a deposition, or (b) consistent with declarant’s testimony and is offered to rebut an express or implied charge against declarant of recent fabrication or improper influence or motive, or (c) one of identification of a person soon after perceiving the person, if the circumstances demonstrate the reliability of the prior identification.</item>
+        <item>2&lt;b>(2) Admission by party-opponent.&lt;/b> The statement is offered against a party and is (a) the party’s own statement, in either an individual or a representative capacity, or (b) a statement of which the party has manifested an adoption or belief in its truth, or (c) a statement by a person authorized by the party to make a statement concerning the subject, or (d) a statement by the party’s agent or servant concerning a matter within the scope of the agency or employment, made during the existence of the relationship, or (e) a statement by a co-conspirator of a party during the course and in furtherance of the conspiracy upon independent proof of the conspiracy.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_802">
+        <item>1&lt;b>RULE 802. Hearsay Rule&lt;/b></item>
+        <item>1Hearsay is not admissible except as otherwise provided by the Constitution of the United States, by the Constitution of the State of Ohio, by statute enacted by the General Assembly not in conflict with a rule of the Supreme Court of Ohio, by these rules, or by other rules prescribed by the Supreme Court of Ohio.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_803">
+        <item>1&lt;b>RULE 803. Hearsay Exceptions; Availability of Declarant Immaterial&lt;/b></item>
+        <item>1The following are not excluded by the hearsay rule, even though the declarant is available as a witness:</item>
+        <item>1&lt;b>(1) Present sense impression.&lt;/b> A statement describing or explaining an event or condition made while the declarant was perceiving the event or condition, or immediately thereafter unless circumstances indicate lack of trustworthiness.</item>
+        <item>1&lt;b>(2) Excited utterance.&lt;/b> A statement relating to a startling event or condition made while the declarant was under the stress of excitement caused by the event or condition. </item>
+        <item>1&lt;b>(3) Then existing, mental, emotional, or physical condition.&lt;/b> A statement of the declarant\'s then existing state of mind, emotion, sensation, or physical condition (such as intent, plan, motive, design, mental feeling, pain, and bodily health), but not including a statement of memory or belief to prove the fact remembered or believed unless it relates to the execution, revocation, identification, or terms of declarant\'s will.</item>
+        <item>1&lt;b>(4) Statements for purposes of medical diagnosis or treatment.&lt;/b> Statements made for purposes of medical diagnosis or treatment and describing medical history, or past or present symptoms, pain, or sensations, or the inception or general character of the cause or external source thereof insofar as reasonably pertinent to diagnosis or treatment.</item>
+        <item>1&lt;b>(5) Recorded recollection.&lt;/b> A memorandum or record concerning a matter about which a witness once had knowledge but now has insufficient recollection to enable him to testify fully and accurately, shown by the testimony of the witness to have been made or adopted when the matter was fresh in his memory and to reflect that knowledge correctly. If admitted, the memorandum or record may be read into evidence but may not itself be received as an exhibit unless offered by an adverse party.</item>
+        <item>1&lt;b>(6) Records of regularly conducted activity.&lt;/b> A memorandum, report, record, or data compilation, in any form, of acts, events, or conditions, made at or near the time by, or from information transmitted by, a person with knowledge, if kept in the course of a regularly conducted business activity, and if it was the regular practice of that business activity to make the memorandum, report, record, or data compilation, all as shown by the testimony of the custodian or other qualified witness or as provided by Rule 901(B)(10), unless the source of information or the method or circumstances of preparation indicate lack of trustworthiness. The term "business" as used in this paragraph includes business, institution, association, profession, occupation, and calling of every kind, whether or not conducted for profit.</item>
+        <item>1&lt;b>(7) Absence of entry in record kept in accordance with the provisions of paragraph (6).&lt;/b> Evidence that a matter is not included in the memoranda, reports, records, or data compilations, in any form, kept in accordance with the provisions of paragraph (6), to prove the nonoccurrence or nonexistence of the matter, if the matter was of a kind of which a memorandum, report, record, or data compilation was regularly made and preserved, unless the sources of information or other circumstances indicate lack of trustworthiness.</item>
+        <item>1&lt;b>(8) Public records and reports.&lt;/b> Records, reports, statements, or data compilations, in any form, of public offices or agencies, setting forth (a) the activities of the office or agency, or (b) matters observed pursuant to duty imposed by law as to which matters there was a duty to report, excluding, however, in criminal cases matters observed by police officers and other law enforcement personnel, unless offered by defendant, unless the sources of information or other circumstances indicate lack of trustworthiness.</item>
+        <item>1&lt;b>(9) Records of vital statistics.&lt;/b> Records or data compilations, in any form, of births, fetal deaths, deaths, or marriages, if the report thereof was made to a public office pursuant to requirement of law.</item>
+        <item>1&lt;b>(10) Absence of public record or entry.&lt;/b> To prove the absence of a record, report, statement, or data compilation, in any form, or the nonoccurrence or nonexistence of a matter of which a record, report, statement, or data compilation, in any form, was regularly made and preserved by a public office or agency, evidence in the form of a certification in accordance with Rule 901(B)(10) or testimony, that diligent search failed to disclose the record, report, statement, or data compilation, or entry.</item>
+        <item>1&lt;b>(11) Records of religious organizations.&lt;/b> Statements of births, marriages, divorces, deaths, legitimacy, ancestry, relationship by blood or marriage, or other similar facts of personal or family history, contained in a regularly kept record of a religious organization.</item>
+        <item>1&lt;b>(12) Marriage, baptismal, and similar certificates.&lt;/b> Statements of fact contained in a certificate that the maker performed a marriage or other ceremony or administered a sacrament, made by a clergyman, public official, or other person authorized by the rules or practices of a religious organization or by law to perform the act certified, and purporting to have been issued at the time of the act or within a reasonable time thereafter.</item>
+        <item>1&lt;b>(13) Family records.&lt;/b> Statements of fact concerning personal or family history contained in family Bibles, genealogies, charts, engravings on rings, inscriptions on family portraits, engravings on urns, crypts, or tombstones, or the like.</item>
+        <item>1&lt;b>(14) Records of documents affecting an interest in property.&lt;/b> The record of a document purporting to establish or affect an interest in property, as proof of the content of the original recorded document and its execution and delivery by each person by whom it purports to have been executed, if the record is a record of a public office and an applicable statute authorizes the recording of documents of that kind in that office.</item>
+        <item>1&lt;b>(15) Statements in documents affecting an interest in property.&lt;/b> A statement contained in a document purporting to establish or affect an interest in property if the matter stated was relevant to the purpose of the document, unless dealings with the property since the document was made have been inconsistent with the truth of the statement or the purport of the document.</item>
+        <item>1&lt;b>(16) Statements in ancient documents.&lt;/b> Statements in a document in existence twenty years or more the authenticity of which is established.</item>
+        <item>1&lt;b>(17) Market reports, commercial publications.&lt;/b> Market quotations, tabulations, lists, directories, or other published compilations, generally used and relied upon by the public or by persons in particular occupations.</item>
+        <item>1&lt;b>(18) Learned Treatises.&lt;/b> To the extent called to the attention of an expert witness upon cross-examination or relied upon by the expert witness in direct examination, statements contained in published treatises, periodicals, or pamphlets on a subject of history, medicine, or other science or art, established as a reliable authority by the testimony or admission of the witness or by other expert testimony or by judicial notice. If admitted, the statements may be read into evidence but may not be received as exhibits.</item>
+        <item>1&lt;b>(19) Reputation concerning personal or family history.&lt;/b> Reputation among members of the declarant’s family by blood, adoption, or marriage or among the declarant’s associates, or in the community, concerning a person’s birth, adoption, marriage, divorce, death, legitimacy, relationship by blood, adoption or marriage, ancestry, or other similar fact of the declarant’s personal or family history.</item>
+        <item>1&lt;b>(20) Reputation concerning boundaries or general history.&lt;/b> Reputation in a community, arising before the controversy, as to boundaries of or customs affecting lands in the community, and reputation as to events of general history important to the community or state or nation in which located.</item>
+        <item>1&lt;b>(21) Reputation as to character.&lt;/b> Reputation of a person\'s character among the person’s associates or in the community.</item>
+        <item>1&lt;b>(22) Judgment of previous conviction.&lt;/b> Evidence of a final judgment, entered after a trial or upon a plea of guilty (but not upon a plea of no contest or the equivalent plea from another jurisdiction), adjudging a person guilty of a crime punishable by death or imprisonment in excess of one year, to prove any fact essential to sustain the judgment, but not including, when offered by the Government in a criminal prosecution for purposes other than impeachment, judgments against persons other than the accused. The pendency of an appeal may be shown but does not affect admissibility.</item>
+        <item>1&lt;b>(23) Judgment as to personal, family, or general history, or boundaries.&lt;/b> Judgments as proof of matters of personal, family or general history, or boundaries, essential to the judgment, if the same would be provable by evidence of reputation.</item>
+        <item>2[Effective: July 1, 1980; amended effective July 1, 2006; July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_804">
+        <item>1&lt;b>RULE 804 Hearsay Exceptions; Declarant Unavailable&lt;/b></item>
+        <item>1&lt;b>(A) Definition of unavailability.&lt;/b> "Unavailability as a witness" includes any of the following situations in which the declarant:</item>
+        <item>2(1) is exempted by ruling of the court on the ground of privilege from testifying concerning the subject matter of the declarant\'s statement;</item>
+        <item>2(2) persists in refusing to testify concerning the subject matter of the declarant\'s statement despite an order of the court to do so;</item>
+        <item>2(3) testifies to a lack of memory of the subject matter of the declarant\'s statement;</item>
+        <item>2(4) is unable to be present or to testify at the hearing because of death or then-existing physical or mental illness or infirmity;</item>
+        <item>2(5) is absent from the hearing and the proponent of the declarant\'s statement has been unable to procure the declarant\'s attendance (or in the case of a hearsay exception under division (B)(2), (3), or (4) of this rule, the declarant\'s attendance or testimony) by process or other reasonable means.</item>
+        <item>1A declarant is not unavailable as a witness if the declarant\'s exemption, refusal, claim of lack of memory, inability, or absence is due to the procurement or wrongdoing of the proponent of the declarant\'s statement for the purpose of preventing the witness from attending or testifying.</item>
+        <item>1&lt;b>(B) Hearsay exceptions.&lt;/b> The following are not excluded by the hearsay rule if the declarant is unavailable as a witness:</item>
+        <item>2&lt;b>(1) Former testimony.&lt;/b> Testimony given as a witness at another hearing of the same or a different proceeding, or in a deposition taken in compliance with law in the course of the same or another proceeding, if the party against whom the testimony is now offered, or, in a civil action or proceeding, a predecessor in interest, had an opportunity and similar motive to develop the testimony by direct, cross, or redirect examination. Testimony given at a preliminary hearing must satisfy the right to confrontation and exhibit indicia of reliability.</item>
+        <item>2&lt;b>(2) Statement under belief of impending death.&lt;/b> In a prosecution for homicide or in a civil action or proceeding, a statement made by a declarant, while believing that his or her death was imminent, concerning the cause or circumstances of what the declarant believed to be his or her impending death.</item>
+        <item>2&lt;b>(3) Statement against interest.&lt;/b> A statement that was at the time of its making so far contrary to the declarant\'s pecuniary or proprietary interest, or so far tended to subject the declarant to civil or criminal liability, or to render invalid a claim by the declarant against another, that a reasonable person in the declarant\'s position would not have made the statement unless the declarant believed it to be true. A statement tending to expose the declarant to criminal liability, whether offered to exculpate or inculpate the accused, is not admissible unless corroborating circumstances clearly indicate the truthworthiness of the statement.</item>
+        <item>2&lt;b>(4) Statement of personal or family history.&lt;/b> (a) A statement concerning the declarant\'s own birth, adoption, marriage, divorce, legitimacy, relationship by blood, adoption, or marriage, ancestry, or other similar fact of personal or family history, even though the declarant had no means of acquiring personal knowledge of the matter stated; or (b) a statement concerning the foregoing matters, and death also, of another person, if the declarant was related to the other by blood, adoption, or marriage or was so intimately associated with the other\'s family as to be likely to have accurate information concerning the matter declared.</item>
+        <item>2&lt;b>(5) Statement by a deceased or incompetent person.&lt;/b> The statement was made by a decedent or a mentally incompetent person, where all of the following apply:</item>
+        <item>3(a) the estate or personal representative of the decedent\'s estate or the guardian or trustee of the incompetent person is a party;</item>
+        <item>3(b) the statement was made before the death or the development of the incompetency;</item>
+        <item>3(c) the statement is offered to rebut testimony by an adverse party on a matter within the knowledge of the decedent or incompetent person.</item>
+        <item>2&lt;b>(6) Forfeiture by wrongdoing.&lt;/b> A statement offered against a party if the unavailability of the witness is due to the wrongdoing of the party for the purpose of preventing the witness from attending or testifying. However, a statement is not admissible under this rule unless the proponent has given to each adverse party advance written notice of an intention to introduce the statement sufficient to provide the adverse party a fair opportunity to contest the admissibility of the statement.</item>
+        <item>2[Effective July 1, 1980; amended effective July 1, 1981, July 1, 1993; July 1, 2001.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_805">
+        <item>1&lt;b>RULE 805. Hearsay Within Hearsay&lt;/b></item>
+        <item>1Hearsay included within hearsay is not excluded under the hearsay rule if each part of the combined statements conforms with an exception to the hearsay rule provided in these rules.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_806">
+        <item>1&lt;b>RULE 806. Attacking and Supporting Credibility of Declarant&lt;/b></item>
+        <item>1(A) When a hearsay statement, or a statement defined in Evid.R. 801(D)(2), (c), (d), or (e), has been admitted in evidence, the credibility of the declarant may be attacked, and if attacked may be supported, by any evidence that would be admissible for those purposes if declarant had testified as a witness.</item>
+        <item>1(B) Evidence of a statement or conduct by the declarant at any time, inconsistent with the declarant’s hearsay statement, is not subject to any requirement that the declarant may have been afforded an opportunity to deny or explain.</item>
+        <item>1(C) Evidence of a declarant’s prior conviction is not subject to any requirement that the declarant be shown a public record.</item>
+        <item>1(D) If the party against whom a hearsay statement has been admitted calls the declarant as a witness, the party is entitled to examine the declarant on the statement as if under cross-examination.</item>
+        <item>2[Effective: July 1, 1980; amended July 1, 1998.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_807">
+        <item>1&lt;b>RULE 807. Hearsay Exceptions; Child Statements in Abuse Cases&lt;/b></item>
+        <item>1(A) An out-of-court statement made by a child who is under twelve years of age at the time of trial or hearing describing any sexual act performed by, with, or on the child or describing any act of physical violence directed against the child is not excluded as hearsay under Evid.R. 802 if all of the following apply:</item>
+        <item>2(1) The court finds that the totality of the circumstances surrounding the making of the statement provides particularized guarantees of trustworthiness that make the statement at least as reliable as statements admitted pursuant to Evid.R. 803 and 804. The circumstances must establish that the child was particularly likely to be telling the truth when the statement was made and that the test of cross-examination would add little to the reliability of the statement. In making its determination of the reliability of the statement, the court shall consider all of the circumstances surrounding the making of the statement, including but not limited to spontaneity, the internal consistency of the statement, the mental state of the child, the child\'s motive or lack of motive to fabricate, the child\'s use of terminology unexpected of a child of similar age, the means by which the statement was elicited, and the lapse of time between the act and the statement. In making this determination, the court shall not consider whether there is independent proof of the sexual act or act of physical violence.</item>
+        <item>2(2) The child\'s testimony is not reasonably obtainable by the proponent of the statement.</item>
+        <item>2(3) There is independent proof of the sexual act or act of physical violence.</item>
+        <item>2(4) At least ten days before the trial or hearing, a proponent of the statement has notified all other parties in writing of the content of the statement, the time and place at which the statement was made, the identity of the witness who is to testify about the statement, and the circumstances surrounding the statement that are claimed to indicate its trustworthiness.</item>
+        <item>1(B) The child\'s testimony is "not reasonably obtainable by the proponent of the statement" under division (A)(2) of this rule only if one or more of the following apply:</item>
+        <item>2(1) The child refuses to testify concerning the subject matter of the statement or claims a lack of memory of the subject matter of the statement after a person trusted by the child, in the presence of the court, urges the child to both describe the acts described by the statement and to testify.</item>
+        <item>2(2) The court finds all of the following:</item>
+        <item>3(a) the child is absent from the trial or hearing;</item>
+        <item>3(b) the proponent of the statement has been unable to procure the child\'s attendance or testimony by process or other reasonable means despite a good faith effort to do so;(c) it is probable that the proponent would be unable to procure the child\'s testimony or attendance if the trial or hearing were delayed for a reasonable time.</item>
+        <item>2(3) The court finds both of the following:</item>
+        <item>3(a) the child is unable to testify at the trial or hearing because of death or then existing physical or mental illness or infirmity;</item>
+        <item>3(b) the illness or infirmity would not improve sufficiently to permit the child to testify if the trial or hearing were delayed for a reasonable time.</item>
+        <item>2The proponent of the statement has not established that the child\'s testimony or attendance is not reasonably obtainable if the child\'s refusal, claim of lack of memory, inability, or absence is due to the procurement or wrongdoing of the proponent of the statement for the purpose of preventing the child from attending or testifying.</item>
+        <item>1(C) The court shall make the findings required by this rule on the basis of a hearing conducted outside the presence of the jury and shall make findings of fact, on the record, as to the bases for its ruling.</item>
+        <item>2[Effective: July 1, 1991.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_901">
+        <item>1&lt;b>RULE 901. Requirement of Authentication or Identification&lt;/b></item>
+        <item>1&lt;b>(A) General provision.&lt;/b> The requirement of authentication or identification as a condition precedent to admissibility is satisfied by evidence sufficient to support a finding that the matter in question is what its proponent claims.</item>
+        <item>1&lt;b>(B) Illustrations.&lt;/b> By way of illustration only, and not by way of limitation, the following are examples of authentication or identification conforming with the requirements of this rule:</item>
+        <item>2&lt;b>(1) Testimony of witness with knowledge.&lt;/b> Testimony that a matter is what it is claimed to be.</item>
+        <item>2&lt;b>(2) Nonexpert opinion on handwriting.&lt;/b> Nonexpert opinion as to the genuineness of handwriting, based upon familiarity not acquired for purposes of the litigation.</item>
+        <item>2&lt;b>(3) Comparison by trier or expert witness.&lt;/b> Comparison by the trier of fact or by expert witness with specimens which have been authenticated.</item>
+        <item>2&lt;b>(4) Distinctive characteristics and the like.&lt;/b> Appearance, contents, substance, internal patterns, or other distinctive characteristics, taken in conjunction with circumstances.</item>
+        <item>2&lt;b>(5) Voice identification.&lt;/b> Identification of a voice, whether heard firsthand or through mechanical or electronic transmission or recording, by opinion based upon hearing the voice at any time under circumstances connecting it with the alleged speaker.</item>
+        <item>2&lt;b>(6) Telephone conversations.&lt;/b> Telephone conversations, by evidence that a call was made to the number assigned at the time by the telephone company to a particular person or business, if (a) in the case of a person, circumstances, including self-identification, show the person answering to be the one called, or (b) in the case of a business, the call was made to a place of business and the conversation related to business reasonably transacted over the telephone.</item>
+        <item>2&lt;b>(7) Public records or reports.&lt;/b> Evidence that a writing authorized by law to be recorded or filed and in fact recorded or filed in a public office, or a purported public record, report, statement or data compilation, in any form, is from the public office where items of this nature are kept.</item>
+        <item>2&lt;b>(8) Ancient documents or data compilation.&lt;/b> Evidence that a document or data compilation, in any form, (a) is in such condition as to create no suspicion concerning its authenticity, (b) was in a place where it, if authentic, would likely be, and (c) has been in existence twenty years or more at the time it is offered.</item>
+        <item>2&lt;b>(9) Process or system.&lt;/b> Evidence describing a process or system used to produce a result and showing that the process or system produces an accurate result.</item>
+        <item>2&lt;b>(10) Methods provided by statute or rule.&lt;/b> Any method of authentication or identification provided by statute enacted by the General Assembly not in conflict with a rule of the Supreme Court of Ohio or by other rules prescribed by the Supreme Court.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_902">
+        <item>1&lt;b>RULE 902. Self-Authentication&lt;/b></item>
+        <item>1Extrinsic evidence of authenticity as a condition precedent to admissibility is not required with respect to the following:</item>
+        <item>1&lt;b>(1) Domestic public documents under seal.&lt;/b> A document bearing a seal purporting to be that of the United States, or of any State, district, Commonwealth, territory, or insular possession thereof, or the Panama Canal Zone, or the Trust Territory of the Pacific Islands, or of a political subdivision, department, officer, or agency thereof, and a signature purporting to be an attestation or execution.</item>
+        <item>1&lt;b>(2) Domestic public documents not under seal.&lt;/b> A document purporting to bear the signature in the official capacity of an officer or employee of any entity included in paragraph (1) hereof, having no seal, if a public officer having a seal and having official duties in the district or political subdivision of the officer or employee certifies under seal that the signer has the official capacity and that the signature is genuine.</item>
+        <item>1&lt;b>(3) Foreign public documents.&lt;/b> A document purporting to be executed or attested in the official capacity by a person authorized by the laws of a foreign country to make the execution or attestation, and accompanied by a final certification as to the genuineness of the signature and official position (a) of the executing or attesting person, or (b) of any foreign official whose certificate of genuineness of signature and official position relates to the execution or attestation or is in a chain of certificates of genuineness of signature and official position relating to the execution or attestation. A final certification may be made by a secretary of embassy or legation, consul general, consul, vice consul, or consular agent of the United States, or a diplomatic or consular official of the foreign country assigned or accredited to the United States. If reasonable opportunity has been given to all parties to investigate the authenticity and accuracy of official documents, the court may, for good cause shown, order that they be treated as presumptively authentic without final certification or permit them to be evidenced by an attested summary with or without final certification.</item>
+        <item>1&lt;b>(4) Certified copies of public records.&lt;/b> A copy of an official record or report or entry therein, or of a document authorized by law to be recorded or filed and actually recorded or filed in a public office, including data compilations in any form, certified as correct by the custodian or other person authorized to make the certification, by certificate complying with paragraph (1), (2), or (3) of this rule or complying with any law of a jurisdiction, state or federal, or rule prescribed by the Supreme Court of Ohio.</item>
+        <item>1&lt;b>(5) Official publications.&lt;/b> Books, pamphlets, or other publications purporting to be issued by public authority.</item>
+        <item>1&lt;b>(6) Newspapers and periodicals.&lt;/b> Printed materials purporting to be newspapers or periodicals, including notices and advertisements contained therein.</item>
+        <item>1&lt;b>(7) Trade inscriptions and the like.&lt;/b> Inscriptions, signs, tags, or labels purporting to have been affixed in the course of business and indicating ownership, control, or origin.</item>
+        <item>1&lt;b>(8) Acknowledged documents.&lt;/b> Documents accompanied by a certificate of acknowledgment executed in the manner provided by law by a notary public or other officer authorized by law to take acknowledgments.</item>
+        <item>1&lt;b>(9) Commercial paper and related documents.&lt;/b> Commercial paper, signatures thereon, and documents relating thereto to the extent provided by general commercial law.</item>
+        <item>1&lt;b>(10) Presumptions created by law.&lt;/b> Any signature, document, or other matter declared by any law of a jurisdiction, state or federal, to be presumptively or prima facie genuine or authentic.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_903">
+        <item>1&lt;b>RULE 903. Subscribing Witness\' Testimony Unnecessary&lt;/b></item>
+        <item>1The testimony of a subscribing witness is not necessary to authenticate a writing unless required by the laws of the jurisdiction whose laws govern the validity of the writing.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1001">
+        <item>1&lt;b>RULE 1001. Definitions&lt;/b></item>
+        <item>1For purposes of this article the following definitions are applicable:</item>
+        <item>1&lt;b>(1) Writings and recordings.&lt;/b> "Writings" and "recordings" consist of letters, words, or numbers, or their equivalent, set down by handwriting, typewriting, printing, photostating, photographing, magnetic impulse, mechanical or electronic recording, or other forms of data compilation.</item>
+        <item>1&lt;b>(2) Photographs.&lt;/b> "Photographs" include still photographs, X-ray films, video tapes, and motion pictures.</item>
+        <item>1&lt;b>(3) Original.&lt;/b> An "original" of a writing or recording is the writing or recording itself or any counterpart intended to have the same effect by a person executing or issuing it. An "original" of a photograph includes the negative or any print therefrom. If data are stored in a computer or similar device, any printout or other output readable by sight, shown to reflect the data accurately, is an "original."</item>
+        <item>1&lt;b>(4) Duplicate.&lt;/b> A "duplicate" is a counterpart produced by the same impression as the original, or from the same matrix, or by means of photography, including enlargements and miniatures, or by mechanical or electronic re-recording, or by chemical reproduction, or by other equivalent techniques which accurately reproduce the original. A “duplicate” includes a counterpart from which personal identifiers have been omitted pursuant to Rule 45 of the Rules of Superintendence for the Courts of Ohio, and which otherwise accurately reproduces the original.</item>
+        <item>2[Effective: July 1, 1980, amended effectively July 1, 2012.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1002">
+        <item>1&lt;b>RULE 1002. Requirement of Original&lt;/b></item>
+        <item>1To prove the content of a writing, recording, or photograph, the original writing, recording, or photograph is required, except as otherwise provided in these rules or by statute enacted by the General Assembly not in conflict with a rule of the Supreme Court of Ohio.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1003">
+        <item>1&lt;b>RULE 1003. Admissibility of Duplicates&lt;/b></item>
+        <item>1A duplicate is admissible to the same extent as an original unless (1) a genuine question is raised as to the authenticity of the original or (2) in the circumstances it would be unfair to admit the duplicate in lieu of the original.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1004">
+        <item>1&lt;b>RULE 1004. Admissibility of Other Evidence of Contents&lt;/b></item>
+        <item>1The original is not required, and other evidence of the contents of a writing, recording, or photograph is admissible if:</item>
+        <item>1&lt;b>(1) Originals lost or destroyed.&lt;/b> All originals are lost or have been destroyed, unless the proponent lost or destroyed them in bad faith; or</item>
+        <item>1&lt;b>(2) Original not obtainable.&lt;/b> No original can be obtained by any available judicial process or procedure; or</item>
+        <item>1&lt;b>(3) Original in possession of opponent.&lt;/b> At a time when an original was under the control of the party against whom offered, that party was put on notice, by the pleadings or otherwise, that the contents would be subject of proof at the hearing, and that party does not produce the original at the hearing; or</item>
+        <item>1&lt;b>(4) Collateral matters.&lt;/b> The writing, recording, or photograph is not closely related to a controlling issue.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1005">
+        <item>1&lt;b>RULE 1005. Public Records&lt;/b></item>
+        <item>1The contents of an official record, or of a document authorized to be recorded or filed and actually recorded or filed, including data compilations in any form if otherwise admissible, may be proved by copy, certified as correct in accordance with Rule 902, Civ.R. 44, Crim.R. 27 or testified to be correct by a witness who has compared it with the original. If a copy which complies with the foregoing cannot be obtained by the exercise of reasonable diligence, then other evidence of the contents may be given.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1006">
+        <item>1&lt;b>RULE 1006. Summaries&lt;/b></item>
+        <item>1The contents of voluminous writings, recordings, or photographs which cannot conveniently be examined in court may be presented in the form of a chart, summary, or calculation. The originals, or duplicates, shall be made available for examination or copying, or both, by other parties at a reasonable time and place. The court may order that they be produced in court.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1007">
+        <item>1&lt;b>RULE 1007. Testimony or Written Admission of Party&lt;/b></item>
+        <item>1Contents of writings, recordings, or photographs may be proved by the testimony or deposition of the party against whom offered or by that party’s written admission, without accounting for the nonproduction of the original.</item>
+        <item>2[Effective: July 1, 1980; amended effectively July 1, 2007.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1008">
+        <item>1&lt;b>RULE 1008. Functions of Court and Jury&lt;/b></item>
+        <item>1When the admissibility of other evidence of contents of writings, recordings, or photographs under these rules depends upon the fulfillment of a condition of fact, the question whether the condition has been fulfilled is ordinarily for the court to determine in accordance with the provisions of Rule 104. However, when an issue is raised (a) whether the asserted writing ever existed, or (b) whether another writing, recording, or photograph produced at the trial is the original, or (c) whether other evidence of contents correctly reflects the contents, the issue is for the trier of fact to determine as in the case of other issues of fact.</item>
+        <item>2[Effective: July 1, 1980.]</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1101">
+        <item>1&lt;b>RULE 1101. [RESERVED]&lt;/b></item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1102">
+        <item>1&lt;b>RULE 1102. Effective Date&lt;/b></item>
+        <item>1&lt;b>(A) Effective date of rules.&lt;/b> These rules shall take effect on the first day of July, 1980. They govern all proceedings in actions brought after they first take effect and also all further proceedings in actions then pending, except to the extent that in the opinion of the court their application in a particular action pending when the rules take effect would not be feasible or would work injustice, in which event former evidentiary rules apply.</item>
+        <item>1&lt;b>(B) Effective date of amendments.&lt;/b> The amendments submitted by the Supreme Court to the General Assembly on January 14, 1981, and on April 29, 1981, shall take effect on July 1, 1981. They govern all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(C) Effective date of amendments.&lt;/b> The amendments submitted by the Supreme Court to the General Assembly on January 12, 1990, and further revised and submitted on April  16, 1990, shall take effect on July 1, 1990. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(D) Effective Date of Amendments.&lt;/b> The amendments submitted by the Supreme Court to the General Assembly on January 10, 1991 and further revised and submitted on April 29, 1991, shall take effect on July 1, 1991. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(E) Effective date of amendments.&lt;/b> The amendments filed by the Supreme Court with the General Assembly on January 14, 1992 and further filed on April 30, 1992, shall take effect on July 1, 1992. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(F) Effective date of amendments.&lt;/b> The amendments submitted by the Supreme Court to the General Assembly on January 8, 1993 and further filed on April 30, 1993 shall take effect on July 1, 1993. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(G) Effective date of amendments.&lt;/b> The amendments submitted by the Supreme Court to the General Assembly on January 14, 1994 and further filed on April 29, 1994 shall take effect on July 1, 1994. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(H) Effective date of amendments.&lt;/b> The amendments to Rules 101, 102, and 403 filed by the Supreme Court with the General Assembly on January 5, 1996 and refiled on April 26, 1996 shall take effect on July 1, 1996. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(I) Effective date of amendments.&lt;/b> The amendments to Rules 607, 613, 616, 706, and 806 filed by the Supreme Court with the General Assembly on January 15, 1998 and further revised and refiled on April 30, 1998 shall take effect on July 1, 1998. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(J) Effective date of amendments.&lt;/b> The amendments to Rules 101 and 1102(I) filed by the Supreme Court with the General Assembly on January 13, 1999 shall take effect on July 1, 1999. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(K) Effective date of amendments.&lt;/b> The amendments to Evidence Rule 407 filed by the Supreme Court with the General Assembly on January 13, 2000 and refiled on April 27, 2000 shall take effect on July 1, 2000. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(L) Effective date of amendments.&lt;/b> The amendments to Evidence Rules 615 and 804 filed by the Supreme Court with the General Assembly on January 12, 2001, and refiled on April 26, 2001, shall take effect on July 1, 2001. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(M) Effective date of amendments.&lt;/b> The amendments to Evidence Rules 609 and 615 filed by the Supreme Court with the General Assembly on January 9, 2003 and refiled on April 28, 2003, shall take effect on July 1, 2003. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(N) Effective date of amendments.&lt;/b> The amendment to Evidence Rule 803 and the repeal of Evidence Rule 706 filed by the Supreme Court with the General Assembly on January 12, 2006 shall take effect on July 1, 2006. The amendment and repeal govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(O) Effective date of amendments.&lt;/b> The amendments to the Rules of Evidence filed by the Supreme Court with the General Assembly on January 11, 2007 and refiled April 30, 2007 shall take effect on July 1, 2007. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(P) Effective date of amendments.&lt;/b> The amendments to the Rules of Evidence filed by the Supreme Court with the General Assembly on January 5, 2011 and refiled on April 21, 2011 shall take effect on July 1, 2011. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+        <item>1&lt;b>(Q) Effective date of amendments.&lt;/b> The amendments to the Rules of Evidence filed by the Supreme Court with the General Assembly on January 13, 2012 and refiled on April 30, 2012 shall take effect on July 1, 2012. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+    </string-array>
+    <string-array name="ohio_rules_evidence_1103">
+        <item>1&lt;b>RULE 1103. Title&lt;/b></item>
+        <item>1These rules shall be known as the Ohio Rules of Evidence and may be cited as "Evidence Rules" or "Evid.R. ____."</item>
+        <item>[Effective: July 1, 1980.]</item>
+    </string-array>
+</resources>

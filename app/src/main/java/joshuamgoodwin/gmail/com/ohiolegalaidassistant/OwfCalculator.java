@@ -132,9 +132,9 @@ public class OwfCalculator extends Fragment {
 						tvHoursPerWeek.setVisibility(View.VISIBLE);
 					} else {
 						etHoursPerWeek = (EditText)getView().findViewById(R.id.hoursPerWeek);
-						etHoursPerWeek.setVisibility(View.INVISIBLE);
+						etHoursPerWeek.setVisibility(View.GONE);
 						TextView tvHoursPerWeek = (TextView)getView().findViewById(R.id.tvHoursPerWeek);
-						tvHoursPerWeek.setVisibility(View.INVISIBLE);
+						tvHoursPerWeek.setVisibility(View.GONE);
 					}
 
 				}

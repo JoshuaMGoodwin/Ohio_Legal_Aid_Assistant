@@ -1,6 +1,7 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
 import android.app.Fragment;
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Button;
@@ -56,7 +57,7 @@ public class AddCourtWebsiteFragment extends Fragment {
 				String courtAddress = etWebsiteURL.getText().toString();
 				dao.addNewCourt(courtName, courtAddress);
 				resetAll();
-				
+               ((MainActivity)getActivity()).setDrawer();
 				Toast toast = Toast.makeText(getActivity(), "New Court website successfully added", Toast.LENGTH_LONG);
 				toast.show();
 			
