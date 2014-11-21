@@ -1,6 +1,7 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import android.app.*;
+import android.support.v4.app.Fragment;
+import android.app.AlertDialog;
 import android.os.*;
 import android.widget.EditText;
 import android.widget.Spinner;

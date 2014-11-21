@@ -1,6 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
  
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.*;
 import android.os.*;
 import android.app.AlertDialog;

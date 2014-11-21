@@ -1,6 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -12,11 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.MotionEvent;
 
 /**
  * Created by Goodwin on 11/10/2014.
  */
-public class RulesFragment extends Fragment {
+public class RulesFragment extends Fragment /*implements SimpleGestureListener*/{
 
     private boolean firstTime = true;
 
@@ -43,13 +44,14 @@ public class RulesFragment extends Fragment {
         return rootView;
     }
 
+
     private void getViews(View rootView){
 
         broadTopics = (Spinner) rootView.findViewById(R.id.broad_topic_spinner);
         narrowTopics = (Spinner) rootView.findViewById(R.id.narrow_topic_spinner);
         ll = (LinearLayout) rootView.findViewById(R.id.rules_linear_layout);
         Bundle bundle = getArguments();
-        ruleSet = bundle.getString("ruleSet", "fre_by_rule");
+        ruleSet = bundle.getString("ruleSet");
 
     }
 
@@ -111,7 +113,7 @@ public class RulesFragment extends Fragment {
                     ll.removeAllViews();
                 }
 
-            String detail = position < 10 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
+            String detail = position < 9 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
             String string = ruleSet + "_" + Integer.toString(narrowTopicSelected) + detail;
             String[] ruleArray = getResources().getStringArray(getResources().getIdentifier(string, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
 

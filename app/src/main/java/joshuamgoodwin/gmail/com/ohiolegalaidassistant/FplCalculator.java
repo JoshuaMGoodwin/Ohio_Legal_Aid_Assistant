@@ -1,6 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.widget.Button;
 import android.widget.TextView;
 import android.view.View;

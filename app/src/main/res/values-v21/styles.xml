@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
-        <item name="android:colorPrimary">@color/default_blue</item>
-        <item name="android:colorPrimaryDark">@color/accent_blue</item>
-        <item name="android:colorAccent">@color/accent_material_light</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/default_blue</item>
+        <item name="colorPrimaryDark">@color/accent_blue</item>
+        <item name="colorAccent">@color/accent_material_light</item>
     </style>
 </resources>

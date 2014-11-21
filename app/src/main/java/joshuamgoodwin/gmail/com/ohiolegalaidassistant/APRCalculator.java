@@ -3,7 +3,7 @@ package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.os.Bundle;

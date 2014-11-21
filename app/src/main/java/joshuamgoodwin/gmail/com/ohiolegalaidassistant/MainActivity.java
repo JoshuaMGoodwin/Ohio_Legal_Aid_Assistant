@@ -7,17 +7,18 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,7 +38,7 @@ import android.graphics.Typeface;
 
 import joshuamgoodwin.gmail.com.*;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
     
 	private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
@@ -102,15 +103,15 @@ public class MainActivity extends Activity {
 		//	mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         // enable ActionBar app icon to behave as action to toggle nav drawer
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         // ActionBarDrawerToggle ties together the the proper interactions
         // between the sliding drawer and the action bar app icon
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,                  // host Activity 
                 mDrawerLayout,         // DrawerLayout object 
-                R.drawable.ic_drawer,  // nav drawer image to replace 'Up' caret 
+                //R.drawable.ic_drawer,  // nav drawer image to replace 'Up' caret
                 R.string.drawer_open,  // "open drawer" description for accessibility 
                 R.string.drawer_close  // "close drawer" description for accessibility 
                 ) {
@@ -126,7 +127,7 @@ public class MainActivity extends Activity {
 
         if (savedInstanceState == null) {
             Fragment fragmentName = new Welcome();
-			FragmentManager fragmentManager = getFragmentManager();
+			FragmentManager fragmentManager = getSupportFragmentManager();
 			FragmentTransaction ft = fragmentManager.beginTransaction();
 			ft.replace(R.id.content_frame, fragmentName, "WELCOME");
 			// ft.addToBackStack(null);
@@ -207,7 +208,7 @@ public class MainActivity extends Activity {
     }
 	
 	private void setFragment(Fragment fragmentName, String tag){
-		FragmentManager fragmentManager = getFragmentManager();
+		FragmentManager fragmentManager = getSupportFragmentManager();
 		FragmentTransaction ft = fragmentManager.beginTransaction();
 
         ft.replace(R.id.content_frame, fragmentName, tag);
@@ -217,7 +218,7 @@ public class MainActivity extends Activity {
 	}
 	
 	private boolean welcomeVisible(){
-		Welcome welcome = (Welcome) getFragmentManager().findFragmentByTag("WELCOME");
+		Welcome welcome = (Welcome) getSupportFragmentManager().findFragmentByTag("WELCOME");
 		if (welcome != null && welcome.isVisible()){
 			return true;
 		} else {
@@ -226,7 +227,7 @@ public class MainActivity extends Activity {
 	}
 	
 	private boolean webviewVisible(){
-		WebViewFragment webFragment = (WebViewFragment) getFragmentManager().findFragmentByTag("WEBVIEW");
+		WebViewFragment webFragment = (WebViewFragment) getSupportFragmentManager().findFragmentByTag("WEBVIEW");
 		if (webFragment != null && webFragment.isVisible()){
 			return true;
 		} else {
@@ -255,7 +256,7 @@ public class MainActivity extends Activity {
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
-        getActionBar().setTitle(mTitle);
+        getSupportActionBar().setTitle(mTitle);
     }
 
     /**
