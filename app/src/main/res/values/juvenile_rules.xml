@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="ohio_rules_juvenile">
+        <item>Juvenile Rules</item>
+    </string-array>
+    <string-array name="ohio_rules_juvenile_0">
         <item>1 Scope of rules: applicability; construction; exceptions</item>
         <item>2 Definitions</item>
         <item>3 Waiver of rights</item>

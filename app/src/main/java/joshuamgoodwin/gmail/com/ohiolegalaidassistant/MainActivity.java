@@ -195,6 +195,9 @@ public class MainActivity extends ActionBarActivity {
             if (childName.equals("Ohio Rules of Evidence")) {
                 bundle.putString("ruleSet", "ohio_rules_evidence");
             }
+            if (childName.equals("Ohio Rules of Juvenile Procedure")) {
+                bundle.putString("ruleSet", "ohio_rules_juvenile");
+            }
             fragmentName.setArguments(bundle);
         }
 		
