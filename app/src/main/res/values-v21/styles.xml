@@ -2,8 +2,8 @@
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/default_blue</item>
-        <item name="colorPrimaryDark">@color/accent_blue</item>
-        <item name="colorAccent">@color/accent_material_light</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
         <item name="actionMenuTextColor">#ffffffff</item>
     </style>
 </resources>

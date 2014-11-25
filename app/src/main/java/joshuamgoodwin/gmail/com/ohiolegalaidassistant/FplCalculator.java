@@ -2,6 +2,7 @@ package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
 import android.support.v4.app.Fragment;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.view.View;
 import android.view.LayoutInflater;
@@ -81,8 +82,8 @@ public class FplCalculator extends Fragment {
 						etHoursPerWeek.setVisibility(View.VISIBLE);
 						tvHoursPerWeek.setVisibility(View.VISIBLE);
 					} else {
-						etHoursPerWeek.setVisibility(View.INVISIBLE);
-						tvHoursPerWeek.setVisibility(View.INVISIBLE);
+						etHoursPerWeek.setVisibility(View.GONE);
+						tvHoursPerWeek.setVisibility(View.GONE);
 					}
 				}
 
@@ -99,7 +100,7 @@ public class FplCalculator extends Fragment {
 
 	private void clearButton(View rootView) {
 
-		Button button = (Button)rootView.findViewById(R.id.FPLClear);
+		ImageButton button = (ImageButton)rootView.findViewById(R.id.FPLClear);
 
 		// set button's onClickListener
 		button.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +123,7 @@ public class FplCalculator extends Fragment {
 
 	private void submitButton(View rootView) {
 
-		Button button = (Button) rootView.findViewById(R.id.FPLSubmit);
+		ImageButton button = (ImageButton) rootView.findViewById(R.id.FPLSubmit);
 		button.setOnClickListener(new View.OnClickListener() {
 
 				public void onClick(View v) {
