@@ -7,17 +7,29 @@
 		android:id="@+id/content_frame"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" />
-	
-		<ExpandableListView
-			android:id="@+id/left_drawer"
-			android:layout_height="match_parent"
-			android:layout_width="240dp"
-			android:layout_gravity="left"
-			android:choiceMode="singleChoice"
-			android:dividerHeight="3px"
-			android:divider="@android:drawable/divider_horizontal_bright"
-			android:background="#fff3f3f3"/>
-		
 
+       <!-- <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:layout_alignParentBottom="true"
+                android:text="About"/>-->
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_height="match_parent"
+                android:layout_width="240dp"
+                android:layout_gravity="left"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="3px"
+                android:divider="@android:drawable/divider_horizontal_bright"
+                android:background="#fff3f3f3"/>
+		
+        <!--</RelativeLayout>-->
 		
 </android.support.v4.widget.DrawerLayout>

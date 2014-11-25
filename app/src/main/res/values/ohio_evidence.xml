@@ -22,7 +22,7 @@
         <item>106 Remainder of or related writings or recorded statements</item>
     </string-array>
     <string-array name="ohio_rules_evidence_1">
-        <item>102 Judicial notice of adjudicative facts</item>
+        <item>201 Judicial notice of adjudicative facts</item>
     </string-array>
     <string-array name="ohio_rules_evidence_2">
         <item>301 Presumptions in general in civil actions and proceedings</item>
@@ -599,6 +599,6 @@
     <string-array name="ohio_rules_evidence_1103">
         <item>1&lt;b>RULE 1103. Title&lt;/b></item>
         <item>1These rules shall be known as the Ohio Rules of Evidence and may be cited as "Evidence Rules" or "Evid.R. ____."</item>
-        <item>[Effective: July 1, 1980.]</item>
+        <item>2[Effective: July 1, 1980.]</item>
     </string-array>
 </resources>

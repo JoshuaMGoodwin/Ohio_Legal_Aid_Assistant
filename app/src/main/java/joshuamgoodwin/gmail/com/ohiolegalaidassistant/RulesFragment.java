@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
@@ -29,6 +30,7 @@ public class RulesFragment extends Fragment {
     private boolean firstTime = true;
 
     private int broadTopicSelected;
+    private int narrowPosition = 0;
 	private int ruleSelected;
 
     private LinearLayout ll;
@@ -39,11 +41,12 @@ public class RulesFragment extends Fragment {
     private Spinner narrowTopics;
 
     private String ruleSet;
+    private String TAG = "OhioLegalAidAssistant:";
+
     String[] broadTopicArray;
     String[] narrowTopicString;
 
     private TextView details;
-    ;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -101,13 +104,13 @@ public class RulesFragment extends Fragment {
 						if (ruleSelected > 0) {
 							narrowTopics.setSelection(ruleSelected - 1);
 						} else if (broadTopics.getSelectedItemPosition() > 0) {
-							broadTopics.setSelection(broadTopicSelected - 2);
-							//String[] test = getResources().getStringArray(getResources()
-							//	.getIdentifier(ruleSet + "_" + (broadTopicSelected - 2),
-							//	"array", "joshuagoodwin.gmail.com.ohiolegalaidassistant"));
-							//Toast.makeText(getActivity(), "test.length:" + test.length, Toast.LENGTH_LONG).show();
-							narrowTopics.setSelection(1, false);
-								
+                            int bt = broadTopics.getSelectedItemPosition();
+
+							String[] test = getResources().getStringArray(getResources()
+								.getIdentifier(ruleSet + "_" + (broadTopicSelected - 2),
+								"array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+                            narrowPosition = test.length - 1;
+                            broadTopics.setSelection(bt - 1, true);
 						}
 						return true;
 					}
@@ -120,7 +123,7 @@ public class RulesFragment extends Fragment {
 				}
 			});
 	}
-	
+
     private void initializeSpinners() {
 
         setBroadTopicsSpinner();
@@ -157,8 +160,9 @@ public class RulesFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 setNarrowTopicsSpinner(position);
-				narrowTopics.setSelection(0, false);
+				narrowTopics.setSelection(narrowPosition, false);
 				broadTopicSelected = position + 1;
+                narrowPosition = 0;
             }
 
             @Override

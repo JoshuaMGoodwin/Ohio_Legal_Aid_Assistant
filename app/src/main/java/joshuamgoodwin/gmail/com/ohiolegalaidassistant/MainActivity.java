@@ -260,6 +260,7 @@ public class MainActivity extends ActionBarActivity {
     public void setTitle(CharSequence title) {
         mTitle = title;
         getSupportActionBar().setTitle(mTitle);
+
     }
 
     /**
