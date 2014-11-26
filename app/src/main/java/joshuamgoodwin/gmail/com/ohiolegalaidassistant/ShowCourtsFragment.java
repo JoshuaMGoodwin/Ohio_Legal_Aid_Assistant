@@ -36,12 +36,13 @@ public class ShowCourtsFragment extends ListFragment {
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 	
+		v.setSelected(true);
 		CourtSites courtSites = (CourtSites)getListAdapter().getItem(position);
 		//int selected = courtSites.getId();
         String address = dao.showAddress(courtSites.getId());
-        dao.deleteCourt(courtSites.getId());
-		setListAdapter(new CourtListAdapter(getActivity(), dao.getCourts()));
-        ((MainActivity)getActivity()).setDrawer();
+//        dao.deleteCourt(courtSites.getId());
+//		setListAdapter(new CourtListAdapter(getActivity(), dao.getCourts()));
+//        ((MainActivity)getActivity()).setDrawer();
 		Toast toast = Toast.makeText(getActivity(), address + " was deleted", Toast.LENGTH_LONG);
 		toast.show();
 	

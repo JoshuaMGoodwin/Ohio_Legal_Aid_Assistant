@@ -2,5 +2,6 @@
 <resources>
     <color name="default_blue">#0026FF</color>
     <color name="dark_blue">#0026aa</color>
+	<color name="white">#ffffff</color>
 	<color name="accent_blue">#0084FF</color>
 </resources>

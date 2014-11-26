@@ -61,6 +61,7 @@
 
     <string-array name="Rules">
         <item>Federal Rules of Evidence</item>
+		<item>Ohio Rules of Appellate Procedure</item>
         <item>Ohio Rules of Civil Procedure</item>
         <item>Ohio Rules of Evidence</item>
         <item>Ohio Rules of Juvenile Procedure</item>
