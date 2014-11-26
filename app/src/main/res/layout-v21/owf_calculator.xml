@@ -161,17 +161,21 @@ android:layout_marginRight="@dimen/fab_margin">
         android:id="@+id/OWFSubmit"
         android:layout_height="@dimen/fab_diameter"
         android:layout_width="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
+        android:background="@drawable/oval_ripple"
         android:src="@drawable/ic_action_done"
         android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin" />
+        android:layout_marginRight="@dimen/fab_margin"
+        android:elevation="@dimen/elevation_low"
+        android:stateListAnimator="@anim/button_elevation"/>
 
     <ImageButton
         android:id="@+id/OWFClear"
         android:src="@drawable/ic_action_discard"
         android:layout_height="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
+        android:background="@drawable/oval_ripple"
         android:layout_width="@dimen/fab_diameter"
+        android:elevation="@dimen/elevation_low"
+        android:stateListAnimator="@anim/button_elevation"
         />
 </LinearLayout>
 </RelativeLayout>

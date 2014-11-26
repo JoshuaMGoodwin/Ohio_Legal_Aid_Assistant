@@ -1,60 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<ScrollView
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 <LinearLayout
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical" >
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Amount Borrowed" />
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:id="@+id/amountBorrowed"
-		android:hint="Amount Borrowed"
-		android:inputType="numberDecimal" />
-	
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Number of Payments" />
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:id="@+id/numberOfPayments"
-		android:hint="Number of Payments"
-		android:inputType="number" />
-		
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Costs" />
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:id="@+id/costs"
-		android:hint="Costs"
-		android:inputType="numberDecimal" />
-	
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Base Rate" />
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:id="@+id/baseRate"
-		android:hint="Base Rate ex. 5.5"
-		android:inputType="numberDecimal" />
-	
-	<Button
-		android:id="@+id/submit"
-		android:text="Submit"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	    	android:text="Amount Borrowed:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/amountBorrowed"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Number of Payments:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/numberOfPayments"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Costs:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/costs"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Base Rate (ex. 4.25):" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/baseRate"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
 
 </LinearLayout>
 </ScrollView>
+<RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom|right"
+android:layout_marginBottom="@dimen/fab_margin"
+android:layout_marginRight="@dimen/fab_margin">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ImageButton
+        android:id="@+id/submit"
+        android:layout_height="@dimen/fab_diameter"
+        android:layout_width="@dimen/fab_diameter"
+        android:background="@drawable/fab_button"
+        android:src="@drawable/ic_action_done"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:src="@drawable/ic_action_discard"
+        android:layout_height="@dimen/fab_diameter"
+        android:background="@drawable/fab_button"
+        android:layout_width="@dimen/fab_diameter"
+        />
+</LinearLayout>
+</RelativeLayout>
+</FrameLayout>

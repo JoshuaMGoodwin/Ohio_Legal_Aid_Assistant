@@ -2,9 +2,10 @@
 <shape 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:shape="oval" >
-	<solid android:color="#FF0008" />
-	<corners android:bottomLeftRadius="56dp"
-		android:bottomRightRadius="56dp"
-		android:topLeftRadius="56dp"
-		android:topRightRadius="56dp" />
+
+	<solid android:color="@color/default_blue" />
+	<corners android:bottomLeftRadius="@dimen/fab_diameter"
+		android:bottomRightRadius="@dimen/fab_diameter"
+		android:topLeftRadius="@dimen/fab_diameter"
+		android:topRightRadius="@dimen/fab_diameter" />
 </shape>

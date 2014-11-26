@@ -147,7 +147,7 @@ public class OwfCalculator extends Fragment {
 	}
 
 	private void submitButton(View rootView) {
-		Button button = (Button) rootView.findViewById(R.id.OWFSubmit);
+		ImageButton button = (ImageButton) rootView.findViewById(R.id.OWFSubmit);
 		button.setOnClickListener(new View.OnClickListener() {
 	
 		public void onClick(View v) {
@@ -180,7 +180,7 @@ public class OwfCalculator extends Fragment {
 	}
 	
 	private void resetButton(View rootView) {
-		Button button = (Button) rootView.findViewById(R.id.OWFClear);
+		ImageButton button = (ImageButton) rootView.findViewById(R.id.OWFClear);
 		button.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v){
 				resetAll();

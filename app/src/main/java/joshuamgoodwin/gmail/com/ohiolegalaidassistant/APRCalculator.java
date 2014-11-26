@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.os.Bundle;
 import android.view.*;
 import android.view.View.*;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class APRCalculator extends Fragment {
 
@@ -32,7 +34,7 @@ public class APRCalculator extends Fragment {
 		etCosts = (EditText) rootView.findViewById(R.id.costs);
 		etNumberOfPayments = (EditText) rootView.findViewById(R.id.numberOfPayments);
 
-        Button submit = (Button) rootView.findViewById(R.id.submit);
+        ImageButton submit = (ImageButton) rootView.findViewById(R.id.submit);
 		submit.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -42,13 +44,37 @@ public class APRCalculator extends Fragment {
 
             }
         });
+
+        ImageButton clear = (ImageButton) rootView.findViewById(R.id.clear);
+        clear.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etAmountBorrowed.setText("");
+                etBaseRate.setText("");
+                etCosts.setText("");
+                etNumberOfPayments.setText("");
+            }
+        });
 	}
 	
 	private void calculateAPR() {
 
+        // check for missing data
+        if (etNumberOfPayments.getText().toString().equals("") || etNumberOfPayments.getText().toString().equals("0")) {
+            Toast.makeText(getActivity(), "The number of payments is missing or is 0", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (etBaseRate.getText().toString().equals("") || etBaseRate.getText().toString().equals("0")) {
+            Toast.makeText(getActivity(), "The base rate cannot be blank", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (etAmountBorrowed.getText().toString().equals("") || etBaseRate.getText().toString().equals("0")) {
+            Toast.makeText(getActivity(), "Base rate cannot be blank or 0", Toast.LENGTH_LONG).show();
+        }
+
         double baseRate = Double.parseDouble(etBaseRate.getText().toString());
         double amountBorrowed = Double.parseDouble(etAmountBorrowed.getText().toString());
-        double costs = Double.parseDouble(etCosts.getText().toString());
+        double costs = etCosts.getText().toString().equals("") ? 0.0 : Double.parseDouble(etCosts.getText().toString());
         int numberOfPayments = Integer.parseInt(etNumberOfPayments.getText().toString());
 	
 		double rate = baseRate / 100 / 12;

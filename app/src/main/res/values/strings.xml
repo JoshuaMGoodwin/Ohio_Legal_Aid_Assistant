@@ -5,24 +5,24 @@
     <string name="app_name">Ohio Legal Aid Assistant</string>
     <string name="add_cm">Add new case management site</string>
     <string name="edit_cm">Edit case management sites</string>
-    <string name="AGSize">AG Size</string>
-    <string name="deemedIncome">Deemed/Allocable Income</string>
-    <string name="dependentCare">Dependent care</string>
-    <string name="grossEarnedIncome">Gross Earned Income</string>
+    <string name="AGSize">AG Size:</string>
+    <string name="deemedIncome">Deemed/Allocable Income:</string>
+    <string name="dependentCare">Dependent care:</string>
+    <string name="grossEarnedIncome">Gross Earned Income:</string>
     <string name="hoursPerWeek">Hours per week</string>
     <string name="OWFClear">Clear</string>
     <string name="OWFSubmit">Submit</string>
-    <string name="unearnedIncome">Unearned Income</string>
+    <string name="unearnedIncome">Unearned Income:</string>
     <string name="tvAGSize">Assistance Group Size:</string>
-    <string name="tvDeemedIncome">Deemed/Allocable Income per Month</string>
+    <string name="tvDeemedIncome">Deemed/Allocable Income per Month:</string>
     <string name="tvGrossEarnedIncome">Gross Earned Income:</string>
-    <string name="tvHoursPerWeek">At how many hours per week?</string>
-    <string name="tvUnearnedIncome">Unearned Income per Month</string>
-    <string name="tvDependentCare">Monthly dependent care costs</string>
+    <string name="tvHoursPerWeek">Hours per week:</string>
+    <string name="tvUnearnedIncome">Unearned Income per Month:</string>
+    <string name="tvDependentCare">Monthly dependent care costs:</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
-    <string name="frequency">How frequently?</string>
+    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nCheck out the code at:\nhttps://github.com/JoshuaMGoodwin/Ohio_Legal_Aid_Assistant\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
+    <string name="frequency">Frequency:</string>
     <string name="household_information_heading">HOUSEHOLD INFORMATION</string>
     <string name="tvAGDisabled">Are there disabled members in AG?</string>
     <string name="tvAGSSI">Are there SSI, DFA, or PRC recipients in AG (categorical eligibility)? </string>
@@ -91,5 +91,7 @@
         <item>Yes</item>
         <item>No</item>
     </string-array>
+
+    <string name="changes">&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
 
 </resources>

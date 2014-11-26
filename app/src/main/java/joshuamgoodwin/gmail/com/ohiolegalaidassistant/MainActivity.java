@@ -6,7 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -19,6 +22,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -39,7 +43,8 @@ import android.graphics.Typeface;
 import joshuamgoodwin.gmail.com.*;
 
 public class MainActivity extends ActionBarActivity {
-    
+
+    private int lastExpanded = -1;
 	private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
 	
@@ -85,6 +90,10 @@ public class MainActivity extends ActionBarActivity {
 
 				@Override
 				public void onGroupExpand(int groupPosition) {
+
+                if (lastExpanded != -1) {
+                    if (lastExpanded != groupPosition) mDrawerList.collapseGroup(lastExpanded);}
+                lastExpanded = groupPosition;
 
 				}
 			});
@@ -133,7 +142,25 @@ public class MainActivity extends ActionBarActivity {
 			// ft.addToBackStack(null);
 			ft.commit();
         }
-		
+        // changelog on start
+        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+        boolean test = prefs.getBoolean("first", true);
+
+        if (test) {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setMessage(Html.fromHtml(getString(R.string.changes)))
+                    .setPositiveButton("OK", null)
+                    .setTitle("What's New!");
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+            // make sure it only runs first time
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("first", false);
+            editor.commit();
+        }
     }
 
 
@@ -251,6 +278,7 @@ public class MainActivity extends ActionBarActivity {
 			Fragment fragmentName = new Welcome();
 			String tag = "WELCOME";
 			setFragment(fragmentName, tag);
+            getSupportActionBar().setTitle(R.string.app_name);
 		} else {
             super.onBackPressed();
         }
