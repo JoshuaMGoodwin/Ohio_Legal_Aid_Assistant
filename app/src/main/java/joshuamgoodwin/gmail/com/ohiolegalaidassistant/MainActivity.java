@@ -239,6 +239,11 @@ public class MainActivity extends ActionBarActivity {
         mDrawerLayout.closeDrawer(mDrawerList);
 		
     }
+    public void OpenCourtEditor(Bundle bundle) {
+        Fragment fragment = new AddCourtWebsiteFragment();
+        fragment.setArguments(bundle);
+        setFragment(fragment, "COURTS");
+    }
 	
 	private void setFragment(Fragment fragmentName, String tag){
 		FragmentManager fragmentManager = getSupportFragmentManager();

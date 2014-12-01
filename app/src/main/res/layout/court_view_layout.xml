@@ -1,34 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
- 
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Website Name" />
- 
-	<EditText
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:id="@+id/etWebsiteName"
-		android:hint="Website name" />
-	
-	<TextView
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="Website Address" />
-	
-	<EditText
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:id="@+id/etWebsiteURL"
-		android:hint="url" />
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-</LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
 
     <ImageButton
         android:layout_width="@dimen/fab_diameter"
@@ -37,18 +16,18 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
-        android:id="@+id/addEntry"
+        android:id="@+id/edit"
         android:src="@drawable/ic_action_edit"
         android:background="@drawable/fab_button" />
 
     <ImageButton
         android:layout_width="@dimen/fab_diameter"
         android:layout_height="@dimen/fab_diameter"
-        android:layout_above="@id/addEntry"
+        android:layout_above="@id/edit"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
-        android:id="@+id/clear"
+        android:id="@+id/delete"
         android:src="@drawable/ic_action_discard"
         android:background="@drawable/fab_button" />
 

@@ -28,6 +28,14 @@ public class CourtSitesDAO {
 		database.close();
 	
 	}
+
+    public void editCourt(String name, String address, String id) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("court_name", name);
+        contentValues.put("court_address", address);
+        contentValues.put("_id", id);
+        database.update("courtsites", contentValues,"_id = ?", new String[] {id});
+    }
 	
 	// method for adding new court entry
 	public void addNewCourt(String name, String address) {
@@ -89,6 +97,41 @@ public class CourtSitesDAO {
 		cursor.close();
 		return list;
 	}
+
+    public List<CourtSites> getCourtsForEdit() {
+
+        List<CourtSites> list = new ArrayList<CourtSites>();
+
+        String[] tableColumns = new String[] {"_id", "court_name"};
+        CourtSites courtSites = new CourtSites();
+        courtSites.setCourtName("Add New Court...");
+        courtSites.setId(-1);
+        list.add(courtSites);
+
+        // query db
+        Cursor cursor = database.query("courtsites", tableColumns, null, null, null, null, tableColumns[1] + " COLLATE NOCASE");
+        cursor.moveToFirst();
+
+        while (!cursor.isAfterLast()) {
+            courtSites = new CourtSites();
+            courtSites.setId(cursor.getInt(0));
+            courtSites.setCourtName(cursor.getString(1));
+            list.add(courtSites);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return list;
+    }
+
+    public String[] getCourt(int id) {
+        String[] tableColumns = new String[] {"_id", "court_name", "court_address"};
+        Cursor cursor = database.query("courtsites", tableColumns, "_id = ?", new String[] {Integer.toString(id)}, null, null, null);
+        cursor.moveToFirst();
+        String number = cursor.getString(0);
+        String name = cursor.getString(1);
+        String address = cursor.getString(2);
+        return new String[] {number, name, address};
+    }
 	
 	public String addressFromName(String name) {
 		String[] tableColumns = new String[] {"court_name", "court_address"};
