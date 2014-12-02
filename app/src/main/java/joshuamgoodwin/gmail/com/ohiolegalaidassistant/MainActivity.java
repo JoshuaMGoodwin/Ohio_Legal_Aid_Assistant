@@ -196,9 +196,7 @@ public class MainActivity extends ActionBarActivity {
 			} 
 		} else if (groupName.equals("Court Dockets")){
 			tag = "WEBVIEW";
-			if (childName.equals(getString(R.string.add_court))){
-				fragmentName = new AddCourtWebsiteFragment();
-			} else if (childName.equals(getString(R.string.edit_courts))){
+			if (childName.equals(getString(R.string.edit_courts))){
 				fragmentName = new ShowCourtsFragment();
 			} else {
 					CourtSitesDAO dao = new CourtSitesDAO(this);
@@ -354,7 +352,6 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		 List<String> courtDockets = new ArrayList<String>();
 		 CourtSitesDAO dao = new CourtSitesDAO(this);
 		 courtDockets = dao.courtNamesList();
-		 courtDockets.add(getString(R.string.add_court));
 		 courtDockets.add(getString(R.string.edit_courts));
 		 
 		 /*// add data to the cm list

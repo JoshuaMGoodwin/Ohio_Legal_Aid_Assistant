@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout 
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -40,4 +44,17 @@
 
     </ScrollView>
 
+	<ImageButton
+        android:layout_width="@dimen/fab_diameter"
+        android:layout_height="@dimen/fab_diameter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:id="@+id/rules_search"
+        android:src="@drawable/ic_action_edit"
+        android:background="@drawable/fab_button" />
+	
+	
 </LinearLayout>
+</FrameLayout>

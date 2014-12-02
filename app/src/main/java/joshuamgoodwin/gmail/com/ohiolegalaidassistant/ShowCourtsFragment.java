@@ -20,11 +20,13 @@ import android.support.v4.app.ListFragment;
 import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSites;
 import joshuamgoodwin.gmail.com.ohiolegalaidassistant.CourtSitesDAO;
 import java.security.*;
+import android.content.*;
 
 public class ShowCourtsFragment extends ListFragment {
 
 	CourtSitesDAO dao;
     String address = "";
+	String name = "";
     int positionSelected = -1;
 
     @Override
@@ -82,15 +84,30 @@ public class ShowCourtsFragment extends ListFragment {
                 if (address.equals("") || address.equals(getString(R.string.AddCourt))) {
                     return;
                 } else {
+					CourtSites courtSites = (CourtSites) getListAdapter().getItem(positionSelected);
+                    final String[] court = dao.getCourt(courtSites.getId());
+					name = court[1];
                     // TODO: build alert dialog to confirm that user wants to delete court
-                    // AlertDialog.Builder builder = new AlertDialog();
-
-                    CourtSites courtSites = (CourtSites)getListAdapter().getItem(positionSelected);
-                    dao.deleteCourt(courtSites.getId());
-                    setListAdapter(new CourtListAdapter(getActivity(), dao.getCourtsForEdit()));
-                    ((MainActivity)getActivity()).setDrawer();
-                    Toast toast = Toast.makeText(getActivity(), address + " was deleted", Toast.LENGTH_LONG);
-                    toast.show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+					builder.setMessage("Are you sure you want to delete " + name + " ?")
+							.setTitle("Warning")
+							.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog, int id) {
+									dialog.dismiss();
+									dao.deleteCourt(Integer.parseInt(court[0]));
+									setListAdapter(new CourtListAdapter(getActivity(), dao.getCourtsForEdit()));
+									((MainActivity)getActivity()).setDrawer();
+									Toast toast = Toast.makeText(getActivity(), name + " was deleted.", Toast.LENGTH_LONG);
+									toast.show();
+								}
+							})
+							.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog, int id) {
+									dialog.dismiss();		
+								}
+							});
+					AlertDialog dialog = builder.create();
+					dialog.show();
                 }
             }
         });

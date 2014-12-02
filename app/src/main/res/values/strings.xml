@@ -46,8 +46,7 @@
     <string name="garbageTrash">Garbage or trash</string>
     <string name="phone">Telephone</string>
     <string name="calculators">CALCULATORS</string>
-    <string name="add_court">Add new court</string>
-    <string name="edit_courts">Edit courts</string>
+    <string name="edit_courts">Edit/Add courts</string>
     <!--<string name="child_support_address">"https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en"</string>-->
 
 

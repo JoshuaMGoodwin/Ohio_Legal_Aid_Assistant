@@ -1,10 +1,15 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
+import java.util.ArrayList;
+
 import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.app.AlertDialog;
+import android.app.AlertDialog.*;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
@@ -13,14 +18,18 @@ import android.view.View;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.MotionEvent;
+import android.widget.*;
 
 /**
  * Created by Goodwin on 11/10/2014.
@@ -29,6 +38,8 @@ public class RulesFragment extends Fragment {
     private GestureDetector gesture;
     private boolean firstTime = true;
 
+	private ImageButton buttonSearch;
+	
     private int broadTopicSelected;
     private int narrowPosition = 0;
 	private int ruleSelected;
@@ -56,6 +67,7 @@ public class RulesFragment extends Fragment {
         setBroadTopicsListener();
         setNarrowTopicsListener();
 		setSVOnTouchListener();
+		setSearchListener();
 		return rootView;
     }
 
@@ -66,6 +78,7 @@ public class RulesFragment extends Fragment {
         narrowTopics = (Spinner) rootView.findViewById(R.id.narrow_topic_spinner);
         ll = (LinearLayout) rootView.findViewById(R.id.rules_linear_layout);
         sv = (ScrollView) rootView.findViewById(R.id.rules_sv);
+		buttonSearch = (ImageButton) rootView.findViewById(R.id.rules_search);
         Bundle bundle = getArguments();
         ruleSet = bundle.getString("ruleSet");
 
@@ -185,8 +198,6 @@ public class RulesFragment extends Fragment {
                 } else {
                     ll.removeAllViews();
                 }
-				
-				
 
                 String detail = position < 9 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
                 String string = ruleSet + "_" + Integer.toString(broadTopicSelected) + detail;
@@ -215,6 +226,116 @@ public class RulesFragment extends Fragment {
             }
         });
     }
+	
+	private void setSearchListener() {
+		buttonSearch.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				final EditText search = new EditText(getActivity());
+				AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+				builder.setTitle("Search")
+					.setMessage("Enter your search term(s)")
+					.setView(search)
+					.setPositiveButton("Search", new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							dialog.dismiss();
+							runSearch(search.getText().toString());
+							/// Toast.makeText(getActivity(), "your search term is " + search.getText().toString(), Toast.LENGTH_LONG).show();
+						}
+					})
+					.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							dialog.dismiss();
+						}
+					});
+				AlertDialog alert = builder.create();
+				alert.show();
+			}
+		});
+	}
+	
+	private void runSearch(String incomingSearch) {
+		String search = incomingSearch;
+		String[] masterBroadList = getResources().getStringArray(getResources().getIdentifier(ruleSet, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));	
+		ArrayList<String[]> finalList = new ArrayList<String[]>();
+
+		// goes through all of the broad list
+		for (int i = 0; i < masterBroadList.length; i++) {
+			String[] narrowList = getResources().getStringArray(getResources().getIdentifier(ruleSet + "_" + i, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+			// go through narrow list
+			for (int j = 0; j < narrowList.length; j++) {
+				String ruleNumber = j < 9 ? "0" + Integer.toString(j + 1) : Integer.toString(j + 1);
+				// this is the array for each rule
+				String[] ruleList = getResources().getStringArray(getResources().getIdentifier(ruleSet + "_" + (i + 1) + ruleNumber, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+				// go through each line of the rule
+				boolean answerFound = false;
+				// only return one example per rule
+				while (answerFound == false) {
+					for (int k = 0; k < ruleList.length; k++) {
+						String test = ruleList[k];
+						if (test.indexOf(search) >= 0) {
+							// the search term is in the string
+							String[] string = {ruleList[0], ruleList[k]};
+							finalList.add(string);
+						} else {
+							// the search term is not in the string
+						}
+					}
+					answerFound = true;
+				}	
+			}
+		}
+		if (finalList.size() == 0) {
+			Toast.makeText(getActivity(), "Your search returned no results.", Toast.LENGTH_LONG).show();
+		} else {
+			searchList(finalList);
+		}
+	}
+	
+	private void searchList(ArrayList<String[]> incomingList) {
+		ArrayList<String[]> list = incomingList;
+		// remove all views from rules area
+		ll.removeAllViews();
+		ListView lv = new ListView(getActivity());
+		SearchAdapter adapter = new SearchAdapter(getActivity(), list);
+		lv.setAdapter(adapter);
+		
+		lv.setLayoutParams(new ViewGroup.LayoutParams(
+							   ViewGroup.LayoutParams.MATCH_PARENT,
+							   ViewGroup.LayoutParams.MATCH_PARENT));
+		ll.addView(lv);
+	}
+	
+	public class SearchAdapter extends ArrayAdapter<String[]> {
+
+		// List context
+		private final Context context;
+		// List values
+		private final ArrayList<String[]> list;
+
+		public SearchAdapter(Context context, ArrayList<String[]> inList) {
+			super(context, R.layout.rule_search, inList);
+			this.context = context;
+			this.list = inList;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+			View rowView = inflater.inflate(R.layout.rule_search, parent, false);
+
+			TextView ruleName = (TextView) rowView.findViewById(R.id.search_rule);
+			TextView searchText = (TextView) rowView.findViewById(R.id.search_text);
+			String[] string = list.get(position);
+			ruleName.setText(string[0]);
+			searchText.setText(string[1]);
+
+
+			return rowView;
+		}
+	}
+	
 }
 
 
