@@ -45,6 +45,7 @@ public class RulesFragment extends Fragment {
 	private int ruleSelected;
 
     private LinearLayout ll;
+    private LinearLayout innerLL;
 
 	private ScrollView sv;
 	
@@ -66,7 +67,6 @@ public class RulesFragment extends Fragment {
         initializeSpinners();
         setBroadTopicsListener();
         setNarrowTopicsListener();
-		setSVOnTouchListener();
 		setSearchListener();
 		return rootView;
     }
@@ -77,7 +77,7 @@ public class RulesFragment extends Fragment {
         broadTopics = (Spinner) rootView.findViewById(R.id.broad_topic_spinner);
         narrowTopics = (Spinner) rootView.findViewById(R.id.narrow_topic_spinner);
         ll = (LinearLayout) rootView.findViewById(R.id.rules_linear_layout);
-        sv = (ScrollView) rootView.findViewById(R.id.rules_sv);
+
 		buttonSearch = (ImageButton) rootView.findViewById(R.id.rules_search);
         Bundle bundle = getArguments();
         ruleSet = bundle.getString("ruleSet");
@@ -186,39 +186,46 @@ public class RulesFragment extends Fragment {
 
     }
 
+    private void showRules(int position) {
+
+        ll.removeAllViews();
+            firstTime = false;
+            sv = new ScrollView(getActivity());
+            sv.setId(R.id.scroll);
+            sv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            innerLL = new LinearLayout(getActivity());
+            innerLL.setId(R.id.innerLL);
+        innerLL.setOrientation(LinearLayout.VERTICAL);
+            innerLL.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            ll.addView(sv);
+            sv.addView(innerLL);
+            setSVOnTouchListener();
+
+        String detail = position < 9 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
+        String string = ruleSet + "_" + Integer.toString(broadTopicSelected) + detail;
+        String[] ruleArray = getResources().getStringArray(getResources().getIdentifier(string, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
+
+        for (int i = 0; i < ruleArray.length; i++) {
+
+            String wholeString = ruleArray[i];
+            int paddingMultiplier = Integer.parseInt(wholeString.substring(0, 1));
+            String actualString = wholeString.substring(1);
+            TextView tv = new TextView(getActivity());
+            // setPadding(left, top, right, bottom)
+            tv.setPadding(5 * (paddingMultiplier * 5), 5, 5, 5);
+            tv.setText(Html.fromHtml(actualString));
+            innerLL.addView(tv);
+        }
+        ruleSelected = position;
+
+    }
+
     private void setNarrowTopicsListener() {
 
         narrowTopics.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-
-                if (firstTime) {
-                    firstTime = false;
-                } else {
-                    ll.removeAllViews();
-                }
-
-                String detail = position < 9 ? "0" + Integer.toString(position + 1) : Integer.toString(position + 1);
-                String string = ruleSet + "_" + Integer.toString(broadTopicSelected) + detail;
-                String[] ruleArray = getResources().getStringArray(getResources().getIdentifier(string, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
-
-                for (int i = 0; i < ruleArray.length; i++) {
-
-                    String wholeString = ruleArray[i];
-                    int paddingMultiplier = Integer.parseInt(wholeString.substring(0, 1));
-                    String actualString = wholeString.substring(1);
-                    TextView tv = new TextView(getActivity());
-                    // setPadding(left, top, right, bottom)
-                    tv.setPadding(5 * (paddingMultiplier * 5), 5, 5, 5);
-                    tv.setText(Html.fromHtml(actualString));
-                    ll.addView(tv);
-
-                }
-				
-				ruleSelected = position;
-				//Toast.makeText(getActivity(), "rule selected = " + ruleSelected, Toast.LENGTH_SHORT).show();
-
+                showRules(position);
             }
 
             @Override
@@ -275,7 +282,7 @@ public class RulesFragment extends Fragment {
 						String test = ruleList[k];
 						if (test.indexOf(search) >= 0) {
 							// the search term is in the string
-							String[] string = {ruleList[0], ruleList[k]};
+							String[] string = {ruleList[0].substring(1), ruleList[k].substring(1), Integer.toString(i), ruleNumber};
 							finalList.add(string);
 						} else {
 							// the search term is not in the string
@@ -304,6 +311,7 @@ public class RulesFragment extends Fragment {
 							   ViewGroup.LayoutParams.MATCH_PARENT,
 							   ViewGroup.LayoutParams.MATCH_PARENT));
 		ll.addView(lv);
+        firstTime = true;
 	}
 	
 	public class SearchAdapter extends ArrayAdapter<String[]> {
@@ -328,9 +336,8 @@ public class RulesFragment extends Fragment {
 			TextView ruleName = (TextView) rowView.findViewById(R.id.search_rule);
 			TextView searchText = (TextView) rowView.findViewById(R.id.search_text);
 			String[] string = list.get(position);
-			ruleName.setText(string[0]);
-			searchText.setText(string[1]);
-
+			ruleName.setText(Html.fromHtml(string[0]));
+			searchText.setText(Html.fromHtml(string[1]));
 
 			return rowView;
 		}

@@ -22,6 +22,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
+import android.support.v7.internal.view.menu.ActionMenuItemView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -47,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
     private int lastExpanded = -1;
 	private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
-	
+
 	private DrawerLayout mDrawerLayout;
     private ExpandableListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -134,6 +135,7 @@ public class MainActivity extends ActionBarActivity {
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
+
         if (savedInstanceState == null) {
             Fragment fragmentName = new Welcome();
 			FragmentManager fragmentManager = getSupportFragmentManager();
@@ -141,6 +143,7 @@ public class MainActivity extends ActionBarActivity {
 			ft.replace(R.id.content_frame, fragmentName, "WELCOME");
 			// ft.addToBackStack(null);
 			ft.commit();
+
         }
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
@@ -167,6 +170,8 @@ public class MainActivity extends ActionBarActivity {
     private void selectItem(String groupName,  int groupPosition, int childPosition, String childName) {
         // update the main content by replacing fragments
 		Fragment fragmentName = new Welcome();
+        ActionMenuItemView search = (ActionMenuItemView) findViewById(R.id.action_search);
+        search.setVisibility(View.INVISIBLE);
 		String tag = "WELCOME";
         Bundle bundle = new Bundle();
 		boolean welcomeVisible = false;
@@ -210,6 +215,7 @@ public class MainActivity extends ActionBarActivity {
 			}
 		} else if (groupName.equals("Rules")) {
             fragmentName = new RulesFragment();
+            search.setVisibility(View.VISIBLE);
             tag = "RULES";
             if (childName.equals("Federal Rules of Evidence")) {
                 bundle.putString("ruleSet", "fre_by_rule");
@@ -315,9 +321,16 @@ public class MainActivity extends ActionBarActivity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-	
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar_menu, menu);
+        return true;
+    }
+
 	@Override
-public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
      // Pass the event to ActionBarDrawerToggle, if it returns
      // true, then it has handled the app icon touch event
      if (mDrawerToggle.onOptionsItemSelected(item)) {
