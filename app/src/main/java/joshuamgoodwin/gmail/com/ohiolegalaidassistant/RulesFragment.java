@@ -19,6 +19,9 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
 import android.view.View.OnClickListener;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -30,6 +33,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.view.MotionEvent;
 import android.widget.*;
+import android.support.v7.internal.view.menu.*;
+import android.widget.AdapterView.*;
 
 /**
  * Created by Goodwin on 11/10/2014.
@@ -37,8 +42,6 @@ import android.widget.*;
 public class RulesFragment extends Fragment {
     private GestureDetector gesture;
     private boolean firstTime = true;
-
-	private ImageButton buttonSearch;
 	
     private int broadTopicSelected;
     private int narrowPosition = 0;
@@ -60,6 +63,14 @@ public class RulesFragment extends Fragment {
 
     private TextView details;
 
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		// TODO: Implement this method
+		super.onCreate(savedInstanceState);
+		setHasOptionsMenu(true);
+	}
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.rules_fragment_layout, container, false);
@@ -67,7 +78,6 @@ public class RulesFragment extends Fragment {
         initializeSpinners();
         setBroadTopicsListener();
         setNarrowTopicsListener();
-		setSearchListener();
 		return rootView;
     }
 
@@ -77,11 +87,16 @@ public class RulesFragment extends Fragment {
         broadTopics = (Spinner) rootView.findViewById(R.id.broad_topic_spinner);
         narrowTopics = (Spinner) rootView.findViewById(R.id.narrow_topic_spinner);
         ll = (LinearLayout) rootView.findViewById(R.id.rules_linear_layout);
-
-		buttonSearch = (ImageButton) rootView.findViewById(R.id.rules_search);
         Bundle bundle = getArguments();
         ruleSet = bundle.getString("ruleSet");
 
+    }
+	
+	@Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+       	super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.action_bar_menu, menu);
+        
     }
 
 	private void setSVOnTouchListener(){
@@ -234,10 +249,10 @@ public class RulesFragment extends Fragment {
         });
     }
 	
-	private void setSearchListener() {
-		buttonSearch.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId()){
+			case R.id.action_search:
 				final EditText search = new EditText(getActivity());
 				AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 				builder.setTitle("Search")
@@ -257,8 +272,11 @@ public class RulesFragment extends Fragment {
 					});
 				AlertDialog alert = builder.create();
 				alert.show();
-			}
-		});
+				return true;
+			default:
+				return true;
+			
+		}
 	}
 	
 	private void runSearch(String incomingSearch) {
@@ -282,7 +300,7 @@ public class RulesFragment extends Fragment {
 						String test = ruleList[k];
 						if (test.indexOf(search) >= 0) {
 							// the search term is in the string
-							String[] string = {ruleList[0].substring(1), ruleList[k].substring(1), Integer.toString(i), ruleNumber};
+							String[] string = {ruleList[0].substring(1), ruleList[k].substring(1), Integer.toString(i), Integer.toString(j)};
 							finalList.add(string);
 						} else {
 							// the search term is not in the string
@@ -304,12 +322,21 @@ public class RulesFragment extends Fragment {
 		// remove all views from rules area
 		ll.removeAllViews();
 		ListView lv = new ListView(getActivity());
-		SearchAdapter adapter = new SearchAdapter(getActivity(), list);
+		final SearchAdapter adapter = new SearchAdapter(getActivity(), list);
 		lv.setAdapter(adapter);
 		
 		lv.setLayoutParams(new ViewGroup.LayoutParams(
 							   ViewGroup.LayoutParams.MATCH_PARENT,
 							   ViewGroup.LayoutParams.MATCH_PARENT));
+		lv.setOnItemClickListener(new OnItemClickListener(){
+			public void onItemClick(AdapterView<?> av, View v, int pos, long id){
+				String[] data = adapter.getRow(pos);
+				narrowPosition = Integer.parseInt(data[3]);
+				broadTopics.setSelection(Integer.parseInt(data[2]), true);
+				
+				
+			}
+		});
 		ll.addView(lv);
         firstTime = true;
 	}
@@ -340,6 +367,10 @@ public class RulesFragment extends Fragment {
 			searchText.setText(Html.fromHtml(string[1]));
 
 			return rowView;
+		}
+		
+		public String[] getRow(int pos){
+			return list.get(pos);
 		}
 	}
 	

@@ -137,12 +137,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         if (savedInstanceState == null) {
-            Fragment fragmentName = new Welcome();
-			FragmentManager fragmentManager = getSupportFragmentManager();
-			FragmentTransaction ft = fragmentManager.beginTransaction();
-			ft.replace(R.id.content_frame, fragmentName, "WELCOME");
-			// ft.addToBackStack(null);
-			ft.commit();
+            selectItem("Welcome", 0, 0, "");
 
         }
         // changelog on start
@@ -171,7 +166,7 @@ public class MainActivity extends ActionBarActivity {
         // update the main content by replacing fragments
 		Fragment fragmentName = new Welcome();
         ActionMenuItemView search = (ActionMenuItemView) findViewById(R.id.action_search);
-        search.setVisibility(View.INVISIBLE);
+        //search.setVisibility(View.INVISIBLE);
 		String tag = "WELCOME";
         Bundle bundle = new Bundle();
 		boolean welcomeVisible = false;
@@ -215,7 +210,7 @@ public class MainActivity extends ActionBarActivity {
 			}
 		} else if (groupName.equals("Rules")) {
             fragmentName = new RulesFragment();
-            search.setVisibility(View.VISIBLE);
+            //search.setVisibility(View.VISIBLE);
             tag = "RULES";
             if (childName.equals("Federal Rules of Evidence")) {
                 bundle.putString("ruleSet", "fre_by_rule");
@@ -233,7 +228,9 @@ public class MainActivity extends ActionBarActivity {
 				bundle.putString("ruleSet", "ohio_appellate_rules");
 			}
             fragmentName.setArguments(bundle);
-        }
+        } else {
+			fragmentName = new Welcome();
+		}
 		
 		setFragment(fragmentName, tag);
 		
@@ -322,12 +319,12 @@ public class MainActivity extends ActionBarActivity {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.action_bar_menu, menu);
         return true;
-    }
+    }*/
 
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
