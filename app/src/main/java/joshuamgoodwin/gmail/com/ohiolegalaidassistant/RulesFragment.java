@@ -298,9 +298,11 @@ public class RulesFragment extends Fragment {
 				while (answerFound == false) {
 					for (int k = 0; k < ruleList.length; k++) {
 						String test = ruleList[k];
-						if (test.indexOf(search) >= 0) {
+						String changedCase = search.substring(0, 1).toUpperCase() + search.substring(1);
+						if (test.indexOf(search) >= 0 || test.indexOf(changedCase) >= 0 || test.indexOf(search.toUpperCase()) >= 0) {
 							// the search term is in the string
-							String[] string = {ruleList[0].substring(1), ruleList[k].substring(1), Integer.toString(i), Integer.toString(j)};
+							// ruletitle, ruleline, broadtopic, narrowtopic, search string
+							String[] string = {ruleList[0].substring(1), ruleList[k].substring(1), Integer.toString(i), Integer.toString(j), search};
 							finalList.add(string);
 						} else {
 							// the search term is not in the string
