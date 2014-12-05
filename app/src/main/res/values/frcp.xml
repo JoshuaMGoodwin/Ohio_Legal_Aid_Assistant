@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="federal_rules_cp">
+        <item>TITLE I. SCOPE OF RULES; FORM OF ACTION</item>
+        <item>TITLE II. COMMENCING AN ACTION; SERVICE OF PROCESS, PLEADINGS, MOTIONS, AND ORDERS</item>
+        <item>TITLE III. PLEADINGS AND MOTIONS</item>
+        <item>TITLE IV. PARTIES</item>
+    </string-array>
+    <string-array name="federal_rules_cp_0">
+        <item>Rule 1. Scope and Purpose</item>
+        <item>Rule 2. One Form of Action</item>
+    </string-array>
+    <string-array name="federal_rules_cp_1">
+        <item>Rule 3. Commencing an Action</item>
+        <item>Rule 4. Summons</item>
+        <item>Rule 4.1. Serving Other Process</item>
+        <item>Rule 5. Serving and Filing Pleadings and Other Papers</item>
+        <item>Rule 5.1. Constitutional Challenge to a Statute—Notice, Certification, and Intervention</item>
+        <item>Rule 5.2. Privacy Protection For Filings Made with the Court</item>
+        <item>Rule 6. Computing and Extending Time; Time for Motion Papers</item>
+    </string-array>
+    <string-array name="federal_rules_cp_2">
+        <item>Rule 7. Pleadings Allowed; Form of Motions and Other Papers</item>
+        <item>Rule 7.1. Disclosure Statement</item>
+        <item>Rule 8. General Rules of Pleading</item>
+        <item>Rule 9. Pleading Special Matters</item>
+        <item>Rule 10. Form of Pleadings</item>
+        <item>Rule 11. Signing Pleadings, Motions, and Other Papers; Representations to the Court; Sanctions</item>
+        <item>Rule 12. Defenses and Objections: When and How Presented; Motion for Judgment on the Pleadings; Consolidating Motions; Waiving Defenses; Pretrial Hearing</item>
+        <item>Rule 13. Counterclaim and Crossclaim</item>
+        <item>Rule 14. Third-Party Practice</item>
+        <item>Rule 15. Amended and Supplemental Pleadings</item>
+        <item>Rule 16. Pretrial Conferences; Scheduling; Management</item>
+    </string-array>
+    <string-array name="federal_rules_cp_101">
+        <item>1&lt;b>Rule 1. Scope and Purpose&lt;/b></item>
+        <item>1These rules govern the procedure in all civil actions and proceedings in the United States district courts, except as stated in Rule 81. They should be construed and administered to secure the just, speedy, and inexpensive determination of every action and proceeding.</item>
+        <item>2(As amended Dec. 29, 1948, eff. Oct. 20, 1949; Feb. 28, 1966, eff. July 1, 1966; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_102">
+        <item>1&lt;b>Rule 2. One Form of Action&lt;/b></item>
+        <item>1There is one form of action—the civil action.</item>
+        <item>2(As amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_201">
+        <item>1&lt;b>Rule 3. Commencing an Action&lt;/b></item>
+        <item>1A civil action is commenced by filing a complaint with the court.</item>
+        <item>2(As amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_202">
+        <item>1&lt;b>Rule 4. Summons&lt;/b></item>
+        <item>1(a) CONTENTS; AMENDMENTS.</item>
+        <item>2(1) &lt;i>Contents.&lt;/i> A summons must:</item>
+        <item>3(A) name the court and the parties;</item>
+        <item>3(B) be directed to the defendant;</item>
+        <item>3(C) state the name and address of the plaintiff’s attorney or—if unrepresented—of the plaintiff;</item>
+        <item>3(D) state the time within which the defendant must appear and defend;</item>
+        <item>3(E) notify the defendant that a failure to appear and defend will result in a default judgment against the defendant for the relief demanded in the complaint;</item>
+        <item>3(F) be signed by the clerk; and</item>
+        <item>3(G) bear the court’s seal.</item>
+        <item>2(2) &lt;i>Amendments.&lt;/i> The court may permit a summons to be amended.</item>
+        <item>1(b) ISSUANCE. On or after filing the complaint, the plaintiff may present a summons to the clerk for signature and seal. If the summons is properly completed, the clerk must sign, seal, and issue it to the plaintiff for service on the defendant. A summons—or a copy of a summons that is addressed to multiple defendants—must be issued for each defendant to be served.</item>
+        <item>1(c) SERVICE.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> A summons must be served with a copy of the complaint. The plaintiff is responsible for having the summons and complaint served within the time allowed by Rule 4(m) and must furnish the necessary copies to the person who makes service.</item>
+        <item>2(2) &lt;i>By Whom.&lt;/i> Any person who is at least 18 years old and not a party may serve a summons and complaint.</item>
+        <item>2(3) &lt;i>By a Marshal or Someone Specially Appointed.&lt;/i> At the plaintiff’s request, the court may order that service be made by a United States marshal or deputy marshal or by a person specially appointed by the court. The court must so order if the plaintiff is authorized to proceed in forma pauperis under 28 U.S.C. § 1915 or as a seaman under 28 U.S.C. § 1916.</item>
+        <item>1(d) WAIVING SERVICE.</item>
+        <item>2(1) &lt;i>Requesting a Waiver.&lt;/i> An individual, corporation, or association that is subject to service under Rule 4(e), (f), or (h) has a duty to avoid unnecessary expenses of serving the summons. The plaintiff may notify such a defendant that an action has been commenced and request that the defendant waive service of a summons. The notice and request must:</item>
+        <item>3(A) be in writing and be addressed:</item>
+        <item>4(i) to the individual defendant; or</item>
+        <item>4(ii) for a defendant subject to service under Rule 4(h), to an officer, a managing or general agent, or any other agent authorized by appointment or by law to receive service of process;</item>
+        <item>3(B) name the court where the complaint was filed;</item>
+        <item>3(C) be accompanied by a copy of the complaint, 2 copies of a waiver form, and a prepaid means for returning the form;</item>
+        <item>3(D) inform the defendant, using text prescribed in Form 5, of the consequences of waiving and not waiving service;</item>
+        <item>3(E) state the date when the request is sent;</item>
+        <item>3(F) give the defendant a reasonable time of at least 30 days after the request was sent—or at least 60 days if sent to the defendant outside any judicial district of the United States—to return the waiver; and</item>
+        <item>3(G) be sent by first-class mail or other reliable means.</item>
+        <item>2(2) &lt;i>Failure to Waive.&lt;/i> If a defendant located within the United States fails, without good cause, to sign and return a waiver requested by a plaintiff located within the United States, the court must impose on the defendant:</item>
+        <item>3(A) the expenses later incurred in making service; and</item>
+        <item>3(B) the reasonable expenses, including attorney’s fees, of any motion required to collect those service expenses.</item>
+        <item>2(3) &lt;i>Time to Answer After a Waiver.&lt;/i> A defendant who, before being served with process, timely returns a waiver need not serve an answer to the complaint until 60 days after the request was sent—or until 90 days after it was sent to the defendant outside any judicial district of the United States.</item>
+        <item>2(4) &lt;i>Results of Filing a Waiver.&lt;/i> When the plaintiff files a waiver, proof of service is not required and these rules apply as if a summons and complaint had been served at the time of filing the waiver.</item>
+        <item>2(5) &lt;i>Jurisdiction and Venue Not Waived.&lt;/i> Waiving service of a summons does not waive any objection to personal jurisdiction or to venue.</item>
+        <item>1(e) SERVING AN INDIVIDUAL WITHIN A JUDICIAL DISTRICT OF THE UNITED STATES. Unless federal law provides otherwise, an individual— other than a minor, an incompetent person, or a person whose waiver has been filed—may be served in a judicial district of the United States by:</item>
+        <item>2(1) following state law for serving a summons in an action brought in courts of general jurisdiction in the state where the district court is located or where service is made; or</item>
+        <item>2(2) doing any of the following:</item>
+        <item>3(A) delivering a copy of the summons and of the complaint to the individual personally;</item>
+        <item>3(B) leaving a copy of each at the individual’s dwelling or usual place of abode with someone of suitable age and discretion who resides there; or</item>
+        <item>3(C) delivering a copy of each to an agent authorized by appointment or by law to receive service of process.</item>
+        <item>1(f) SERVING AN INDIVIDUAL IN A FOREIGN COUNTRY. Unless federal law provides otherwise, an individual—other than a minor, an incompetent person, or a person whose waiver has been filed—may be served at a place not within any judicial district of the United States:</item>
+        <item>2(1) by any internationally agreed means of service that is reasonably calculated to give notice, such as those authorized by the Hague Convention on the Service Abroad of Judicial and Extrajudicial Documents;</item>
+        <item>2(2) if there is no internationally agreed means, or if an international agreement allows but does not specify other means, by a method that is reasonably calculated to give notice:</item>
+        <item>3(A) as prescribed by the foreign country’s law for service in that country in an action in its courts of general jurisdiction;</item>
+        <item>3(B) as the foreign authority directs in response to a letter rogatory or letter of request; or</item>
+        <item>3(C) unless prohibited by the foreign country’s law, by:</item>
+        <item>4(i) delivering a copy of the summons and of the complaint to the individual personally; or</item>
+        <item>4(ii) using any form of mail that the clerk addresses and sends to the individual and that requires a signed receipt; or</item>
+        <item>2(3) by other means not prohibited by international agreement, as the court orders.</item>
+        <item>1(g) SERVING A MINOR OR AN INCOMPETENT PERSON. A minor or an incompetent person in a judicial district of the United States must be served by following state law for serving a summons or like process on such a defendant in an action brought in the courts of general jurisdiction of the state where service is made. A minor or an incompetent person who is not within any judicial district of the United States must be served in the manner prescribed by Rule 4(f)(2)(A), (f)(2)(B), or (f)(3).</item>
+        <item>1(h) SERVING A CORPORATION, PARTNERSHIP, OR ASSOCIATION. Unless federal law provides otherwise or the defendant’s waiver has been filed, a domestic or foreign corporation, or a partnership or other unincorporated association that is subject to suit under a common name, must be served:</item>
+        <item>2(1) in a judicial district of the United States:</item>
+        <item>3(A) in the manner prescribed by Rule 4(e)(1) for serving an individual; or</item>
+        <item>3(B) by delivering a copy of the summons and of the complaint to an officer, a managing or general agent, or any other agent authorized by appointment or by law to receive service of process and—if the agent is one authorized by statute and the statute so requires—by also mailing a copy of each to the defendant; or</item>
+        <item>2(2) at a place not within any judicial district of the United States, in any manner prescribed by Rule 4(f) for serving an individual, except personal delivery under (f)(2)(C)(i).</item>
+        <item>1(i) SERVING THE UNITED STATES AND ITS AGENCIES, CORPORATIONS, OFFICERS, OR EMPLOYEES.</item>
+        <item>2(1) &lt;i>United States.&lt;/i> To serve the United States, a party must:</item>
+        <item>3(A)(i) deliver a copy of the summons and of the complaint to the United States attorney for the district where the action is brought—or to an assistant United States attorney or clerical employee whom the United States attorney designates in a writing filed with the court clerk—or</item>
+        <item>3(ii) send a copy of each by registered or certified mail to the civil-process clerk at the United States attorney’s office;</item>
+        <item>3(B) send a copy of each by registered or certified mail to the Attorney General of the United States at Washington, D.C.; and</item>
+        <item>3(C) if the action challenges an order of a nonparty agency or officer of the United States, send a copy of each by registered or certified mail to the agency or officer.</item>
+        <item>2(2) &lt;i>Agency; Corporation; Officer or Employee Sued in an Official Capacity.&lt;/i> To serve a United States agency or corporation, or a United States officer or employee sued only in an official capacity, a party must serve the United States and also send a copy of the summons and of the complaint by registered or certified mail to the agency, corporation, officer, or employee.</item>
+        <item>2(3) &lt;i>Officer or Employee Sued Individually.&lt;/i> To serve a United States officer or employee sued in an individual capacity for an act or omission occurring in connection with duties performed on the United States’ behalf (whether or not the officer or employee is also sued in an official capacity), a party must serve the United States and also serve the officer or employee under Rule 4(e), (f), or (g).</item>
+        <item>2(4) &lt;i>Extending Time.&lt;/i> The court must allow a party a reasonable time to cure its failure to:</item>
+        <item>3(A) serve a person required to be served under Rule 4(i)(2), if the party has served either the United States attorney or the Attorney General of the United States; or</item>
+        <item>3(B) serve the United States under Rule 4(i)(3), if the party has served the United States officer or employee.</item>
+        <item>1(j) SERVING A FOREIGN, STATE, OR LOCAL GOVERNMENT.</item>
+        <item>2(1) &lt;i>Foreign State.&lt;/i>A foreign state or its political subdivision, agency, or instrumentality must be served in accordance with 28 U.S.C. § 1608.</item>
+        <item>2(2) &lt;i>State or Local Government.&lt;/i> A state, a municipal corporation, or any other state-created governmental organization that is subject to suit must be served by:</item>
+        <item>3(A) delivering a copy of the summons and of the complaint to its chief executive officer; or</item>
+        <item>3(B) serving a copy of each in the manner prescribed by that state’s law for serving a summons or like process on such a defendant.</item>
+        <item>1(k) TERRITORIAL LIMITS OF EFFECTIVE SERVICE.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> Serving a summons or filing a waiver of service establishes personal jurisdiction over a defendant:</item>
+        <item>3(A) who is subject to the jurisdiction of a court of general jurisdiction in the state where the district court is located;</item>
+        <item>3(B) who is a party joined under Rule 14 or 19 and is served within a judicial district of the United States and not more than 100 miles from where the summons was issued; or</item>
+        <item>3(C) when authorized by a federal statute.</item>
+        <item>2(2) &lt;i>Federal Claim Outside State-Court Jurisdiction.&lt;/i> For a claim that arises under federal law, serving a summons or filing a waiver of service establishes personal jurisdiction over a defendant if:</item>
+        <item>3(A) the defendant is not subject to jurisdiction in any state’s courts of general jurisdiction; and</item>
+        <item>3(B) exercising jurisdiction is consistent with the United States Constitution and laws.</item>
+        <item>1(l) PROVING SERVICE.</item>
+        <item>2(1) &lt;i>Affidavit Required.&lt;/i> Unless service is waived, proof of service must be made to the court. Except for service by a United States marshal or deputy marshal, proof must be by the server’s affidavit.</item>
+        <item>2(2) &lt;i>Service Outside the United States.&lt;/i> Service not within any judicial district of the United States must be proved as follows:</item>
+        <item>3(A) if made under Rule 4(f)(1), as provided in the applicable treaty or convention; or</item>
+        <item>3(B) if made under Rule 4(f)(2) or (f)(3), by a receipt signed by the addressee, or by other evidence satisfying the court that the summons and complaint were delivered to the addressee.</item>
+        <item>2(3) &lt;i>Validity of Service; Amending Proof.&lt;/i> Failure to prove service does not affect the validity of service. The court may permit proof of service to be amended.</item>
+        <item>1(m) TIME LIMIT FOR SERVICE. If a defendant is not served within 120 days after the complaint is filed, the court—on motion or on its own after notice to the plaintiff—must dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period. This subdivision (m) does not apply to service in a foreign country under Rule 4(f) or 4(j)(1).</item>
+        <item>1(n) ASSERTING JURISDICTION OVER PROPERTY OR ASSETS.</item>
+        <item>2(1) &lt;i>Federal Law.&lt;/i> The court may assert jurisdiction over property if authorized by a federal statute. Notice to claimants of the property must be given as provided in the statute or by serving a summons under this rule.</item>
+        <item>2(2) &lt;i>State Law.&lt;/i> On a showing that personal jurisdiction over a defendant cannot be obtained in the district where the action is brought by reasonable efforts to serve a summons under this rule, the court may assert jurisdiction over the defendant’s assets found in the district. Jurisdiction is acquired by seizing the assets under the circumstances and in the manner provided by state law in that district.</item>
+        <item>2(As amended Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Apr. 29, 1980, eff. Aug. 1, 1980; Pub. L. 97–462, § 2, Jan. 12, 1983, 96 Stat. 2527, eff. Feb. 26, 1983; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 17, 2000, eff. Dec. 1, 2000; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_203">
+        <item>1&lt;b>Rule 4.1. Serving Other Process&lt;/b></item>
+        <item>1(a) IN GENERAL. Process—other than a summons under Rule 4 or a subpoena under Rule 45—must be served by a United States marshal or deputy marshal or by a person specially appointed for that purpose. It may be served anywhere within the territorial limits of the state where the district court is located and, if authorized by a federal statute, beyond those limits. Proof of service must be made under Rule 4(l).</item>
+        <item>1(b) ENFORCING ORDERS: COMMITTING FOR CIVIL CONTEMPT. An order committing a person for civil contempt of a decree or injunction issued to enforce federal law may be served and enforced in any district. Any other order in a civil-contempt proceeding may be served only in the state where the issuing court is located or elsewhere in the United States within 100 miles from where the order was issued.</item>
+        <item>2(As added Apr. 22, 1993, eff. Dec. 1, 1993; amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_204">
+        <item>1&lt;b>Rule 5. Serving and Filing Pleadings and Other Papers&lt;/b></item>
+        <item>1(a) SERVICE: WHEN REQUIRED.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> Unless these rules provide otherwise, each of the following papers must be served on every party:</item>
+        <item>3(A) an order stating that service is required;</item>
+        <item>3(B) a pleading filed after the original complaint, unless the court orders otherwise under Rule 5(c) because there are numerous defendants;</item>
+        <item>3(C) a discovery paper required to be served on a party, unless the court orders otherwise;</item>
+        <item>3(D) a written motion, except one that may be heard ex parte; and</item>
+        <item>3(E) a written notice, appearance, demand, or offer of judgment, or any similar paper.</item>
+        <item>2(2) &lt;i>If a Party Fails to Appear.&lt;/i> No service is required on a party who is in default for failing to appear. But a pleading that asserts a new claim for relief against such a party must be served on that party under Rule 4.</item>
+        <item>2(3) &lt;i>Seizing Property.&lt;/i> If an action is begun by seizing property and no person is or need be named as a defendant, any service required before the filing of an appearance, answer, or claim must be made on the person who had custody or possession of the property when it was seized.</item>
+        <item>1(b) SERVICE: HOW MADE.</item>
+        <item>2(1) &lt;i>Serving an Attorney.&lt;/i> If a party is represented by an attorney, service under this rule must be made on the attorney unless the court orders service on the party.</item>
+        <item>2(2) &lt;i>Service in General.&lt;/i> A paper is served under this rule by:</item>
+        <item>3(A) handing it to the person;</item>
+        <item>3(B) leaving it:</item>
+        <item>4(i) at the person’s office with a clerk or other person in charge or, if no one is in charge, in a conspicuous place in the office; or</item>
+        <item>4(ii) if the person has no office or the office is closed, at the person’s dwelling or usual place of abode with someone of suitable age and discretion who resides there;</item>
+        <item>3(C) mailing it to the person’s last known address—in which event service is complete upon mailing;</item>
+        <item>3(D) leaving it with the court clerk if the person has no known address;</item>
+        <item>3(E) sending it by electronic means if the person consented in writing—in which event service is complete upon transmission, but is not effective if the serving party learns that it did not reach the person to be served; or</item>
+        <item>3(F) delivering it by any other means that the person consented to in writing—in which event service is complete when the person making service delivers it to the agency designated to make delivery.</item>
+        <item>2(3) &lt;i>Using Court Facilities.&lt;/i> If a local rule so authorizes, a party may use the court’s transmission facilities to make service under Rule 5(b)(2)(E).</item>
+        <item>1(c) SERVING NUMEROUS DEFENDANTS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> If an action involves an unusually large number of defendants, the court may, on motion or on its own, order that:</item>
+        <item>3(A) defendants’ pleadings and replies to them need not be served on other defendants;</item>
+        <item>3(B) any crossclaim, counterclaim, avoidance, or affirmative defense in those pleadings and replies to them will be treated as denied or avoided by all other parties; and</item>
+        <item>3(C) filing any such pleading and serving it on the plaintiff constitutes notice of the pleading to all parties.</item>
+        <item>2(2) &lt;i>Notifying Parties.&lt;/i> A copy of every such order must be served on the parties as the court directs.</item>
+        <item>1(d) FILING.</item>
+        <item>2(1) &lt;i>Required Filings; Certificate of Service.&lt;/i> Any paper after the complaint that is required to be served—together with a certificate of service—must be filed within a reasonable time after service. But disclosures under Rule 26(a)(1) or (2) and the following discovery requests and responses must not be filed until they are used in the proceeding or the court orders filing: depositions, interrogatories, requests for documents or tangible things or to permit entry onto land, and requests for admission.</item>
+        <item>2(2) &lt;i>How Filing Is Made—In General.&lt;/i> A paper is filed by delivering it:</item>
+        <item>3(A) to the clerk; or</item>
+        <item>3(B) to a judge who agrees to accept it for filing, and who must then note the filing date on the paper and promptly send it to the clerk.</item>
+        <item>2(3) &lt;i>Electronic Filing, Signing, or Verification.&lt;/i> A court may, by local rule, allow papers to be filed, signed, or verified by electronic means that are consistent with any technical standards established by the Judicial Conference of the United States. A local rule may require electronic filing only if reasonable exceptions are allowed. A paper filed electronically in compliance with a local rule is a written paper for purposes of these rules.</item>
+        <item>2(4) &lt;i>Acceptance by the Clerk.&lt;/i> The clerk must not refuse to file a paper solely because it is not in the form prescribed by these rules or by a local rule or practice.</item>
+        <item>2(As amended Jan. 21, 1963, eff. July 1, 1963; Mar. 30, 1970, eff. July 1, 1970; Apr. 29, 1980, eff. Aug. 1, 1980; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 1991, eff. Dec. 1, 1991; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 23, 1996, eff. Dec. 1, 1996; Apr. 17, 2000, eff. Dec. 1, 2000; Apr. 23, 2001, eff. Dec. 1, 2001; Apr. 12, 2006, eff. Dec. 1, 2006; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_205">
+        <item>1&lt;b>Rule 5.1. Constitutional Challenge to a Statute—Notice, Certification, and Intervention&lt;/b></item>
+        <item>1(a) NOTICE BY A PARTY. A party that files a pleading, written motion, or other paper drawing into question the constitutionality of a federal or state statute must promptly:</item>
+        <item>2(1) file a notice of constitutional question stating the question and identifying the paper that raises it, if:</item>
+        <item>3(A) a federal statute is questioned and the parties do not include the United States, one of its agencies, or one of its officers or employees in an official capacity; or</item>
+        <item>3(B) a state statute is questioned and the parties do not include the state, one of its agencies, or one of its officers or employees in an official capacity; and</item>
+        <item>2(2) serve the notice and paper on the Attorney General of the United States if a federal statute is questioned—or on the state attorney general if a state statute is questioned—either by certified or registered mail or by sending it to an electronic address designated by the attorney general for this purpose.</item>
+        <item>1(b) CERTIFICATION BY THE COURT. The court must, under 28 U.S.C. §2403, certify to the appropriate attorney general that a statute has been questioned.</item>
+        <item>1(c) INTERVENTION; FINAL DECISION ON THE MERITS. Unless the court sets a later time, the attorney general may intervene within 60 days after the notice is filed or after the court certifies the challenge, whichever is earlier. Before the time to intervene expires, the court may reject the constitutional challenge, but may not enter a final judgment holding the statute unconstitutional.</item>
+        <item>1(d) NO FORFEITURE. A party\'s failure to file and serve the notice, or the court\'s failure to certify, does not forfeit a constitutional claim or defense that is otherwise timely asserted.</item>
+        <item>2(As added Apr. 12, 2006, eff. Dec. 1, 2006; amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_206">
+        <item>1&lt;b>Rule 5.2. Privacy Protection For Filings Made with the Court&lt;/b></item>
+        <item>1(a) REDACTED FILINGS. Unless the court orders otherwise, in an electronic or paper filing with the court that contains an individual\'s social-security number, taxpayer-identification number, or birth date, the name of an individual known to be a minor, or a financial-account number, a party or nonparty making the filing may include only:</item>
+        <item>2(1) the last four digits of the social-security number and taxpayer-identification number;</item>
+        <item>2(2) the year of the individual\'s birth;</item>
+        <item>2(3) the minor\'s initials; and</item>
+        <item>2(4) the last four digits of the financial-account number.</item>
+        <item>1(b) EXEMPTIONS FROM THE REDACTION REQUIREMENT. The redaction requirement does not apply to the following:</item>
+        <item>2(1) a financial-account number that identifies the property allegedly subject to forfeiture in a forfeiture proceeding;</item>
+        <item>2(2) the record of an administrative or agency proceeding;</item>
+        <item>2(3) the official record of a state-court proceeding;</item>
+        <item>2(4) the record of a court or tribunal, if that record was not subject to the redaction requirement when originally filed;</item>
+        <item>2(5) a filing covered by Rule 5.2(c) or (d); and</item>
+        <item>2(6) a pro se filing in an action brought under 28 U.S.C. §§2241, 2254, or 2255.</item>
+        <item>1(c) LIMITATIONS ON REMOTE ACCESS TO ELECTRONIC FILES; SOCIAL-SECURITY APPEALS AND IMMIGRATION CASES. Unless the court orders otherwise, in an action for benefits under the Social Security Act, and in an action or proceeding relating to an order of removal, to relief from removal, or to immigration benefits or detention, access to an electronic file is authorized as follows:</item>
+        <item>2(1) the parties and their attorneys may have remote electronic access to any part of the case file, including the administrative record;</item>
+        <item>2(2) any other person may have electronic access to the full record at the courthouse, but may have remote electronic access only to:</item>
+        <item>3(A) the docket maintained by the court; and</item>
+        <item>3(B) an opinion, order, judgment, or other disposition of the court, but not any other part of the case file or the administrative record.</item>
+        <item>1(d) FILINGS MADE UNDER SEAL. The court may order that a filing be made under seal without redaction. The court may later unseal the filing or order the person who made the filing to file a redacted version for the public record.</item>
+        <item>1(e) PROTECTIVE ORDERS. For good cause, the court may by order in a case:</item>
+        <item>2(1) require redaction of additional information; or</item>
+        <item>2(2) limit or prohibit a nonparty\'s remote electronic access to a document filed with the court.</item>
+        <item>1(f) OPTION FOR ADDITIONAL UNREDACTED FILING UNDER SEAL. A person making a redacted filing may also file an unredacted copy under seal. The court must retain the unredacted copy as part of the record.</item>
+        <item>1(g) OPTION FOR FILING A REFERENCE LIST. A filing that contains redacted information may be filed together with a reference list that identifies each item of redacted information and specifies an appropriate identifier that uniquely corresponds to each item listed. The list must be filed under seal and may be amended as of right. Any reference in the case to a listed identifier will be construed to refer to the corresponding item of information.</item>
+        <item>1(h) WAIVER OF PROTECTION OF IDENTIFIERS. A person waives the protection of Rule 5.2(a) as to the person\'s own information by filing it without redaction and not under seal.</item>
+        <item>2(As added Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_207">
+        <item>1&lt;b>Rule 6. Computing and Extending Time; Time for Motion Papers&lt;/b></item>
+        <item>1(a) COMPUTING TIME. The following rules apply in computing any time period specified in these rules, in any local rule or court order, or in any statute that does not specify a method of computing time.</item>
+        <item>2(1) &lt;i>Period Stated in Days or a Longer Unit.&lt;/i> When the period is stated in days or a longer unit of time:</item>
+        <item>3(A) exclude the day of the event that triggers the period;</item>
+        <item>3(B) count every day, including intermediate Saturdays, Sundays, and legal holidays; and</item>
+        <item>3(C) include the last day of the period, but if the last day is a Saturday, Sunday, or legal holiday, the period continues to run until the end of the next day that is not a Saturday, Sunday, or legal holiday.</item>
+        <item>2(2) &lt;i>Period Stated in Hours.&lt;/i> When the period is stated in hours:</item>
+        <item>3(A) begin counting immediately on the occurrence of the event that triggers the period;</item>
+        <item>3(B) count every hour, including hours during intermediate Saturdays, Sundays, and legal holidays; and</item>
+        <item>3(C) if the period would end on a Saturday, Sunday, or legal holiday, the period continues to run until the same time on the next day that is not a Saturday, Sunday, or legal holiday.</item>
+        <item>2(3) &lt;i>Inaccessibility of the Clerk\'s Office.&lt;/i> Unless the court orders otherwise, if the clerk\'s office is inaccessible:</item>
+        <item>3(A) on the last day for filing under Rule 6(a)(1), then the time for filing is extended to the first accessible day that is not a Saturday, Sunday, or legal holiday; or</item>
+        <item>3(B) during the last hour for filing under Rule 6(a)(2), then the time for filing is extended to the same time on the first accessible day that is not a Saturday, Sunday, or legal holiday.</item>
+        <item>2(4) &lt;i>“Last Day” Defined.&lt;/i> Unless a different time is set by a statute, local rule, or court order, the last day ends:</item>
+        <item>3(A) for electronic filing, at midnight in the court\'s time zone; and</item>
+        <item>3(B) for filing by other means, when the clerk\'s office is scheduled to close.</item>
+        <item>2(5) &lt;i>“Next Day” Defined.&lt;/i> The “next day” is determined by continuing to count forward when the period is measured after an event and backward when measured before an event.</item>
+        <item>2(6) &lt;i>.“Legal Holiday” Defined.&lt;/i> “Legal holiday” means:</item>
+        <item>3(A) the day set aside by statute for observing New Year\'s Day, Martin Luther King Jr.\'s Birthday, Washington\'s Birthday, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans’ Day, Thanksgiving Day, or Christmas Day;</item>
+        <item>3(B) any day declared a holiday by the President or Congress; and</item>
+        <item>3(C) for periods that are measured after an event, any other day declared a holiday by the state where the district court is located.</item>
+        <item>1(b) EXTENDING TIME.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> When an act may or must be done within a specified time, the court may, for good cause, extend the time:</item>
+        <item>3(A) with or without motion or notice if the court acts, or if a request is made, before the original time or its extension expires; or</item>
+        <item>3(B) on motion made after the time has expired if the party failed to act because of excusable neglect.</item>
+        <item>2(2) &lt;i>Exceptions.&lt;/i> A court must not extend the time to act under Rules 50(b) and (d), 52(b), 59(b), (d), and (e), and 60(b).</item>
+        <item>1(c) MOTIONS, NOTICES OF HEARING, AND AFFIDAVITS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> A written motion and notice of the hearing must be served at least 14 days before the time specified for the hearing, with the following exceptions:</item>
+        <item>3(A) when the motion may be heard ex parte;</item>
+        <item>3(B) when these rules set a different time; or</item>
+        <item>3(C) when a court order—which a party may, for good cause, apply for ex parte—sets a different time.</item>
+        <item>2(2) &lt;i>Supporting Affidavit.&lt;/i> Any affidavit supporting a motion must be served with the motion. Except as Rule 59(c) provides otherwise, any opposing affidavit must be served at least 7 days before the hearing, unless the court permits service at another time.</item>
+        <item>1(d) ADDITIONAL TIME AFTER CERTAIN KINDS OF SERVICE. When a party may or must act within a specified time after service and service is made under Rule 5(b)(2)(C), (D), (E), or (F), 3 days are added after the period would otherwise expire under Rule 6(a).</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Dec. 4, 1967, eff. July 1, 1968; Mar. 1, 1971, eff. July 1, 1971; Apr. 28, 1983, eff. Aug. 1, 1983; Apr. 29, 1985, eff. Aug. 1, 1985; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 26, 1999, eff. Dec. 1, 1999; Apr. 23, 2001, eff. Dec. 1, 2001; Apr. 25, 2005, eff. Dec. 1, 2005; Apr. 30, 2007, eff. Dec. 1, 2007; Mar. 26, 2009, eff. Dec. 1, 2009.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_301">
+        <item>1&lt;b>Rule 7. Pleadings Allowed; Form of Motions and Other Papers&lt;/b></item>
+        <item>1(a) PLEADINGS. Only these pleadings are allowed:</item>
+        <item>2(1) a complaint;</item>
+        <item>2(2) an answer to a complaint;</item>
+        <item>2(3) an answer to a counterclaim designated as a counterclaim;</item>
+        <item>2(4) an answer to a crossclaim;</item>
+        <item>2(5) a third-party complaint;</item>
+        <item>2(6) an answer to a third-party complaint; and</item>
+        <item>2(7) if the court orders one, a reply to an answer.</item>
+        <item>1(b) MOTIONS AND OTHER PAPERS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> A request for a court order must be made by motion. The motion must:</item>
+        <item>3(A) be in writing unless made during a hearing or trial;</item>
+        <item>3(B) state with particularity the grounds for seeking the order; and</item>
+        <item>3(C) state the relief sought.</item>
+        <item>2(2) &lt;i>Form.&lt;/i> The rules governing captions and other matters of form in pleadings apply to motions and other papers.</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Jan. 21, 1963, eff. July 1, 1963; Apr. 28, 1983, eff. Aug. 1, 1983; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_302">
+        <item>1&lt;b>Rule 7.1. Disclosure Statement&lt;/b></item>
+        <item>1(a) WHO MUST FILE; CONTENTS. A nongovernmental corporate party must file 2 copies of a disclosure statement that:</item>
+        <item>2(1) identifies any parent corporation and any publicly held corporation owning 10% or more of its stock; or</item>
+        <item>2(2) states that there is no such corporation.</item>
+        <item>1(b) TIME TO FILE; SUPPLEMENTAL FILING. A party must:</item>
+        <item>2(1) file the disclosure statement with its first appearance, pleading, petition, motion, response, or other request addressed to the court; and</item>
+        <item>2(2) promptly file a supplemental statement if any required information changes.</item>
+        <item>2(As added Apr. 29, 2002, eff. Dec. 1, 2002; amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_303">
+        <item>1&lt;b>Rule 8. General Rules of Pleading&lt;/b></item>
+        <item>1(a) CLAIM FOR RELIEF. A pleading that states a claim for relief must contain:</item>
+        <item>2(1) a short and plain statement of the grounds for the court\'s jurisdiction, unless the court already has jurisdiction and the claim needs no new jurisdictional support;</item>
+        <item>2(2) a short and plain statement of the claim showing that the pleader is entitled to relief; and</item>
+        <item>2(3) a demand for the relief sought, which may include relief in the alternative or different types of relief.</item>
+        <item>1(b) DEFENSES; ADMISSIONS AND DENIALS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> In responding to a pleading, a party must:</item>
+        <item>3(A) state in short and plain terms its defenses to each claim asserted against it; and</item>
+        <item>3(B) admit or deny the allegations asserted against it by an opposing party.</item>
+        <item>2(2) &lt;i>Denials—Responding to the Substance.&lt;/i> A denial must fairly respond to the substance of the allegation.</item>
+        <item>2(3) &lt;i>General and Specific Denials.&lt;/i> A party that intends in good faith to deny all the allegations of a pleading—including the jurisdictional grounds—may do so by a general denial. A party that does not intend to deny all the allegations must either specifically deny designated allegations or generally deny all except those specifically admitted.</item>
+        <item>2(4) &lt;i>Denying Part of an Allegation.&lt;/i> A party that intends in good faith to deny only part of an allegation must admit the part that is true and deny the rest.</item>
+        <item>2(5) &lt;i>Lacking Knowledge or Information.&lt;/i> A party that lacks knowledge or information sufficient to form a belief about the truth of an allegation must so state, and the statement has the effect of a denial.</item>
+        <item>2(6) &lt;i>Effect of Failing to Deny.&lt;/i> An allegation—other than one relating to the amount of damages—is admitted if a responsive pleading is required and the allegation is not denied. If a responsive pleading is not required, an allegation is considered denied or avoided.</item>
+        <item>1(c) AFFIRMATIVE DEFENSES.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> In responding to a pleading, a party must affirmatively state any avoidance or affirmative defense, including:</item>
+        <item>3\u00b7accord and satisfaction;</item>
+        <item>3\u00b7arbitration and award;</item>
+        <item>3\u00b7assumption of risk;</item>
+        <item>3\u00b7contributory negligence;</item>
+        <item>3\u00b7duress;</item>
+        <item>3\u00b7estoppel;</item>
+        <item>3\u00b7failure of consideration;</item>
+        <item>3\u00b7fraud;</item>
+        <item>3\u00b7illegality;</item>
+        <item>3\u00b7injury by fellow servant;</item>
+        <item>3\u00b7laches;</item>
+        <item>3\u00b7license;</item>
+        <item>3\u00b7payment;</item>
+        <item>3\u00b7release;</item>
+        <item>3\u00b7res judicata;</item>
+        <item>3\u00b7statute of frauds;</item>
+        <item>3\u00b7statute of limitations; and</item>
+        <item>3\u00b7waiver.</item>
+        <item>2(2) &lt;i>Mistaken Designation.&lt;/i> If a party mistakenly designates a defense as a counterclaim, or a counterclaim as a defense, the court must, if justice requires, treat the pleading as though it were correctly designated, and may impose terms for doing so.</item>
+        <item>1(d) PLEADING TO BE CONCISE AND DIRECT; ALTERNATIVE STATEMENTS; INCONSISTENCY.</item>
+        <item>1(1) &lt;i>In General.&lt;/i> Each allegation must be simple, concise, and direct. No technical form is required.</item>
+        <item>2(2) &lt;i>Alternative Statements of a Claim or Defense.&lt;/i> A party may set out 2 or more statements of a claim or defense alternatively or hypothetically, either in a single count or defense or in separate ones. If a party makes alternative statements, the pleading is sufficient if any one of them is sufficient.</item>
+        <item>2(3) &lt;i>Inconsistent Claims or Defenses.&lt;/i> A party may state as many separate claims or defenses as it has, regardless of consistency.</item>
+        <item>3(e) CONSTRUING PLEADINGS. Pleadings must be construed so as to do justice.</item>
+        <item>2(As amended Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007; Apr. 28, 2010, eff. Dec. 1, 2010.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_304">
+        <item>1&lt;b>Rule 9. Pleading Special Matters&lt;/b></item>
+        <item>1(a) CAPACITY OR AUTHORITY TO SUE; LEGAL EXISTENCE.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> Except when required to show that the court has jurisdiction, a pleading need not allege:</item>
+        <item>3(A) a party\'s capacity to sue or be sued;</item>
+        <item>3(B) a party\'s authority to sue or be sued in a representative capacity; or</item>
+        <item>3(C) the legal existence of an organized association of persons that is made a party.</item>
+        <item>2(2) Raising Those Issues. To raise any of those issues, a party must do so by a specific denial, which must state any supporting facts that are peculiarly within the party\'s knowledge.</item>
+        <item>1(b) FRAUD OR MISTAKE; CONDITIONS OF MIND. In alleging fraud or mistake, a party must state with particularity the circumstances constituting fraud or mistake. Malice, intent, knowledge, and other conditions of a person\'s mind may be alleged generally.</item>
+        <item>1(c) CONDITIONS PRECEDENT. In pleading conditions precedent, it suffices to allege generally that all conditions precedent have occurred or been performed. But when denying that a condition precedent has occurred or been performed, a party must do so with particularity.</item>
+        <item>1(d) OFFICIAL DOCUMENT OR ACT. In pleading an official document or official act, it suffices to allege that the document was legally issued or the act legally done.</item>
+        <item>1(e) JUDGMENT. In pleading a judgment or decision of a domestic or foreign court, a judicial or quasi-judicial tribunal, or a board or officer, it suffices to plead the judgment or decision without showing jurisdiction to render it.</item>
+        <item>1(f) TIME AND PLACE. An allegation of time or place is material when testing the sufficiency of a pleading.</item>
+        <item>1(g) SPECIAL DAMAGES. If an item of special damage is claimed, it must be specifically stated.</item>
+        <item>1(h) ADMIRALTY OR MARITIME CLAIM.</item>
+        <item>2(1) &lt;i>How Designated.&lt;/i> If a claim for relief is within the admiralty or maritime jurisdiction and also within the court\'s subject-matter jurisdiction on some other ground, the pleading may designate the claim as an admiralty or maritime claim for purposes of Rules 14(c), 38(e), and 82 and the Supplemental Rules for Admiralty or Maritime Claims and Asset Forfeiture Actions. A claim cognizable only in the admiralty or maritime jurisdiction is an admiralty or maritime claim for those purposes, whether or not so designated.</item>
+        <item>2(2) &lt;i>Designation for Appeal.&lt;/i> A case that includes an admiralty or maritime claim within this subdivision (h) is an admiralty case within 28 U.S.C. §1292(a)(3).</item>
+        <item>2(As amended Feb. 28, 1966, eff. July 1, 1966; Dec. 4, 1967, eff. July 1, 1968; Mar. 30, 1970, eff. July 1, 1970; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 11, 1997, eff. Dec. 1, 1997; Apr. 12, 2006, eff. Dec. 1, 2006; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_305">
+        <item>1&lt;b>Rule 10. Form of Pleadings&lt;/b></item>
+        <item>1(a) CAPTION; NAMES OF PARTIES. Every pleading must have a caption with the court\'s name, a title, a file number, and a Rule 7(a) designation. The title of the complaint must name all the parties; the title of other pleadings, after naming the first party on each side, may refer generally to other parties.</item>
+        <item>1(b) PARAGRAPHS; SEPARATE STATEMENTS. A party must state its claims or defenses in numbered paragraphs, each limited as far as practicable to a single set of circumstances. A later pleading may refer by number to a paragraph in an earlier pleading. If doing so would promote clarity, each claim founded on a separate transaction or occurrence—and each defense other than a denial—must be stated in a separate count or defense.</item>
+        <item>1(c) ADOPTION BY REFERENCE; EXHIBITS. A statement in a pleading may be adopted by reference elsewhere in the same pleading or in any other pleading or motion. A copy of a written instrument that is an exhibit to a pleading is a part of the pleading for all purposes.</item>
+        <item>2(As amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_306">
+        <item>1&lt;b>Rule 11. Signing Pleadings, Motions, and Other Papers; Representations to the Court; Sanctions&lt;/b></item>
+        <item>1(a) SIGNATURE. Every pleading, written motion, and other paper must be signed by at least one attorney of record in the attorney\'s name—or by a party personally if the party is unrepresented. The paper must state the signer\'s address, e-mail address, and telephone number. Unless a rule or statute specifically states otherwise, a pleading need not be verified or accompanied by an affidavit. The court must strike an unsigned paper unless the omission is promptly corrected after being called to the attorney\'s or party\'s attention.</item>
+        <item>1(b) REPRESENTATIONS TO THE COURT. By presenting to the court a pleading, written motion, or other paper—whether by signing, filing, submitting, or later advocating it—an attorney or unrepresented party certifies that to the best of the person\'s knowledge, information, and belief, formed after an inquiry reasonable under the circumstances:</item>
+        <item>2(1) it is not being presented for any improper purpose, such as to harass, cause unnecessary delay, or needlessly increase the cost of litigation;</item>
+        <item>2(2) the claims, defenses, and other legal contentions are warranted by existing law or by a nonfrivolous argument for extending, modifying, or reversing existing law or for establishing new law;</item>
+        <item>2(3) the factual contentions have evidentiary support or, if specifically so identified, will likely have evidentiary support after a reasonable opportunity for further investigation or discovery; and</item>
+        <item>2(4) the denials of factual contentions are warranted on the evidence or, if specifically so identified, are reasonably based on belief or a lack of information.</item>
+        <item>1(c) SANCTIONS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> If, after notice and a reasonable opportunity to respond, the court determines that Rule 11(b) has been violated, the court may impose an appropriate sanction on any attorney, law firm, or party that violated the rule or is responsible for the violation. Absent exceptional circumstances, a law firm must be held jointly responsible for a violation committed by its partner, associate, or employee.</item>
+        <item>2(2) &lt;i>Motion for Sanctions.&lt;/i> A motion for sanctions must be made separately from any other motion and must describe the specific conduct that allegedly violates Rule 11(b). The motion must be served under Rule 5, but it must not be filed or be presented to the court if the challenged paper, claim, defense, contention, or denial is withdrawn or appropriately corrected within 21 days after service or within another time the court sets. If warranted, the court may award to the prevailing party the reasonable expenses, including attorney\'s fees, incurred for the motion.</item>
+        <item>2(3) &lt;i>On the Court\'s Initiative.&lt;/i> On its own, the court may order an attorney, law firm, or party to show cause why conduct specifically described in the order has not violated Rule 11(b).</item>
+        <item>2(4) &lt;i>Nature of a Sanction.&lt;/i> A sanction imposed under this rule must be limited to what suffices to deter repetition of the conduct or comparable conduct by others similarly situated. The sanction may include nonmonetary directives; an order to pay a penalty into court; or, if imposed on motion and warranted for effective deterrence, an order directing payment to the movant of part or all of the reasonable attorney\'s fees and other expenses directly resulting from the violation.</item>
+        <item>2(5) &lt;i>Limitations on Monetary Sanctions.&lt;/i> The court must not impose a monetary sanction:</item>
+        <item>3(A) against a represented party for violating Rule 11(b)(2); or</item>
+        <item>3(B) on its own, unless it issued the show-cause order under Rule 11(c)(3) before voluntary dismissal or settlement of the claims made by or against the party that is, or whose attorneys are, to be sanctioned.</item>
+        <item>2(6) Requirements for an Order. An order imposing a sanction must describe the sanctioned conduct and explain the basis for the sanction.</item>
+        <item>1(d) INAPPLICABILITY TO DISCOVERY. This rule does not apply to disclosures and discovery requests, responses, objections, and motions under Rules 26 through 37.</item>
+        <item>2(As amended Apr. 28, 1983, eff. Aug. 1, 1983; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_307">
+        <item>1&lt;b>Rule 12. Defenses and Objections: When and How Presented; Motion for Judgment on the Pleadings; Consolidating Motions; Waiving Defenses; Pretrial Hearing&lt;/b></item>
+        <item>1(a) TIME TO SERVE A RESPONSIVE PLEADING.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> Unless another time is specified by this rule or a federal statute, the time for serving a responsive pleading is as follows:</item>
+        <item>3(A) A defendant must serve an answer:</item>
+        <item>4(i) within 21 days after being served with the summons and complaint; or</item>
+        <item>4(ii) if it has timely waived service under Rule 4(d), within 60 days after the request for a waiver was sent, or within 90 days after it was sent to the defendant outside any judicial district of the United States.</item>
+        <item>3(B) A party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim.</item>
+        <item>3(C) A party must serve a reply to an answer within 21 days after being served with an order to reply, unless the order specifies a different time.</item>
+        <item>2(2) &lt;i>United States and Its Agencies, Officers, or Employees Sued in an Official Capacity.&lt;/i> The United States, a United States agency, or a United States officer or employee sued only in an official capacity must serve an answer to a complaint, counterclaim, or crossclaim within 60 days after service on the United States attorney.</item>
+        <item>2(3) &lt;i>United States Officers or Employees Sued in an Individual Capacity.&lt;/i> A United States officer or employee sued in an individual capacity for an act or omission occurring in connection with duties performed on the United States’ behalf must serve an answer to a complaint, counterclaim, or crossclaim within 60 days after service on the officer or employee or service on the United States attorney, whichever is later.</item>
+        <item>2(4) &lt;i>Effect of a Motion.&lt;/i> Unless the court sets a different time, serving a motion under this rule alters these periods as follows:</item>
+        <item>3(A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court\'s action; or</item>
+        <item>3(B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.</item>
+        <item>1(b) HOW TO PRESENT DEFENSES. Every defense to a claim for relief in any pleading must be asserted in the responsive pleading if one is required. But a party may assert the following defenses by motion:</item>
+        <item>2(1) lack of subject-matter jurisdiction;</item>
+        <item>2(2) lack of personal jurisdiction;</item>
+        <item>2(3) improper venue;</item>
+        <item>2(4) insufficient process;</item>
+        <item>2(5) insufficient service of process;</item>
+        <item>2(6) failure to state a claim upon which relief can be granted; and</item>
+        <item>2(7) failure to join a party under Rule 19.</item>
+        <item>1A motion asserting any of these defenses must be made before pleading if a responsive pleading is allowed. If a pleading sets out a claim for relief that does not require a responsive pleading, an opposing party may assert at trial any defense to that claim. No defense or objection is waived by joining it with one or more other defenses or objections in a responsive pleading or in a motion.</item>
+        <item>1(c) MOTION FOR JUDGMENT ON THE PLEADINGS. After the pleadings are closed—but early enough not to delay trial—a party may move for judgment on the pleadings.</item>
+        <item>1(d) RESULT OF PRESENTING MATTERS OUTSIDE THE PLEADINGS. If, on a motion under Rule 12(b)(6) or 12(c), matters outside the pleadings are presented to and not excluded by the court, the motion must be treated as one for summary judgment under Rule 56. All parties must be given a reasonable opportunity to present all the material that is pertinent to the motion.</item>
+        <item>1(e) MOTION FOR A MORE DEFINITE STATEMENT. A party may move for a more definite statement of a pleading to which a responsive pleading is allowed but which is so vague or ambiguous that the party cannot reasonably prepare a response. The motion must be made before filing a responsive pleading and must point out the defects complained of and the details desired. If the court orders a more definite statement and the order is not obeyed within 14 days after notice of the order or within the time the court sets, the court may strike the pleading or issue any other appropriate order.</item>
+        <item>1(f) MOTION TO STRIKE. The court may strike from a pleading an insufficient defense or any redundant, immaterial, impertinent, or scandalous matter. The court may act:</item>
+        <item>2(1) on its own; or</item>
+        <item>2(2) on motion made by a party either before responding to the pleading or, if a response is not allowed, within 21 days after being served with the pleading.</item>
+        <item>1(g) JOINING MOTIONS.</item>
+        <item>2(1) &lt;i>Right to Join.&lt;/i> A motion under this rule may be joined with any other motion allowed by this rule.</item>
+        <item>2(2) &lt;i>Limitation on Further Motions.&lt;/i> Except as provided in Rule 12(h)(2) or (3), a party that makes a motion under this rule must not make another motion under this rule raising a defense or objection that was available to the party but omitted from its earlier motion.</item>
+        <item>1(h) WAIVING AND PRESERVING CERTAIN DEFENSES.</item>
+        <item>2(1) &lt;i>When Some Are Waived.&lt;/i> A party waives any defense listed in Rule 12(b)(2)–(5) by:</item>
+        <item>3(A) omitting it from a motion in the circumstances described in Rule 12(g)(2); or</item>
+        <item>3(B) failing to either:</item>
+        <item>4(i) make it by motion under this rule; or</item>
+        <item>4(ii) include it in a responsive pleading or in an amendment allowed by Rule 15(a)(1) as a matter of course.</item>
+        <item>2(2) &lt;i>When to Raise Others.&lt;/i> Failure to state a claim upon which relief can be granted, to join a person required by Rule 19(b), or to state a legal defense to a claim may be raised:</item>
+        <item>3(A) in any pleading allowed or ordered under Rule 7(a);</item>
+        <item>3(B) by a motion under Rule 12(c); or</item>
+        <item>3(C) at trial.</item>
+        <item>2(3) &lt;i>Lack of Subject-Matter Jurisdiction.&lt;/i> If the court determines at any time that it lacks subject-matter jurisdiction, the court must dismiss the action.</item>
+        <item>1(i) HEARING BEFORE TRIAL. If a party so moves, any defense listed in Rule 12(b)(1)–(7)—whether made in a pleading or by motion—and a motion under Rule 12(c) must be heard and decided before trial unless the court orders a deferral until trial.</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 17, 2000, eff. Dec. 1, 2000; Apr. 30, 2007, eff. Dec. 1, 2007; Mar. 26, 2009, eff. Dec. 1, 2009.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_308">
+        <item>1&lt;b>Rule 13. Counterclaim and Crossclaim&lt;/b></item>
+        <item>1(a) COMPULSORY COUNTERCLAIM.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> A pleading must state as a counterclaim any claim that—at the time of its service—the pleader has against an opposing party if the claim:</item>
+        <item>3(A) arises out of the transaction or occurrence that is the subject matter of the opposing party\'s claim; and</item>
+        <item>3(B) does not require adding another party over whom the court cannot acquire jurisdiction.</item>
+        <item>2(2) &lt;i>Exceptions.&lt;/i> The pleader need not state the claim if:</item>
+        <item>3(A) when the action was commenced, the claim was the subject of another pending action; or</item>
+        <item>3(B) the opposing party sued on its claim by attachment or other process that did not establish personal jurisdiction over the pleader on that claim, and the pleader does not assert any counterclaim under this rule.</item>
+        <item>1(b) PERMISSIVE COUNTERCLAIM. A pleading may state as a counterclaim against an opposing party any claim that is not compulsory.</item>
+        <item>1(c) RELIEF SOUGHT IN A COUNTERCLAIM. A counterclaim need not diminish or defeat the recovery sought by the opposing party. It may request relief that exceeds in amount or differs in kind from the relief sought by the opposing party.</item>
+        <item>1(d) COUNTERCLAIM AGAINST THE UNITED STATES. These rules do not expand the right to assert a counterclaim—or to claim a credit—against the United States or a United States officer or agency.</item>
+        <item>1(e) COUNTERCLAIM MATURING OR ACQUIRED AFTER PLEADING. The court may permit a party to file a supplemental pleading asserting a counterclaim that matured or was acquired by the party after serving an earlier pleading.</item>
+        <item>1(f) [Abrogated. ]</item>
+        <item>1(g) CROSSCLAIM AGAINST A COPARTY. A pleading may state as a crossclaim any claim by one party against a coparty if the claim arises out of the transaction or occurrence that is the subject matter of the original action or of a counterclaim, or if the claim relates to any property that is the subject matter of the original action. The crossclaim may include a claim that the coparty is or may be liable to the crossclaimant for all or part of a claim asserted in the action against the crossclaimant.</item>
+        <item>1(h) JOINING ADDITIONAL PARTIES. Rules 19 and 20 govern the addition of a person as a party to a counterclaim or crossclaim.</item>
+        <item>1(i) SEPARATE TRIALS; SEPARATE JUDGMENTS. If the court orders separate trials under Rule 42(b), it may enter judgment on a counterclaim or crossclaim under Rule 54(b) when it has jurisdiction to do so, even if the opposing party\'s claims have been dismissed or otherwise resolved.</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007; Mar. 26, 2009, eff. Dec. 1, 2009.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_309">
+        <item>1&lt;b>Rule 14. Third-Party Practice&lt;/b></item>
+        <item>1(a) WHEN A DEFENDING PARTY MAY BRING IN A THIRD PARTY.</item>
+        <item>2(1) &lt;i>Timing of the Summons and Complaint.&lt;/i> A defending party may, as third-party plaintiff, serve a summons and complaint on a nonparty who is or may be liable to it for all or part of the claim against it. But the third-party plaintiff must, by motion, obtain the court\'s leave if it files the third-party complaint more than 14 days after serving its original answer.</item>
+        <item>2(2) &lt;i>Third-Party Defendant\'s Claims and Defenses.&lt;/i> The person served with the summons and third-party complaint—the “third-party defendant”:</item>
+        <item>3(A) must assert any defense against the third-party plaintiff\'s claim under Rule 12;</item>
+        <item>3(B) must assert any counterclaim against the third-party plaintiff under Rule 13a, and may assert any counterclaim against the third-party plaintiff under Rule 13(b) or any crossclaim against another third-party defendant under Rule 13(g);</item>
+        <item>3(C) may assert against the plaintiff any defense that the third-party plaintiff has to the plaintiff\'s claim; and</item>
+        <item>3(D) may also assert against the plaintiff any claim arising out of the transaction or occurrence that is the subject matter of the plaintiff\'s claim against the third-party plaintiff.</item>
+        <item>2(3) &lt;i>Plaintiff\'s Claims Against a Third-Party Defendant.&lt;/i> The plaintiff may assert against the third-party defendant any claim arising out of the transaction or occurrence that is the subject matter of the plaintiff\'s claim against the third-party plaintiff. The third-party defendant must then assert any defense under Rule 12 and any counterclaim under Rule 13(a), and may assert any counterclaim under Rule 13(b) or any crossclaim under Rule 13(g).</item>
+        <item>2(4) &lt;i>Motion to Strike, Sever, or Try Separately.&lt;/i> Any party may move to strike the third-party claim, to sever it, or to try it separately.</item>
+        <item>2(5) &lt;i>Third-Party Defendant\'s Claim Against a Nonparty.&lt;/i> A third-party defendant may proceed under this rule against a nonparty who is or may be liable to the third-party defendant for all or part of any claim against it.</item>
+        <item>2(6) &lt;i>Third-Party Complaint In Rem.&lt;/i> If it is within the admiralty or maritime jurisdiction, a third-party complaint may be in rem. In that event, a reference in this rule to the “summons” includes the warrant of arrest, and a reference to the defendant or third-party plaintiff includes, when appropriate, a person who asserts a right under Supplemental Rule C(6)(a)(i) in the property arrested.</item>
+        <item>1(b) WHEN A PLAINTIFF MAY BRING IN A THIRD PARTY. When a claim is asserted against a plaintiff, the plaintiff may bring in a third party if this rule would allow a defendant to do so.</item>
+        <item>1(c) ADMIRALTY OR MARITIME CLAIM.</item>
+        <item>2(1) &lt;i>Scope of Impleader.&lt;/i> If a plaintiff asserts an admiralty or maritime claim under Rule 9(h), the defendant or a person who asserts a right under Supplemental Rule C(6)(a)(i) may, as a third-party plaintiff, bring in a third-party defendant who may be wholly or partly liable—either to the plaintiff or to the third-party plaintiff— for remedy over, contribution, or otherwise on account of the same transaction, occurrence, or series of transactions or occurrences.</item>
+        <item>2(2) &lt;i>Defending Against a Demand for Judgment for the Plaintiff.&lt;/i> The third-party plaintiff may demand judgment in the plaintiff\'s favor against the third-party defendant. In that event, the third-party defendant must defend under Rule 12 against the plaintiff\'s claim as well as the third-party plaintiff\'s claim; and the action proceeds as if the plaintiff had sued both the third-party defendant and the third-party plaintiff.</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 17, 2000, eff. Dec. 1, 2000; Apr. 12, 2006, eff. Dec. 1, 2006; Apr. 30, 2007, eff. Dec. 1, 2007; Mar. 26, 2009, eff. Dec. 1, 2009.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_310">
+        <item>1&lt;b>Rule 15. Amended and Supplemental Pleadings&lt;/b></item>
+        <item>1(a) AMENDMENTS BEFORE TRIAL.</item>
+        <item>2(1) &lt;i>Amending as a Matter of Course.&lt;/i> A party may amend its pleading once as a matter of course within:</item>
+        <item>3(A) 21 days after serving it, or</item>
+        <item>3(B) if the pleading is one to which a responsive pleading is required, 21 days after service of a responsive pleading or 21 days after service of a motion under Rule 12(b), (e), or (f), whichever is earlier.</item>
+        <item>2(2) &lt;i>Other Amendments.&lt;/i> In all other cases, a party may amend its pleading only with the opposing party\'s written consent or the court\'s leave. The court should freely give leave when justice so requires.</item>
+        <item>2(3) &lt;i>Time to Respond.&lt;/i> Unless the court orders otherwise, any required response to an amended pleading must be made within the time remaining to respond to the original pleading or within 14 days after service of the amended pleading, whichever is later.</item>
+        <item>1(b) AMENDMENTS DURING AND AFTER TRIAL.</item>
+        <item>2(1) &lt;i>Based on an Objection at Trial.&lt;/i> If, at trial, a party objects that evidence is not within the issues raised in the pleadings, the court may permit the pleadings to be amended. The court should freely permit an amendment when doing so will aid in presenting the merits and the objecting party fails to satisfy the court that the evidence would prejudice that party\'s action or defense on the merits. The court may grant a continuance to enable the objecting party to meet the evidence.</item>
+        <item>2(2) &lt;i>For Issues Tried by Consent.&lt;/i> When an issue not raised by the pleadings is tried by the parties’ express or implied consent, it must be treated in all respects as if raised in the pleadings. A party may move—at any time, even after judgment—to amend the pleadings to conform them to the evidence and to raise an unpleaded issue. But failure to amend does not affect the result of the trial of that issue.</item>
+        <item>1(c) RELATION BACK OF AMENDMENTS.</item>
+        <item>2(1) &lt;i>When an Amendment Relates Back.&lt;/i> An amendment to a pleading relates back to the date of the original pleading when:</item>
+        <item>3(A) the law that provides the applicable statute of limitations allows relation back;</item>
+        <item>3(B) the amendment asserts a claim or defense that arose out of the conduct, transaction, or occurrence set out—or attempted to be set out—in the original pleading; or</item>
+        <item>3(C) the amendment changes the party or the naming of the party against whom a claim is asserted, if Rule 15(c)(1)(B) is satisfied and if, within the period provided by Rule 4(m) for serving the summons and complaint, the party to be brought in by amendment:</item>
+        <item>4(i) received such notice of the action that it will not be prejudiced in defending on the merits; and</item>
+        <item>4(ii) knew or should have known that the action would have been brought against it, but for a mistake concerning the proper party\'s identity.</item>
+        <item>2(2) &lt;i>Notice to the United States.&lt;/i> When the United States or a United States officer or agency is added as a defendant by amendment, the notice requirements of Rule 15(c)(1)(C)(i) and (ii) are satisfied if, during the stated period, process was delivered or mailed to the United States attorney or the United States attorney\'s designee, to the Attorney General of the United States, or to the officer or agency.</item>
+        <item>1(d) SUPPLEMENTAL PLEADINGS. On motion and reasonable notice, the court may, on just terms, permit a party to serve a supplemental pleading setting out any transaction, occurrence, or event that happened after the date of the pleading to be supplemented. The court may permit supplementation even though the original pleading is defective in stating a claim or defense. The court may order that the opposing party plead to the supplemental pleading within a specified time.</item>
+        <item>2(As amended Jan. 21, 1963, eff. July 1, 1963; Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 1991, eff. Dec. 1, 1991; Pub. L. 102–198, §11(a), Dec. 9, 1991, 105 Stat. 1626; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 30, 2007, eff. Dec. 1, 2007; Mar. 26, 2009, eff. Dec. 1, 2009.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_311">
+        <item>1&lt;b>Rule 16. Pretrial Conferences; Scheduling; Management&lt;/b></item>
+        <item>1(a) PURPOSES OF A PRETRIAL CONFERENCE. In any action, the court may order the attorneys and any unrepresented parties to appear for one or more pretrial conferences for such purposes as:</item>
+        <item>2(1) expediting disposition of the action;</item>
+        <item>2(2) establishing early and continuing control so that the case will not be protracted because of lack of management;</item>
+        <item>2(3) discouraging wasteful pretrial activities;</item>
+        <item>2(4) improving the quality of the trial through more thorough preparation; and</item>
+        <item>2(5) facilitating settlement.</item>
+        <item>1(b) SCHEDULING.</item>
+        <item>2(1) &lt;i>Scheduling Order.&lt;/i> Except in categories of actions exempted by local rule, the district judge—or a magistrate judge when authorized by local rule—must issue a scheduling order:</item>
+        <item>3(A) after receiving the parties’ report under Rule 26(f); or</item>
+        <item>3(B) after consulting with the parties’ attorneys and any unrepresented parties at a scheduling conference or by telephone, mail, or other means.</item>
+        <item>2(2) &lt;i>Time to Issue.&lt;/i> The judge must issue the scheduling order as soon as practicable, but in any event within the earlier of 120 days after any defendant has been served with the complaint or 90 days after any defendant has appeared.</item>
+        <item>2(3) &lt;i>Contents of the Order.&lt;/i></item>
+        <item>3(A) &lt;i>Required Contents.&lt;/i> The scheduling order must limit the time to join other parties, amend the pleadings, complete discovery, and file motions.</item>
+        <item>3(B) &lt;i>Permitted Contents.&lt;/i> The scheduling order may:</item>
+        <item>4(i) modify the timing of disclosures under Rules 26(a) and 26(e)(1);</item>
+        <item>4(ii) modify the extent of discovery;</item>
+        <item>4(iii) provide for disclosure or discovery of electronically stored information;</item>
+        <item>4(iv) include any agreements the parties reach for asserting claims of privilege or of protection as trial-preparation material after information is produced;</item>
+        <item>4(v) set dates for pretrial conferences and for trial; and</item>
+        <item>4(vi) include other appropriate matters.</item>
+        <item>2(4) &lt;i>Modifying a Schedule.&lt;/i> A schedule may be modified only for good cause and with the judge\'s consent.</item>
+        <item>1(c) ATTENDANCE AND MATTERS FOR CONSIDERATION AT A PRETRIAL CONFERENCE.</item>
+        <item>2(1) &lt;i>Attendance.&lt;/i> A represented party must authorize at least one of its attorneys to make stipulations and admissions about all matters that can reasonably be anticipated for discussion at a pretrial conference. If appropriate, the court may require that a party or its representative be present or reasonably available by other means to consider possible settlement.</item>
+        <item>2(2) &lt;i>Matters for Consideration.&lt;/i> At any pretrial conference, the court may consider and take appropriate action on the following matters:</item>
+        <item>3(A) formulating and simplifying the issues, and eliminating frivolous claims or defenses;</item>
+        <item>3(B) amending the pleadings if necessary or desirable;</item>
+        <item>3(C) obtaining admissions and stipulations about facts and documents to avoid unnecessary proof, and ruling in advance on the admissibility of evidence;</item>
+        <item>3(D) avoiding unnecessary proof and cumulative evidence, and limiting the use of testimony under Federal Rule of Evidence 702;</item>
+        <item>3(E) determining the appropriateness and timing of summary adjudication under Rule 56;</item>
+        <item>3(F) controlling and scheduling discovery, including orders affecting disclosures and discovery under Rule 26 and Rules 29 through 37;</item>
+        <item>3(G) identifying witnesses and documents, scheduling the filing and exchange of any pretrial briefs, and setting dates for further conferences and for trial;</item>
+        <item>3(H) referring matters to a magistrate judge or a master;</item>
+        <item>3(I) settling the case and using special procedures to assist in resolving the dispute when authorized by statute or local rule;</item>
+        <item>3(J) determining the form and content of the pretrial order;</item>
+        <item>3(K) disposing of pending motions;</item>
+        <item>3(L) adopting special procedures for managing potentially difficult or protracted actions that may involve complex issues, multiple parties, difficult legal questions, or unusual proof problems;</item>
+        <item>3(M) ordering a separate trial under Rule 42(b) of a claim, counterclaim, crossclaim, third-party claim, or particular issue;</item>
+        <item>3(N) ordering the presentation of evidence early in the trial on a manageable issue that might, on the evidence, be the basis for a judgment as a matter of law under Rule 50(a) or a judgment on partial findings under Rule 52(c);</item>
+        <item>3(O) establishing a reasonable limit on the time allowed to present evidence; and</item>
+        <item>3(P) facilitating in other ways the just, speedy, and inexpensive disposition of the action.</item>
+        <item>1(d) PRETRIAL ORDERS. After any conference under this rule, the court should issue an order reciting the action taken. This order controls the course of the action unless the court modifies it.</item>
+        <item>1(e) FINAL PRETRIAL CONFERENCE AND ORDERS. The court may hold a final pretrial conference to formulate a trial plan, including a plan to facilitate the admission of evidence. The conference must be held as close to the start of trial as is reasonable, and must be attended by at least one attorney who will conduct the trial for each party and by any unrepresented party. The court may modify the order issued after a final pretrial conference only to prevent manifest injustice.</item>
+        <item>1(f) SANCTIONS.</item>
+        <item>2(1) &lt;i>In General.&lt;/i> On motion or on its own, the court may issue any just orders, including those authorized by Rule 37(b)(2)(A)(ii)–(vii), if a party or its attorney:</item>
+        <item>3(A) fails to appear at a scheduling or other pretrial conference;</item>
+        <item>3(B) is substantially unprepared to participate—or does not participate in good faith—in the conference; or</item>
+        <item>3(C) fails to obey a scheduling or other pretrial order.</item>
+        <item>2(2) Imposing Fees and Costs. Instead of or in addition to any other sanction, the court must order the party, its attorney, or both to pay the reasonable expenses—including attorney\'s fees—incurred because of any noncompliance with this rule, unless the noncompliance was substantially justified or other circumstances make an award of expenses unjust.</item>
+        <item>2(As amended Apr. 28, 1983, eff. Aug. 1, 1983; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 22, 1993, eff. Dec. 1, 1993; Apr. 12, 2006, eff. Dec. 1, 2006; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_401">
+        <item>1&lt;b>Rule 17. Plaintiff and Defendant; Capacity; Public Officers&lt;/b></item>
+        <item>1(a) REAL PARTY IN INTEREST.</item>
+        <item>2(1) &lt;i>Designation in General.&lt;/i> An action must be prosecuted in the name of the real party in interest. The following may sue in their own names without joining the person for whose benefit the action is brought:</item>
+        <item>3(A) an executor;</item>
+        <item>3(B) an administrator;</item>
+        <item>3(C) a guardian;</item>
+        <item>3(D) a bailee;</item>
+        <item>3(E) a trustee of an express trust;</item>
+        <item>3(F) a party with whom or in whose name a contract has been made for another\'s benefit; and</item>
+        <item>3(G) a party authorized by statute.</item>
+        <item>2(2) &lt;i>Action in the Name of the United States for Another\'s Use or Benefit.&lt;/i> When a federal statute so provides, an action for another\'s use or benefit must be brought in the name of the United States.</item>
+        <item>2(3) &lt;i>Joinder of the Real Party in Interest.&lt;/i> The court may not dismiss an action for failure to prosecute in the name of the real party in interest until, after an objection, a reasonable time has been allowed for the real party in interest to ratify, join, or be substituted into the action. After ratification, joinder, or substitution, the action proceeds as if it had been originally commenced by the real party in interest.</item>
+        <item>1(b) CAPACITY TO SUE OR BE SUED. Capacity to sue or be sued is determined as follows:</item>
+        <item>2(1) for an individual who is not acting in a representative capacity, by the law of the individual\'s domicile;</item>
+        <item>2(2) for a corporation, by the law under which it was organized; and</item>
+        <item>2(3) for all other parties, by the law of the state where the court is located, except that:</item>
+        <item>3(A) a partnership or other unincorporated association with no such capacity under that state\'s law may sue or be sued in its common name to enforce a substantive right existing under the United States Constitution or laws; and</item>
+        <item>3(B) 28 U.S.C. §§754 and 959(a) govern the capacity of a receiver appointed by a United States court to sue or be sued in a United States court.</item>
+        <item>1(c) MINOR OR INCOMPETENT PERSON.</item>
+        <item>2(1) &lt;i>With a Representative.&lt;/i> The following representatives may sue or defend on behalf of a minor or an incompetent person:</item>
+        <item>3(A) a general guardian;</item>
+        <item>3(B) a committee;</item>
+        <item>3(C) a conservator; or</item>
+        <item>3(D) a like fiduciary.</item>
+        <item>2(2) &lt;i>Without a Representative.&lt;/i> A minor or an incompetent person who does not have a duly appointed representative may sue by a next friend or by a guardian ad litem. The court must appoint a guardian ad litem—or issue another appropriate order—to protect a minor or incompetent person who is unrepresented in an action.</item>
+        <item>1(d) PUBLIC OFFICER\'S TITLE AND NAME. A public officer who sues or is sued in an official capacity may be designated by official title rather than by name, but the court may order that the officer\'s name be added.</item>
+        <item>2(As amended Dec. 27, 1946, eff. Mar. 19, 1948; Dec. 29, 1948, eff. Oct. 20, 1949; Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 25, 1988, eff. Aug. 1, 1988; Pub. L. 100–690, title VII, §7049, Nov. 18, 1988, 102 Stat. 4401; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_402">
+        <item>1&lt;b>Rule 18. Joinder of Claims&lt;/b></item>
+        <item>1(a) IN GENERAL. A party asserting a claim, counterclaim, crossclaim, or third-party claim may join, as independent or alternative claims, as many claims as it has against an opposing party.</item>
+        <item>1(b) JOINDER OF CONTINGENT CLAIMS. A party may join two claims even though one of them is contingent on the disposition of the other; but the court may grant relief only in accordance with the parties’ relative substantive rights. In particular, a plaintiff may state a claim for money and a claim to set aside a conveyance that is fraudulent as to that plaintiff, without first obtaining a judgment for the money.</item>
+        <item>2(As amended Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_403">
+        <item>1&lt;b>Rule 19. Required Joinder of Parties&lt;/b></item>
+        <item>1(a) PERSONS REQUIRED TO BE JOINED IF FEASIBLE.</item>
+        <item>2(1) &lt;i>Required Party.&lt;/i> A person who is subject to service of process and whose joinder will not deprive the court of subject-matter jurisdiction must be joined as a party if:</item>
+        <item>3(A) in that person\'s absence, the court cannot accord complete relief among existing parties; or</item>
+        <item>3(B) that person claims an interest relating to the subject of the action and is so situated that disposing of the action in the person\'s absence may:</item>
+        <item>4(i) as a practical matter impair or impede the person\'s ability to protect the interest; or</item>
+        <item>4(ii) leave an existing party subject to a substantial risk of incurring double, multiple, or otherwise inconsistent obligations because of the interest.</item>
+        <item>2(2) &lt;i>Joinder by Court Order.&lt;/i> If a person has not been joined as required, the court must order that the person be made a party. A person who refuses to join as a plaintiff may be made either a defendant or, in a proper case, an involuntary plaintiff.</item>
+        <item>2(3) &lt;i>Venue.&lt;/i> If a joined party objects to venue and the joinder would make venue improper, the court must dismiss that party.</item>
+        <item>1(b) WHEN JOINDER IS NOT FEASIBLE. If a person who is required to be joined if feasible cannot be joined, the court must determine whether, in equity and good conscience, the action should proceed among the existing parties or should be dismissed. The factors for the court to consider include:</item>
+        <item>2(1) the extent to which a judgment rendered in the person\'s absence might prejudice that person or the existing parties;</item>
+        <item>2(2) the extent to which any prejudice could be lessened or avoided by:</item>
+        <item>3(A) protective provisions in the judgment;</item>
+        <item>3(B) shaping the relief; or</item>
+        <item>3(C) other measures;</item>
+        <item>2(3) whether a judgment rendered in the person\'s absence would be adequate; and</item>
+        <item>2(4) whether the plaintiff would have an adequate remedy if the action were dismissed for nonjoinder.</item>
+        <item>1(c) PLEADING THE REASONS FOR NONJOINDER. When asserting a claim for relief, a party must state:</item>
+        <item>2(1) the name, if known, of any person who is required to be joined if feasible but is not joined; and</item>
+        <item>2(2) the reasons for not joining that person.</item>
+        <item>1(d) EXCEPTION FOR CLASS ACTIONS. This rule is subject to Rule 23.</item>
+        <item>2(As amended Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+    <string-array name="federal_rules_cp_404">
+        <item>1&lt;b>Rule 20. Permissive Joinder of Parties&lt;/b></item>
+        <item>1(a) PERSONS WHO MAY JOIN OR BE JOINED.</item>
+        <item>2(1) &lt;i>Plaintiffs.&lt;/i> Persons may join in one action as plaintiffs if:</item>
+        <item>3(A) they assert any right to relief jointly, severally, or in the alternative with respect to or arising out of the same transaction, occurrence, or series of transactions or occurrences; and</item>
+        <item>3(B) any question of law or fact common to all plaintiffs will arise in the action.</item>
+        <item>2(2) &lt;i>Defendants.&lt;/i> Persons—as well as a vessel, cargo, or other property subject to admiralty process in rem—may be joined in one action as defendants if:</item>
+        <item>3(A) any right to relief is asserted against them jointly, severally, or in the alternative with respect to or arising out of the same transaction, occurrence, or series of transactions or occurrences; and</item>
+        <item>3(B) any question of law or fact common to all defendants will arise in the action.</item>
+        <item>2(3) &lt;i>Extent of Relief.&lt;/i> Neither a plaintiff nor a defendant need be interested in obtaining or defending against all the relief demanded. The court may grant judgment to one or more plaintiffs according to their rights, and against one or more defendants according to their liabilities.</item>
+        <item>1(b) &lt;i>Protective Measures.&lt;/i> The court may issue orders—including an order for separate trials—to protect a party against embarrassment, delay, expense, or other prejudice that arises from including a person against whom the party asserts no claim and who asserts no claim against the party.</item>
+        <item>2(As amended Feb. 28, 1966, eff. July 1, 1966; Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+    </string-array>
+</resources>

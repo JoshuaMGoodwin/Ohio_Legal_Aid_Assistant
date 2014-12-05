@@ -56,6 +56,7 @@ public class RulesFragment extends Fragment {
     private Spinner narrowTopics;
 
     private String ruleSet;
+    private String theSearch = "";
     private String TAG = "OhioLegalAidAssistant:";
 
     String[] broadTopicArray;
@@ -201,7 +202,7 @@ public class RulesFragment extends Fragment {
 
     }
 
-    private void showRules(int position) {
+    private void showRules(int position, String search) {
 
         ll.removeAllViews();
             firstTime = false;
@@ -221,10 +222,23 @@ public class RulesFragment extends Fragment {
         String[] ruleArray = getResources().getStringArray(getResources().getIdentifier(string, "array", "joshuamgoodwin.gmail.com.ohiolegalaidassistant"));
 
         for (int i = 0; i < ruleArray.length; i++) {
-
             String wholeString = ruleArray[i];
             int paddingMultiplier = Integer.parseInt(wholeString.substring(0, 1));
             String actualString = wholeString.substring(1);
+            if (!theSearch.equals("")) {
+                if (actualString.contains(theSearch)) {
+                    String newString = "<font color='#FF0000'><i>" + theSearch + "</i></font>";
+                    actualString = actualString.replaceAll(theSearch, newString);
+                }
+                if (actualString.contains(theSearch.toUpperCase())) {
+                    String newString = "<font color='#FF0000'><i>" + theSearch.toUpperCase() + "</i></font>";
+                    actualString = actualString.replaceAll(theSearch.toUpperCase(), newString);
+                }
+                if (actualString.contains(theSearch.substring(0, 1).toUpperCase() + theSearch.substring(1))){
+                    String newString = "<font color='#FF0000'><i>" + theSearch.toUpperCase() + "</i></font>";
+                    actualString = actualString.replaceAll(theSearch.substring(0, 1).toUpperCase() + theSearch.substring(1), newString);
+                }
+            }
             TextView tv = new TextView(getActivity());
             // setPadding(left, top, right, bottom)
             tv.setPadding(5 * (paddingMultiplier * 5), 5, 5, 5);
@@ -232,6 +246,7 @@ public class RulesFragment extends Fragment {
             innerLL.addView(tv);
         }
         ruleSelected = position;
+        theSearch = "";
 
     }
 
@@ -240,7 +255,7 @@ public class RulesFragment extends Fragment {
         narrowTopics.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                showRules(position);
+                showRules(position, "");
             }
 
             @Override
@@ -335,8 +350,9 @@ public class RulesFragment extends Fragment {
 				String[] data = adapter.getRow(pos);
 				narrowPosition = Integer.parseInt(data[3]);
 				broadTopics.setSelection(Integer.parseInt(data[2]), true);
-				
-				
+                theSearch = data[4];
+
+
 			}
 		});
 		ll.addView(lv);

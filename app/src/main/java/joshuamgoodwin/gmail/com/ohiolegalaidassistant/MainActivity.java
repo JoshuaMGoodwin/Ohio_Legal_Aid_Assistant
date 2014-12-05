@@ -159,6 +159,7 @@ public class MainActivity extends ActionBarActivity {
             editor.putBoolean("first", false);
             editor.commit();
         }
+        getSupportActionBar().setTitle(R.string.app_name);
     }
 
 
@@ -191,6 +192,9 @@ public class MainActivity extends ActionBarActivity {
             } else if (childName.equals(getString(R.string.APR))) {
                 fragmentName = new APRCalculator();
                 tag = "APR";
+            } else if (childName.equals("Garnishment")) {
+                fragmentName = new GarnishmentCalculator();
+                tag = "GARNISHMENT";
             } else {
 				fragmentName = new Welcome();
 			} 
@@ -214,6 +218,9 @@ public class MainActivity extends ActionBarActivity {
             tag = "RULES";
             if (childName.equals("Federal Rules of Evidence")) {
                 bundle.putString("ruleSet", "fre_by_rule");
+            }
+            if (childName.equals("Federal Rules of Civil Procedure")) {
+                bundle.putString("ruleSet", "federal_rules_cp");
             }
             if (childName.equals("Ohio Rules of Civil Procedure")) {
                 bundle.putString("ruleSet", "ohio_rules_cp");
