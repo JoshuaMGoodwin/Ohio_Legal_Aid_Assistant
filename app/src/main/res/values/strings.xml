@@ -68,7 +68,10 @@
         <item>Ohio Rules of Evidence</item>
         <item>Ohio Rules of Juvenile Procedure</item>
     </string-array>
-
+    <string-array name="owf_versions">
+        <!--<item>Current (1/1/15)</item>-->
+        <item>7/1/14 to 1/1/15</item>
+    </string-array>
     <string name="OWF_calculator">OWF</string>
     <string name="federal_poverty">Federal Poverty Level</string>
     <string name="food_stamps">Food Stamps</string>
@@ -103,6 +106,6 @@
         <item>Monthly</item>
     </string-array>
 
-    <string name="changes">&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
+    <string name="changes">&lt;b>12-10-14&lt;/b>&lt;br>* Added complete Fed. R. Civ. P.&lt;br>* Added support for older versions of OWF calculator&lt;br>* updated food stamp layout and design&lt;br>* Added simple garnishment calculator&lt;br>&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
 
 </resources>

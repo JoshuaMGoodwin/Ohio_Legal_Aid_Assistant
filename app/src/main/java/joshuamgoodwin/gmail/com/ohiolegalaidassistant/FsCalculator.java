@@ -5,6 +5,7 @@ import android.view.*;
 import android.os.*;
 import android.app.AlertDialog;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Spinner.*;
 import android.widget.SpinnerAdapter;
@@ -220,7 +221,7 @@ public class FsCalculator extends Fragment {
      
     private void initializeClearButton(View rootView){
      
-        Button button = (Button) rootView.findViewById(R.id.fsReset);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.fsReset);
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -233,7 +234,7 @@ public class FsCalculator extends Fragment {
      
     private void initializeSubmitButton(View rootView) {
 
-        Button button = (Button) rootView.findViewById(R.id.fsSubmit);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.fsSubmit);
         button.setOnClickListener(new View.OnClickListener() {
          
             @Override

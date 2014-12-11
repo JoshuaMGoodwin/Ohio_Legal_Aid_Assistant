@@ -8,12 +8,12 @@ android {
         applicationId "joshuamgoodwin.gmail.com.ohiolegalaidassistant"
         minSdkVersion 7
         targetSdkVersion 21
-        versionCode 10
-        versionName "0.3.1"
+        versionCode 12
+        versionName "0.3.3"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
