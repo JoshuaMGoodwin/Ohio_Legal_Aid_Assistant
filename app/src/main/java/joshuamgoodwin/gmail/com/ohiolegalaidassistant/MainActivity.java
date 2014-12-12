@@ -30,6 +30,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -66,7 +67,7 @@ public class MainActivity extends ActionBarActivity {
 		
         mTitle = mDrawerTitle = getTitle();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ExpandableListView) findViewById(R.id.left_drawer);
+        mDrawerList = (ExpandableListView) findViewById(R.id.left_drawer_list);
 
 
         // set a custom shadow that overlays the main content when the drawer opens
@@ -107,6 +108,8 @@ public class MainActivity extends ActionBarActivity {
 
 				}
 			});
+			
+		TextView about = (TextView) findViewById(R.id.drawer_about);
 
 			
 			
@@ -242,9 +245,10 @@ public class MainActivity extends ActionBarActivity {
 		setFragment(fragmentName, tag);
 		
         // update selected item and title, then close the drawer
+		RelativeLayout mDrawerContent = (RelativeLayout) findViewById(R.id.left_drawer);
         mDrawerList.setItemChecked(childPosition, true);
         setTitle(listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
-        mDrawerLayout.closeDrawer(mDrawerList);
+        mDrawerLayout.closeDrawer(mDrawerContent);
 		
     }
     public void OpenCourtEditor(Bundle bundle) {

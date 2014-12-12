@@ -8,28 +8,34 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" />
 
-       <!-- <RelativeLayout
+       <RelativeLayout
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:layout_gravity="left">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/about"
-                android:layout_alignParentBottom="true"
-                android:text="About"/>-->
+            android:layout_gravity="left"
+			android:id="@+id/left_drawer">
 
             <ExpandableListView
-                android:id="@+id/left_drawer"
+                android:id="@+id/left_drawer_list"
                 android:layout_height="match_parent"
                 android:layout_width="240dp"
-                android:layout_gravity="left"
                 android:choiceMode="singleChoice"
                 android:dividerHeight="3px"
                 android:divider="@android:drawable/divider_horizontal_bright"
                 android:background="#fff3f3f3"/>
 		
-        <!--</RelativeLayout>-->
-		
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_alignParentBottom="true" >
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="About"
+					android:padding="10dp"
+					
+					android:textSize="17dip"
+					android:gravity="center_horizontal|center_vertical"/>
+       			
+			</RelativeLayout>
+	   </RelativeLayout>
 </android.support.v4.widget.DrawerLayout>

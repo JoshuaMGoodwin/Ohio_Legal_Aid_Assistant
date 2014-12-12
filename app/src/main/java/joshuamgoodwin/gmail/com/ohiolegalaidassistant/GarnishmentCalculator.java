@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.*;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,7 @@ public class GarnishmentCalculator extends Fragment {
         frequencySpinner = (Spinner) rootView.findViewById(R.id.frequency_spinner);
         submit = (ImageButton) rootView.findViewById(R.id.submit);
         clear = (ImageButton) rootView.findViewById(R.id.clear);
+		// submit.setElevation(4);
     }
 
     private void setSpinner(){

@@ -614,7 +614,7 @@
     </string-array>
 
     <string-array name="federal_rules_cp_405">
-        <item>1&lt;b>1Rule 21. Misjoinder and Nonjoinder of Parties&lt;/b></item>
+        <item>1&lt;b>Rule 21. Misjoinder and Nonjoinder of Parties&lt;/b></item>
         <item>1Misjoinder of parties is not a ground for dismissing an action. On motion or on its own, the court may at any time, on just terms, add or drop a party. The court may also sever any claim against a party.</item>
         <item>2(As amended Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
     </string-array>
@@ -1320,7 +1320,7 @@
     </string-array>
     <string-array name="federal_rules_cp_610">
         <item>1&lt;b>Rule 46. Objecting to a Ruling or Order&lt;/b></item>
-        <item>A formal exception to a ruling or order is unnecessary. When the ruling or order is requested or made, a party need only state the action that it wants the court to take or objects to, along with the grounds for the request or objection. Failing to object does not prejudice a party who had no opportunity to do so when the ruling or order was made.</item>
+        <item>1A formal exception to a ruling or order is unnecessary. When the ruling or order is requested or made, a party need only state the action that it wants the court to take or objects to, along with the grounds for the request or objection. Failing to object does not prejudice a party who had no opportunity to do so when the ruling or order was made.</item>
         <item>2(As amended Mar. 2, 1987, eff. Aug. 1, 1987; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
     </string-array>
     <string-array name="federal_rules_cp_611">
@@ -1522,7 +1522,7 @@
     <string-array name="federal_rules_cp_704">
         <item>1&lt;b>Rule 57. Declaratory Judgment&lt;/b></item>
         <item>1These rules govern the procedure for obtaining a declaratory judgment under 28 U.S.C. \u00A72201. Rules 38 and 39 govern a demand for a jury trial. The existence of another adequate remedy does not preclude a declaratory judgment that is otherwise appropriate. The court may order a speedy hearing of a declaratory-judgment action.</item>
-        <item>(As amended Dec. 29, 1948, eff. Oct. 20, 1949; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
+        <item>2(As amended Dec. 29, 1948, eff. Oct. 20, 1949; Apr. 30, 2007, eff. Dec. 1, 2007.)</item>
     </string-array>
     <string-array name="federal_rules_cp_705">
         <item>1&lt;b>Rule 58. Entering Judgment&lt;/b></item>
