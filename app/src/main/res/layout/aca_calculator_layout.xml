@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="MOTHER'S INFORMATION"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0pd"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="AGI (Line 37):"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/mother_agi"
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Excluded Foreign Income:"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:inputType="numberDecimal"
+                        android:hint="0"
+                        android:id="@+id/mother_foreign_income"/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Tax Exempt Interest (Line 8b):" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/mother_exempt_interest"
+                        android:hint="0" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Untaxed Social Security (Line20a and b):"
+                        android:layout_weight="70"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/mother_ssa"
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:text="Filing Status"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/mother_filing_status" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Claimed Dependents"
+                        android:layout_weight="70"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mother_claimed_dependents"
+                        android:layout_weight="30"/>
+                    </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="FATHER'S INFORMATION"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0pd"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="AGI (Line 37):"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/father_agi"
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Excluded Foreign Income:"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:inputType="numberDecimal"
+                        android:hint="0"
+                        android:id="@+id/father_foreign_income"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Tax Exempt Interest (Line 8b):" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/father_exempt_interest"
+                        android:hint="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Untaxed Social Security (Line20a and b):"
+                        android:layout_weight="70"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/father_ssa"
+                        android:hint="0"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Filing Status"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/father_filing_status" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Claimed Dependents"
+                        android:layout_weight="70"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/father_claimed_dependents"
+                        android:layout_weight="30"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    <ImageButton
+        android:id="@+id/submit"
+        android:layout_height="@dimen/fab_diameter"
+        android:layout_width="@dimen/fab_diameter"
+        android:background="@drawable/fab_button"
+        android:src="@drawable/ic_action_done"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:src="@drawable/ic_action_discard"
+        android:layout_height="@dimen/fab_diameter"
+        android:background="@drawable/fab_button"
+        android:layout_width="@dimen/fab_diameter"
+        android:layout_above="@id/submit"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        />
+</RelativeLayout>

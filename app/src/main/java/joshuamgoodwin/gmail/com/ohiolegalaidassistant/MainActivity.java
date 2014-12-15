@@ -41,6 +41,7 @@ import android.widget.ExpandableListView.*;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 import android.graphics.Typeface;
+import android.widget.Toast;
 
 import joshuamgoodwin.gmail.com.*;
 
@@ -109,8 +110,13 @@ public class MainActivity extends ActionBarActivity {
 				}
 			});
 			
-		TextView about = (TextView) findViewById(R.id.drawer_about);
-
+		TextView about = (TextView) findViewById(R.id.about_drawer);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectItem("About", 0, 0, "");
+            }
+        });
 			
 			
 		//	mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
@@ -168,16 +174,16 @@ public class MainActivity extends ActionBarActivity {
 
     private void selectItem(String groupName,  int groupPosition, int childPosition, String childName) {
         // update the main content by replacing fragments
-		Fragment fragmentName = new Welcome();
+        Fragment fragmentName = new Welcome();
         ActionMenuItemView search = (ActionMenuItemView) findViewById(R.id.action_search);
         //search.setVisibility(View.INVISIBLE);
-		String tag = "WELCOME";
+        String tag = "WELCOME";
         Bundle bundle = new Bundle();
-		boolean welcomeVisible = false;
-		// Welcome welcome = (Welcome)getFragmentManager().findFragmentByTag("WELCOME");
-		// if (welcome.isVisible()) welcomeVisible = true;
-		if (groupName.equals("Calculators")) {
-			if (childName.equals(getString(R.string.OWF_calculator))) {
+        boolean welcomeVisible = false;
+        // Welcome welcome = (Welcome)getFragmentManager().findFragmentByTag("WELCOME");
+        // if (welcome.isVisible()) welcomeVisible = true;
+        if (groupName.equals("Calculators")) {
+            if (childName.equals(getString(R.string.OWF_calculator))) {
                 fragmentName = new OwfCalculator();
                 tag = "OWF_CALCULATOR";
             } else if (childName.equals(getString(R.string.federal_poverty))) {
@@ -199,23 +205,23 @@ public class MainActivity extends ActionBarActivity {
                 fragmentName = new GarnishmentCalculator();
                 tag = "GARNISHMENT";
             } else {
-				fragmentName = new Welcome();
-			} 
-		} else if (groupName.equals("Court Dockets")){
-			tag = "WEBVIEW";
-			if (childName.equals(getString(R.string.edit_courts))){
-				fragmentName = new ShowCourtsFragment();
-			} else {
-					CourtSitesDAO dao = new CourtSitesDAO(this);
-					
-					String address = dao.addressFromName(childName);
-					bundle = new Bundle();
-					bundle.putString("address", address);
-					fragmentName = new WebViewFragment();
-					fragmentName.setArguments(bundle);
-				
-			}
-		} else if (groupName.equals("Rules")) {
+                fragmentName = new Welcome();
+            }
+        } else if (groupName.equals("Court Dockets")) {
+            tag = "WEBVIEW";
+            if (childName.equals(getString(R.string.edit_courts))) {
+                fragmentName = new ShowCourtsFragment();
+            } else {
+                CourtSitesDAO dao = new CourtSitesDAO(this);
+
+                String address = dao.addressFromName(childName);
+                bundle = new Bundle();
+                bundle.putString("address", address);
+                fragmentName = new WebViewFragment();
+                fragmentName.setArguments(bundle);
+
+            }
+        } else if (groupName.equals("Rules")) {
             fragmentName = new RulesFragment();
             //search.setVisibility(View.VISIBLE);
             tag = "RULES";
@@ -234,11 +240,19 @@ public class MainActivity extends ActionBarActivity {
             if (childName.equals("Ohio Rules of Juvenile Procedure")) {
                 bundle.putString("ruleSet", "ohio_rules_juvenile");
             }
-			if (childName.equals("Ohio Rules of Appellate Procedure")) {
-				bundle.putString("ruleSet", "ohio_appellate_rules");
-			}
+            if (childName.equals("Ohio Rules of Appellate Procedure")) {
+                bundle.putString("ruleSet", "ohio_appellate_rules");
+            }
             fragmentName.setArguments(bundle);
-        } else {
+        } else if (groupName.equals("About")) {
+            fragmentName = new AboutFragment();
+            tag = "ABOUT";
+        } else if (groupName.equals("Forms")) {
+            if (childName.equals("Exemption List")) {
+                //TODO open file
+            }
+        }
+        else {
 			fragmentName = new Welcome();
 		}
 		
@@ -380,11 +394,11 @@ public class MainActivity extends ActionBarActivity {
 		 CaseManagementDAO cmDAO = new CaseManagementDAO(this);
 		 cmSites = cmDAO.caseManagementNamesList();
 		 cmSites.add(getString(R.string.add_cm));
-		 cmSites.add(getString(R.string.edit_cm));
+		 cmSites.add(getString(R.string.edit_cm));*/
 		 
 		 // add data to the forms list
 		 List<String> forms = new ArrayList<String>();
-		 forms.add("Add form (under construction)");*/
+		 forms.add("Exemption List");
 
          // Adding data for rules
          List<String> rules = new ArrayList<String>();
@@ -396,8 +410,8 @@ public class MainActivity extends ActionBarActivity {
 		 listDataChild.put(listDataHeader.get(0), calculators); // add calculators
 		 //listDataChild.put(listDataHeader.get(1), cmSites);// add cm sites
 		 listDataChild.put(listDataHeader.get(1), courtDockets); // add court dockets
-		 //listDataChild.put(listDataHeader.get(3), forms); // add forms data
          listDataChild.put(listDataHeader.get(2), rules); // add rules data
+         listDataChild.put(listDataHeader.get(3), forms); // add forms data
 	 }
 	 
 

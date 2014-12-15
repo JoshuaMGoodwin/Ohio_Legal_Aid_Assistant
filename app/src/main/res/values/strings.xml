@@ -22,7 +22,8 @@
     <string name="tvDependentCare">Monthly dependent care costs:</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nCheck out the code at:\nhttps://github.com/JoshuaMGoodwin/Ohio_Legal_Aid_Assistant\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
+    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nCheck out the code at:\nhttps://github.com/JoshuaMGoodwin/Ohio_Legal_Aid_Assistant\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\n</string>
+    <string name="about">The Ohio Legal Aid Assistant is a free app designed by Joshua Goodwin to assist Ohio\'s legal services attorneys.\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
     <string name="frequency">Frequency:</string>
     <string name="household_information_heading">HOUSEHOLD INFORMATION</string>
     <string name="tvAGDisabled">Are there disabled members in AG?</string>
@@ -90,13 +91,36 @@
         <item>Calculators</item>
         <!--<item>PIKA</item>-->
         <item>Court Dockets</item>
-        <!--<item>Forms</item>-->
         <item>Rules</item>
+        <item>Forms</item>
     </string-array>
 
     <string-array name="yes_no">
         <item>Yes</item>
         <item>No</item>
+    </string-array>
+
+    <string-array name="filing_status">
+        <item>Single</item>
+        <item>Married filing jointly</item>
+        <item>Married filing separate</item>
+        <item>Head of household</item>
+    </string-array>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </string-array>
 
     <string-array name="garn_frequency">
