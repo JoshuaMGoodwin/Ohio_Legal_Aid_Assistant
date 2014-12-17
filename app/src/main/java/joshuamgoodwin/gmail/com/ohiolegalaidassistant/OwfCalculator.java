@@ -11,12 +11,10 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 import android.view.*;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.widget.ListView;
 import android.widget.AdapterView.*;
 import android.widget.*;
-import android.content.res.*;
 
 
 
@@ -396,7 +394,6 @@ public class OwfCalculator extends Fragment {
 
 
 
-    private ActionBarDrawerToggle mDrawerToggle;
 
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;

@@ -1,5 +1,9 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Locale;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -10,6 +14,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -24,6 +30,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.internal.view.menu.ActionMenuItemView;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -201,6 +208,9 @@ public class MainActivity extends ActionBarActivity {
             } else if (childName.equals(getString(R.string.APR))) {
                 fragmentName = new APRCalculator();
                 tag = "APR";
+            } else if (childName.equals(getString(R.string.ACACalculator))) {
+                fragmentName = new ACACalculator();
+                tag = "ACA";
             } else if (childName.equals("Garnishment")) {
                 fragmentName = new GarnishmentCalculator();
                 tag = "GARNISHMENT";
@@ -249,7 +259,10 @@ public class MainActivity extends ActionBarActivity {
             tag = "ABOUT";
         } else if (groupName.equals("Forms")) {
             if (childName.equals("Exemption List")) {
-                //TODO open file
+                CopyAssets("exemption.pdf");
+            }
+            if (childName.equals("Standards Help Sheet")) {
+                CopyAssets("standards_help_sheet.pdf");
             }
         }
         else {
@@ -269,6 +282,36 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment = new AddCourtWebsiteFragment();
         fragment.setArguments(bundle);
         setFragment(fragment, "COURTS");
+    }
+
+    private void CopyAssets(String fileName) {
+        AssetManager am = getAssets();
+        InputStream in = null;
+        OutputStream out = null;
+        File file =new File(getFilesDir(), fileName);
+        try {
+            in = am.open(fileName);
+            out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
+            copyFile(in, out);
+            in.close();
+            in = null;
+            out.close();
+            out = null;
+        } catch (Exception e) {
+            Log.e("tag", e.getMessage());
+        }
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setDataAndType(Uri.parse("file://" + getFilesDir() + "/" + fileName), "application/pdf");
+        startActivity(intent);
+    }
+
+    private void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while ((read = in.read(buffer)) != -1) {
+            out.write(buffer, 0, read);
+        }
     }
 	
 	private void setFragment(Fragment fragmentName, String tag){
@@ -399,6 +442,7 @@ public class MainActivity extends ActionBarActivity {
 		 // add data to the forms list
 		 List<String> forms = new ArrayList<String>();
 		 forms.add("Exemption List");
+         forms.add("Standards Help Sheet");
 
          // Adding data for rules
          List<String> rules = new ArrayList<String>();

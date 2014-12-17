@@ -49,6 +49,7 @@
     <string name="calculators">CALCULATORS</string>
     <string name="edit_courts">Edit/Add courts</string>
     <string name="garnishment">Garnishment</string>
+    <string name="ACACalculator">ACA Calculator</string>
     <!--<string name="child_support_address">"https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en"</string>-->
 
 
@@ -79,6 +80,7 @@
     <string name="child_support">Child Support Worksheet</string>
     <string name="APR">APR</string>
     <string-array name="Calculators">
+        <item>@string/ACACalculator</item>
         <item>@string/APR</item>
         <item>@string/child_support</item>
         <item>@string/federal_poverty</item>
@@ -130,6 +132,6 @@
         <item>Monthly</item>
     </string-array>
 
-    <string name="changes">&lt;b>12-10-14&lt;/b>&lt;br>* Added complete Fed. R. Civ. P.&lt;br>* Added support for older versions of OWF calculator&lt;br>* updated food stamp layout and design&lt;br>* Added simple garnishment calculator&lt;br>&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
+    <string name="changes">&lt;b>12-16-14&lt;/b>&lt;br>* Added the ability to open forms if there is a pdf reader installed&lt;br>&lt;b>12-10-14&lt;/b>&lt;br>* Added complete Fed. R. Civ. P.&lt;br>* Added support for older versions of OWF calculator&lt;br>* updated food stamp layout and design&lt;br>* Added simple garnishment calculator&lt;br>&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
 
 </resources>

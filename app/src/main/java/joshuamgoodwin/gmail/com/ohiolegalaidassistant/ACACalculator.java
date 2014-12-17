@@ -63,13 +63,16 @@ public class ACACalculator extends Fragment {
 
         filingAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        father_dependents.setAdapter(filingAdapter);
-        mother_dependents.setAdapter(filingAdapter);
+        father_filing.setAdapter(filingAdapter);
+        mother_filing.setAdapter(filingAdapter);
 
         ArrayAdapter<CharSequence> dependentAdapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.numbers, android.R.layout.simple_spinner_dropdown_item);
 
         dependentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        father_dependents.setAdapter(dependentAdapter);
+        mother_dependents.setAdapter(dependentAdapter);
 
     }
 
