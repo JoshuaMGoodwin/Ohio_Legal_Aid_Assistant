@@ -177,7 +177,11 @@ public class MainActivity extends ActionBarActivity {
         }
         getSupportActionBar().setTitle(R.string.app_name);
     }
-
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+	}
 
     private void selectItem(String groupName,  int groupPosition, int childPosition, String childName) {
         // update the main content by replacing fragments

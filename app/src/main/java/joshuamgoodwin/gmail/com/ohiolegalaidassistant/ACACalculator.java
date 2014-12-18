@@ -184,21 +184,29 @@ public class ACACalculator extends Fragment {
     }
 
     private void getVariables() {
-        motherAgi = Double.isNaN(Double.parseDouble(mother_agi.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;
-        fatherAgi = Double.isNaN(Double.parseDouble(father_agi.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
+        motherAgi = getDouble(mother_agi.getText().toString());
+        fatherAgi = getDouble(father_agi.getText().toString());
         motherFilingStatus = mother_filing.getSelectedItemPosition();
         fatherFilingStatus = father_filing.getSelectedItemPosition();
         motherClaimedDependents = mother_dependents.getSelectedItemPosition();
         fatherClaimedDependents = father_dependents.getSelectedItemPosition();
         motherNumberOFExemptions = NumberOfExemptions(motherFilingStatus, motherClaimedDependents);
         fatherNumberOfExemptions = NumberOfExemptions(fatherFilingStatus, fatherClaimedDependents);
-        motherForeign = Double.isNaN(Double.parseDouble(mother_foreign.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
-        fatherForeign = Double.isNaN(Double.parseDouble(father_foreign.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
-        motherExempt = Double.isNaN(Double.parseDouble(mother_interest.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
-        fatherExempt = Double.isNaN(Double.parseDouble(father_interest.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
-        motherSSA = Double.isNaN(Double.parseDouble(mother_ssa.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
-        fatherSSA = Double.isNaN(Double.parseDouble(father_ssa.getText().toString())) ? Double.parseDouble(mother_agi.getText().toString()) : 0;;
+        motherForeign = getDouble(mother_foreign.getText().toString());
+        fatherForeign = getDouble(father_foreign.getText().toString());
+        motherExempt = getDouble(mother_interest.getText().toString());
+        fatherExempt = getDouble(father_interest.getText().toString());
+        motherSSA = getDouble(mother_ssa.getText().toString());
+        fatherSSA = getDouble(father_ssa.getText().toString());
     }
+	
+	private double getDouble(String string) {
+		try {
+			return Double.parseDouble(string);
+		} catch (NumberFormatException e) {
+			return 0;	
+		}
+	}
 
     private void DisplayMagi() {
 
