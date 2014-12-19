@@ -290,7 +290,50 @@ public class MainActivity extends ActionBarActivity {
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 String ext = formsDao.extensionFromName(childName);
-                intent.setDataAndType(Uri.parse("file://" + fileName), "application/pdf");
+				String type;
+				if (ext.equals("doc") || ext.equals("docx")) {
+					// Word document
+					type = "application/msword";
+				} else if(ext.equals("pdf")) {
+					// PDF file
+					type = "application/pdf";
+				} else if(ext.equals("ppt") || ext.equals("pptx")) {
+					// Powerpoint file
+					type = "application/vnd.ms-powerpoint";
+				} else if(ext.equals("xls") || ext.equals("xlsx")) {
+					// Excel file
+					type = "application/vnd.ms-excel";
+				} else if(ext.equals("zip") || ext.equals("rar")) {
+					// WAV audio file
+					type = "application/x-wav";
+				} else if(ext.equals("rtf")) {
+					// RTF file
+					type = "application/rtf";
+				} else if(ext.equals("wav") || ext.equals("mp3")) {
+					// WAV audio file
+					type = "audio/x-wav";
+				} else if(ext.equals("gif")) {
+					// GIF file
+					type = "image/gif";
+				} else if(ext.equals("jpg") || ext.equals("jpeg") || ext.equals("png")) {
+					// JPG file
+					type = "image/jpeg";
+				} else if(ext.equals("txt")) {
+					// Text file
+					type = "text/plain";
+				} else if(ext.equals("3gp") || ext.equals("mpg") || ext.equals("mpeg") || ext.equals("mpe") || ext.equals("mp4") || ext.equals("avi")) {
+					// Video files
+					type = "video/*";
+				} else {
+					//if you want you can also define the intent type for any other file
+
+					//additionally use else clause below, to manage other unknown extensions
+					//in this case, Android will show all applications installed on the device
+					//so you can choose which application to use
+					type = "*/*";
+				}
+				
+                intent.setDataAndType(Uri.parse("file://" + fileName), type);
                 startActivity(intent);
             }
         }
@@ -474,7 +517,7 @@ public class MainActivity extends ActionBarActivity {
          forms = formsDao.formNamesList();
          forms.add("Exemption List");
          forms.add("Standards Help Sheet");
-         //forms.add("Edit/Add Forms");
+         forms.add("Edit/Add Forms");
 
          // Adding data for rules
          List<String> rules = new ArrayList<String>();
