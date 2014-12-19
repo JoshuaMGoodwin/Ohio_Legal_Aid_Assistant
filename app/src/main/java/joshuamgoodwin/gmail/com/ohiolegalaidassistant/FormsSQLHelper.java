@@ -16,12 +16,13 @@ public class FormsSQLHelper extends SQLiteOpenHelper {
 	 *	_id == autoincrement key
 	 *	form_name == the user's name for the form as text
 	 *	file_name == the name of the file in the system
+	 *  extension == file extension
 	 */
 
 	@Override
 	public void onCreate(SQLiteDatabase database) {
 		//create the table using SQL
-		database.execSQL("CREATE TABLE forms (_id INTEGER PRIMARY KEY AUTOINCREMENT, form_name TEXT NOT NULL, file_name TEXT NOT NULL);");
+		database.execSQL("CREATE TABLE forms (_id INTEGER PRIMARY KEY AUTOINCREMENT, form_name TEXT NOT NULL, file_name TEXT NOT NULL, extension TEXT NOT NULL);");
 	}
 
 	@Override

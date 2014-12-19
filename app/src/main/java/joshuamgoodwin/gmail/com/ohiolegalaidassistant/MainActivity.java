@@ -264,9 +264,34 @@ public class MainActivity extends ActionBarActivity {
         } else if (groupName.equals("Forms")) {
             if (childName.equals("Exemption List")) {
                 CopyAssets("exemption.pdf");
-            }
-            if (childName.equals("Standards Help Sheet")) {
+            } else if (childName.equals("Standards Help Sheet")) {
                 CopyAssets("standards_help_sheet.pdf");
+            } else if (childName.equals("Edit/Add Forms")) {
+                fragmentName = new AddNewForm();
+                tag = "ADD FORMS";
+            } else {
+                FormsDAO formsDao = new FormsDAO(this);
+                String fileName = formsDao.addressFromName(childName);
+                File file = new File(fileName);
+                AssetManager am = getAssets();
+                InputStream in = null;
+                OutputStream out = null;
+                try {
+                    in = am.open(fileName);
+                    out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
+                    copyFile(in, out);
+                    in.close();
+                    in = null;
+                    out.close();
+                    out = null;
+                } catch (Exception e) {
+                    Log.e("tag", e.getMessage());
+                }
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                String ext = formsDao.extensionFromName(childName);
+                intent.setDataAndType(Uri.parse("file://" + fileName), "application/pdf");
+                startActivity(intent);
             }
         }
         else {
@@ -445,8 +470,11 @@ public class MainActivity extends ActionBarActivity {
 		 
 		 // add data to the forms list
 		 List<String> forms = new ArrayList<String>();
-		 forms.add("Exemption List");
+		 FormsDAO formsDao = new FormsDAO(this);
+         forms = formsDao.formNamesList();
+         forms.add("Exemption List");
          forms.add("Standards Help Sheet");
+         //forms.add("Edit/Add Forms");
 
          // Adding data for rules
          List<String> rules = new ArrayList<String>();

@@ -5,6 +5,7 @@ public class Forms {
 	private int id;
 	private String formName;
 	private String fileName;
+    private String extension;
 
 	public int getId() {
 		return id;
@@ -18,6 +19,8 @@ public class Forms {
 		return fileName;
 	}
 
+    public String getExtension() {return extension;}
+
 	public void setId(int i) {
 		id = i;
 	}
@@ -29,4 +32,9 @@ public class Forms {
 	public void setFileName(String name) {
 		fileName = name;
 	}
+
+    public void setExtension(String ext) {
+        extension = ext;
+    }
+
 }

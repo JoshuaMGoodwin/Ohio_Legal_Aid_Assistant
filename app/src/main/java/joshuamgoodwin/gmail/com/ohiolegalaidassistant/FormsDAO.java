@@ -38,11 +38,12 @@ public class FormsDAO {
     }
 
 	// method for adding new form
-	public void addNewForm(String name, String address) {
+	public void addNewForm(String name, String address, String ext) {
 
 		ContentValues contentValues = new ContentValues();
 		contentValues.put("form_name", name);
 		contentValues.put("file_name", address);
+        contentValues.put("extension", ext);
 		database.insert("forms", null, contentValues);
 
 	}
@@ -141,4 +142,13 @@ public class FormsDAO {
 		cursor.close();
 		return result;
 	}
+
+    public String extensionFromName(String name) {
+        String[] tableColumns = new String[] {"form_name", "extension"};
+        Cursor cursor = database.query("forms", tableColumns, "form_name = ?", new String[] {name}, null, null, null);
+        cursor.moveToFirst();
+        String result = cursor.getString(1);
+        cursor.close();
+        return result;
+    }
 }
