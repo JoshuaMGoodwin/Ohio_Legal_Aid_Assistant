@@ -17,16 +17,20 @@ import joshuamgoodwin.gmail.com.ohiolegalaidassistant.FormsDAO;
 
 public class AddNewForm extends Fragment {
 
+    private boolean newForm;
+
 	private Button add_button;
 
 	private EditText new_form_name;
 
     private ImageButton add, clear;
 
+    private String id;
 	private static final int PICKFILE_RESULT_CODE = 100;
 
 	private String filePath;
 	private String fileName;
+    private String extension;
 
 	private TextView file_name_text;
 
@@ -44,6 +48,14 @@ public class AddNewForm extends Fragment {
 		file_name_text = (TextView) v.findViewById(R.id.file_name_text);
         add = (ImageButton) v.findViewById(R.id.submit);
         clear = (ImageButton) v.findViewById(R.id.clear);
+        Bundle bundle = getArguments();
+        newForm = bundle.getBoolean("newForm");
+        id = bundle.getString("id");
+        filePath = bundle.getString("path");
+        int extensionPosition = filePath.lastIndexOf("/");
+        String fileName = filePath.substring(extensionPosition + 1);
+        file_name_text.setText(fileName);
+        new_form_name.setText(bundle.getString("name"));
 	}
 
 	private void InitializeGetFileButton() {
@@ -84,12 +96,20 @@ public class AddNewForm extends Fragment {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FormsDAO dao = new FormsDAO(getActivity());
-                int extensionPosition = filePath.lastIndexOf(".");
-                String ext = filePath.substring(extensionPosition + 1);
-                file_name_text.setText(ext);
-                dao.addNewForm(new_form_name.getText().toString(), filePath, ext);
-                ((MainActivity) getActivity()).setDrawer();
+            FormsDAO dao = new FormsDAO(getActivity());
+            int extensionPosition = filePath.lastIndexOf(".");
+            String ext = filePath.substring(extensionPosition + 1);
+            String name = new_form_name.getText().toString();
+            String result;
+             if (newForm) {
+                 dao.addNewForm(name, filePath, ext);
+                 result = name + " was successfully added!";
+             } else {
+                 dao.editForm(name, id, filePath, ext);
+                 result = "Your change was successfully made!";
+             }
+             ((MainActivity) getActivity()).setDrawer();
+             Toast.makeText(getActivity(), result, Toast.LENGTH_LONG).show();
             }
         });
     }

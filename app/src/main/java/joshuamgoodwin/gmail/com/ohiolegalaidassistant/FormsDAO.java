@@ -29,11 +29,12 @@ public class FormsDAO {
 
 	}
 
-    public void editForm(String name, String address, String id) {
+    public void editForm(String name, String id, String address, String ext) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("form_name", name);
         contentValues.put("file_name", address);
         contentValues.put("_id", id);
+        contentValues.put("extension", ext);
         database.update("forms", contentValues,"_id = ?", new String[] {id});
     }
 
@@ -125,13 +126,14 @@ public class FormsDAO {
     }
 
     public String[] getForm(int id) {
-        String[] tableColumns = new String[] {"_id", "form_name", "file_name"};
+        String[] tableColumns = new String[] {"_id", "form_name", "file_name", "extension"};
         Cursor cursor = database.query("forms", tableColumns, "_id = ?", new String[] {Integer.toString(id)}, null, null, null);
         cursor.moveToFirst();
         String number = cursor.getString(0);
         String name = cursor.getString(1);
-        String address = cursor.getString(2);
-        return new String[] {number, name, address};
+        String fileName = cursor.getString(2);
+        String extension = cursor.getString(3);
+        return new String[] {number, name, fileName, extension};
     }
 
 	public String addressFromName(String name) {

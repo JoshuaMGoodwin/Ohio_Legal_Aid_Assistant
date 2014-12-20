@@ -158,7 +158,7 @@ public class MainActivity extends ActionBarActivity {
         }
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-        boolean test = prefs.getBoolean("first", true);
+        boolean test = prefs.getBoolean("second", true);
 
         if (test) {
 
@@ -172,7 +172,7 @@ public class MainActivity extends ActionBarActivity {
 
             // make sure it only runs first time
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("first", false);
+            editor.putBoolean("second", false);
             editor.commit();
         }
         getSupportActionBar().setTitle(R.string.app_name);
@@ -267,7 +267,7 @@ public class MainActivity extends ActionBarActivity {
             } else if (childName.equals("Standards Help Sheet")) {
                 CopyAssets("standards_help_sheet.pdf");
             } else if (childName.equals("Edit/Add Forms")) {
-                fragmentName = new AddNewForm();
+                fragmentName = new ShowFormsFragment();
                 tag = "ADD FORMS";
             } else {
                 FormsDAO formsDao = new FormsDAO(this);
@@ -346,7 +346,11 @@ public class MainActivity extends ActionBarActivity {
         // update selected item and title, then close the drawer
 		RelativeLayout mDrawerContent = (RelativeLayout) findViewById(R.id.left_drawer);
         mDrawerList.setItemChecked(childPosition, true);
-        setTitle(listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
+        if (groupName.equals("About")) {
+            setTitle("About");
+        } else {
+            setTitle(listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
+        }
         mDrawerLayout.closeDrawer(mDrawerContent);
 		
     }
@@ -354,6 +358,12 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment = new AddCourtWebsiteFragment();
         fragment.setArguments(bundle);
         setFragment(fragment, "COURTS");
+    }
+
+    public void OpenFormEditor(Bundle bundle) {
+        Fragment fragment = new AddNewForm();
+        fragment.setArguments(bundle);
+        setFragment(fragment, "FORMS");
     }
 
     private void CopyAssets(String fileName) {

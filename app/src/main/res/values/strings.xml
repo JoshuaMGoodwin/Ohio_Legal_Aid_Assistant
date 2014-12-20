@@ -132,6 +132,6 @@
         <item>Monthly</item>
     </string-array>
 
-    <string name="changes">&lt;b>12-16-14&lt;/b>&lt;br>* Added the ability to open forms if there is a pdf reader installed&lt;br>&lt;b>12-10-14&lt;/b>&lt;br>* Added complete Fed. R. Civ. P.&lt;br>* Added support for older versions of OWF calculator&lt;br>* updated food stamp layout and design&lt;br>* Added simple garnishment calculator&lt;br>&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
+    <string name="changes">&lt;b>12-19-144&lt;/b>&lt;br>* Added ability for user to point to own forms&lt;br>&lt;b>12-16-14&lt;/b>&lt;br>* Added the ability to open forms if there is a pdf reader installed&lt;br>&lt;b>12-10-14&lt;/b>&lt;br>* Added complete Fed. R. Civ. P.&lt;br>* Added support for older versions of OWF calculator&lt;br>* updated food stamp layout and design&lt;br>* Added simple garnishment calculator&lt;br>&lt;b>12-4-14   Version0.3.0&lt;/b>&lt;br>* Search function works in the rules&lt;br>&lt;b>11-25-14   Version 0.1.4&lt;/b>&lt;br>* Added changelog at start&lt;br>* Began incorporating material design elements&lt;br>* On rules, swiping left and right increments rule number by 1</string>
 
 </resources>
