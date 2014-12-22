@@ -59,7 +59,7 @@ public class ShowNegotiationsFragment extends ListFragment {
             clientName = "Add new case:";
         } else {
             Negotiations negotiations = (Negotiations) getListAdapter().getItem(position);
-            clientName = dao.showAddress(courtSites.getId());
+            clientName = dao.showClientName(negotiations.getId());
         }
         positionSelected = position;
 
