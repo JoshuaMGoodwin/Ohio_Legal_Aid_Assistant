@@ -336,6 +336,11 @@ public class MainActivity extends ActionBarActivity {
                 intent.setDataAndType(Uri.parse("file://" + fileName), type);
                 startActivity(intent);
             }
+        } else if (groupName.equals("Negotiations")) {
+            if (childName.equals(getString(R.string.add_negotiations))) {
+                fragmentName = new ShowNegotiationsFragment();
+                tag = "Negotiations";
+            }
         }
         else {
 			fragmentName = new Welcome();
@@ -364,6 +369,11 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment = new AddNewForm();
         fragment.setArguments(bundle);
         setFragment(fragment, "FORMS");
+    }
+
+    public void AddNegotiation() {
+        Fragment fragment = new AddNegotiations();
+        setFragment(fragment, "Negotiations");
     }
 
     private void CopyAssets(String fileName) {
@@ -536,11 +546,17 @@ public class MainActivity extends ActionBarActivity {
              rules.add(rulesList[i]);
          }
 
+         // adding negotiations data
+         List<String> negotiations = new ArrayList<String>();
+         negotiations.add(getString(R.string.add_negotiations));
+
+
 		 listDataChild.put(listDataHeader.get(0), calculators); // add calculators
 		 //listDataChild.put(listDataHeader.get(1), cmSites);// add cm sites
 		 listDataChild.put(listDataHeader.get(1), courtDockets); // add court dockets
          listDataChild.put(listDataHeader.get(2), rules); // add rules data
          listDataChild.put(listDataHeader.get(3), forms); // add forms data
+         listDataChild.put(listDataHeader.get(4), negotiations);
 	 }
 	 
 

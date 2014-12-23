@@ -50,6 +50,7 @@
     <string name="edit_courts">Edit/Add courts</string>
     <string name="garnishment">Garnishment</string>
     <string name="ACACalculator">ACA Calculator</string>
+    <string name="add_negotiations">Add/Edit Negotiations</string>
     <!--<string name="child_support_address">"https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en"</string>-->
 
 
@@ -95,6 +96,7 @@
         <item>Court Dockets</item>
         <item>Rules</item>
         <item>Forms</item>
+        <item>Negotiations</item>
     </string-array>
 
     <string-array name="yes_no">

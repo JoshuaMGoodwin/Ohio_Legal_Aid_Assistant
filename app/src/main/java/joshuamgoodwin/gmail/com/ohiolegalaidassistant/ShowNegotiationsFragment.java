@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class ShowNegotiationsFragment extends ListFragment {
     }
 
     private void initializeEditButton(View v) {
-        ImageButton button = (ImageButton) v.findViewById(R.id.submit);
+        ImageButton button = (ImageButton) v.findViewById(R.id.edit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,17 +57,18 @@ public class ShowNegotiationsFragment extends ListFragment {
 
         v.setSelected(true);
         if (position == 0) {
-            clientName = "Add new case:";
+            clientName = getString(R.string.add_negotiations);
+            ((MainActivity)getActivity()).AddNegotiation();
         } else {
             Negotiations negotiations = (Negotiations) getListAdapter().getItem(position);
-            clientName = dao.showClientName(negotiations.getId());
+            clientName = negotiations.getClientName();
         }
-        positionSelected = position;
+        Toast.makeText(getActivity(), "Client name: " + clientName, Toast.LENGTH_LONG).show();
 
     }
 
     private void initializeDeleteButton (View v) {
-        ImageButton button = (ImageButton) v.findViewById(R.id.clear);
+        ImageButton button = (ImageButton) v.findViewById(R.id.delete);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
