@@ -23,7 +23,7 @@ public class ACACalculator extends Fragment {
     private static final int FPL_INCREMENT = 4060;
     private static final int PERSONAL_EXEMPTION = 3950;
     private static final int[] STANDARD_DEDUCTION = {6200, 12400, 6200, 9100};
-    private static final int[] SINGLE_AMOUNTS = {9075, 36900, 89350, 186350, 05100, 406750, 9999999};
+    private static final int[] SINGLE_AMOUNTS = {9075, 36900, 89350, 186350, 405100, 406750, 9999999};
     private static final int[] MARRIED_SEP = {9075, 36900, 74425, 113425, 202550, 228800, 9999999};
     private static final int[] MARRIED_JOINT = {18150, 73800, 148850, 226850, 405100, 457600, 9999999};
     private static final int[] HOH = {12950, 49400, 127550, 206600, 405100, 432200, 9999999};
@@ -66,7 +66,6 @@ public class ACACalculator extends Fragment {
         View rootView = inflater.inflate(R.layout.aca_calculator_layout, container, false);
         getViews(rootView);
         populateSpinners();
-        //TODO: initialize buttons
         InitializeSubmitButton(rootView);
         InitializeClearButton(rootView);
         return rootView;

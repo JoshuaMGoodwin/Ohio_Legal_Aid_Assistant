@@ -44,12 +44,12 @@ public class NegotiationsSQLHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase database) {
         //create the table using SQL
-        database.execSQL("CREATE TABLE negotiations (_id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT NO NULL, client_name TEXT NOT NULL, op_name TEXT NOT NULL, " +
-                "offer_number TEXT NOT NULL, offer_date TEXT NOT NULL, offeror TEXT NOT NULL, custody TEXT NOT NULL," +
-                " visitation TEXT NOT NULL, child_support TEXT NOT NULL, spousal_support TEXT NOT NULL, personal_property_division TEXT NOT NULL, " +
-                "real_property_division TEXT NOT NULL, pensions TEXT NOT NULL, court_costs TEXT NOT NULL, attorney_fees TEXT NOT NULL, " +
-                "cash_1 TEXT NOT NULL, cash_2 TEXT NOT NULL, cash_3 TEXT NOT NULL, cash_4 TEXT NOT NULL, cash_5 TEXT NOT NULL, " +
-                "other_1 TEXT NOT NULL, other_2 TEXT NOT NULL, other_3 TEXT NOT NULL, other_4 TEXT NOT NULL, other_5 TEXT NOT NULL, extension TEXT NOT NULL);");
+        database.execSQL("CREATE TABLE negotiations (_id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT, client_name TEXT, op_name TEXT, " +
+                "offer_number TEXT, offer_date TEXT, offeror TEXT, custody TEXT," +
+                " visitation TEXT, child_support TEXT, spousal_support TEXT, personal_property_division TEXT, " +
+                "real_property_division TEXT, pensions TEXT, court_costs TEXT, attorney_fees TEXT, " +
+                "cash_1 TEXT, cash_2 TEXT, cash_3 TEXT, cash_4 TEXT, cash_5 TEXT, " +
+                "other_1 TEXT, other_2 TEXT, other_3 TEXT, other_4 TEXT, other_5 TEXT, extension TEXT);");
     }
 
     @Override

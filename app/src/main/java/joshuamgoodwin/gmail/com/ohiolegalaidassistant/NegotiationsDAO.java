@@ -23,6 +23,29 @@ public class NegotiationsDAO {
 
     }
 
+    public void deleteNegotiationForClient(String name) {
+
+        // deletes every negotiation for every client
+        String[] args = {name};
+        database.delete("negotiations", "client_name = ?", args);
+
+    }
+
+    public List<String> getNegotiationsForDrawer() {
+        String[] column = {"client_name"};
+        List<String> list = new ArrayList<String>();
+        Cursor cursor = database.query(true, "negotiations", column, null, null, column[0], null, column[0] + " COLLATE NOCASE", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            String name = cursor.getString(0);
+            list.add(name);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return list;
+    }
+
+
     public List<Negotiations> getNegotiationsForEdit() {
 
         List<Negotiations> list = new ArrayList<Negotiations>();
@@ -72,19 +95,20 @@ public class NegotiationsDAO {
         contentValues.put("personal_property_division", list[9]);
         contentValues.put("real_property_division", list[10]);
         contentValues.put("pensions", list[8]);
-        contentValues.put("cash1", list[11]);
+        contentValues.put("cash_1", list[11]);
         contentValues.put("court_costs", list[12]);
         contentValues.put("attorney_fees", list[13]);
-        contentValues.put("cash2", "");
-        contentValues.put("cash3", "");
-        contentValues.put("cash4", "");
-        contentValues.put("cash5", "");
-        contentValues.put("other1", "");
-        contentValues.put("other2", "");
-        contentValues.put("other3", "");
-        contentValues.put("other4", "");
-        contentValues.put("other5", "");
-        database.insert("negotiations", null,contentValues);
+        contentValues.put("cash_2", " ");
+        contentValues.put("cash_3", " ");
+        contentValues.put("cash_4", " ");
+        contentValues.put("cash_5", " ");
+        contentValues.put("other_1", " ");
+        contentValues.put("other_2", " ");
+        contentValues.put("other_3", " ");
+        contentValues.put("other_4", " ");
+        contentValues.put("other_5", " ");
+        contentValues.put("extension", " ");
+        database.insert("negotiations", null, contentValues);
     }
 
 }

@@ -47,7 +47,14 @@ public class ShowNegotiationsFragment extends ListFragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO
+                if (positionSelected == 0) {
+                    clientName = getString(R.string.add_negotiations);
+                    ((MainActivity)getActivity()).AddNegotiation();
+                } else {
+                    Negotiations negotiations = (Negotiations) getListAdapter().getItem(positionSelected);
+                    clientName = negotiations.getClientName();
+                }
+                Toast.makeText(getActivity(), "Client name: " + clientName, Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -56,15 +63,8 @@ public class ShowNegotiationsFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
 
         v.setSelected(true);
-        if (position == 0) {
-            clientName = getString(R.string.add_negotiations);
-            ((MainActivity)getActivity()).AddNegotiation();
-        } else {
-            Negotiations negotiations = (Negotiations) getListAdapter().getItem(position);
-            clientName = negotiations.getClientName();
-        }
-        Toast.makeText(getActivity(), "Client name: " + clientName, Toast.LENGTH_LONG).show();
 
+        positionSelected = position;
     }
 
     private void initializeDeleteButton (View v) {
@@ -72,7 +72,13 @@ public class ShowNegotiationsFragment extends ListFragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO
+                Negotiations negotiations = (Negotiations) getListAdapter().getItem(positionSelected);
+                clientName = negotiations.getClientName();
+                dao.deleteNegotiationForClient(clientName);
+                Toast.makeText(getActivity(), "Deleted", Toast.LENGTH_LONG).show();
+                ((MainActivity) getActivity()).setDrawer();
+                setListAdapter(new NegotiationsListAdapter(getActivity(), dao.getNegotiationsForEdit()));
+
             }
         });
     }

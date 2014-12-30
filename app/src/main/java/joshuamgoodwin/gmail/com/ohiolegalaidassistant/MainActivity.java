@@ -154,8 +154,9 @@ public class MainActivity extends ActionBarActivity {
 
         if (savedInstanceState == null) {
             selectItem("Welcome", 0, 0, "");
-
-        }
+        }/* } else {
+            setTitle(savedInstanceState.getCharSequence("mTitle"));
+        }*/
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
         boolean test = prefs.getBoolean("second", true);
@@ -548,6 +549,8 @@ public class MainActivity extends ActionBarActivity {
 
          // adding negotiations data
          List<String> negotiations = new ArrayList<String>();
+         NegotiationsDAO dao3 = new NegotiationsDAO(this);
+         negotiations = dao3.getNegotiationsForDrawer();
          negotiations.add(getString(R.string.add_negotiations));
 
 
@@ -558,6 +561,12 @@ public class MainActivity extends ActionBarActivity {
          listDataChild.put(listDataHeader.get(3), forms); // add forms data
          listDataChild.put(listDataHeader.get(4), negotiations);
 	 }
+
+  /*  @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putCharSequence("mTitle", mTitle);
+    }*/
+
 	 
 
 	public class ExpandableListAdapter extends BaseExpandableListAdapter {

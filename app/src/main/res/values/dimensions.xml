@@ -2,6 +2,22 @@
 	<resources>
 		<dimen name="fab_diameter">40dp</dimen>
 		<dimen name="fab_margin">16dp</dimen>
-        <dimen name="elevation_low">1dp</dimen>
-        <dimen name="elevation_high">4dp</dimen>
+        <dimen name="elevation_low">4dp</dimen>
+        <dimen name="elevation_high">8dp</dimen>
+        <dimen name="fab_diameter_large">54dp</dimen>
+        <dimen name="large_button_padding">11dp</dimen>
+        <dimen name="small_button_padding">7dp</dimen>
+        <dimen name="fab_size_normal">56dp</dimen>
+        <dimen name="fab_size_mini">40dp</dimen>
+        <dimen name="fab_icon_size">24dp</dimen>
+        <dimen name="fab_plus_icon_size">14dp</dimen>
+        <dimen name="fab_plus_icon_stroke">2dp</dimen>
+        <dimen name="fab_shadow_offset">3dp</dimen>
+        <dimen name="fab_shadow_radius">9dp</dimen>
+        <dimen name="fab_stroke_width">0.5dp</dimen>
+        <dimen name="fab_actions_spacing">16dp</dimen>
+        <dimen name="fab_labels_margin">8dp</dimen>
+        <dimen name="padding_right_mini">8dp</dimen>
+        <dimen name="padding_bottom_mini">8dp</dimen>
+        <dimen name="padding_top_mini">4dp</dimen>
 	</resources>

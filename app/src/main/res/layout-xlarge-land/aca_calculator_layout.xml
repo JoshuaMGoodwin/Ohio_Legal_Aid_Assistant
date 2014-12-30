@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_toStartOf="@+id/clear">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="MOTHER'S INFORMATION"
                 android:paddingLeft="10dp"
@@ -131,6 +142,12 @@
                         android:layout_weight="30"/>
                 </LinearLayout>
             </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -249,11 +266,16 @@
                         android:layout_weight="30"/>
                 </LinearLayout>
             </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:id="@+id/results_layout">
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/results_layout"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal">
                 <TextView
                     android:text="Results"
                     android:layout_height="wrap_content"
@@ -454,19 +476,17 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
+    <ImageButton
         android:id="@+id/submit"
-        fab:fab_icon="@drawable/ic_action_done"
-        android:layout_alignParentBottom="true" />
+        style="@style/large_fab"
+        android:src="@drawable/ic_action_done"
+        android:layout_alignParentBottom="true"
+        />
 
-
-
-    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
+    <ImageButton
         android:id="@+id/clear"
-        fab:fab_icon="@drawable/ic_action_discard"
-        android:layout_above="@id/submit" />
-
+        style="@style/large_fab"
+        android:src="@drawable/ic_action_discard"
+        android:layout_above="@id/submit"
+        />
 </RelativeLayout>

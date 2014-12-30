@@ -262,23 +262,13 @@
 
     <ImageButton
         android:id="@+id/submit"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_width="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
         android:src="@drawable/ic_action_done"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        style="@style/small_fab" />
     <ImageButton
         android:id="@+id/clear"
         android:src="@drawable/ic_action_discard"
-        android:layout_height="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:layout_width="@dimen/fab_diameter"
         android:layout_above="@id/submit"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin" />
+        style="@style/small_fab" />
 
 </RelativeLayout>

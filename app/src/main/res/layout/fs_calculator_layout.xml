@@ -1,61 +1,121 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
 
-    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+        android:padding="10dp">
 
         <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
-            <TextView android:text="@string/household_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+            <TextView android:text="@string/household_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
 
-            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-
-                <TextView android:text="@string/tvAGSize" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
-                <EditText android:id="@+id/etAGSize" android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="number"/>
+                <TextView
+                    android:text="@string/tvAGSize"
+                    style="@style/seventy"/>
+                <EditText
+                    android:id="@+id/etAGSize"
+                    android:inputType="number"
+                    style="@style/thirty"/>
 
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
 
-                <TextView android:text="@string/tvAGaged" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
-                <Spinner android:id="@+id/AGagedSpinner" android:layout_height="wrap_content" android:layout_width="wrap_content" />
+                <TextView android:text="@string/tvAGaged"
+                    style="@style/seventy"/>
+                <Spinner android:id="@+id/AGagedSpinner"
+                    style="@style/thirty"/>
 
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:text="@string/tvAGSSI" android:layout_height="wrap_content" android:layout_width="wrap_content" />
-                <Spinner android:id="@+id/AGSSISpinner" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+                <TextView android:text="@string/tvAGSSI"
+                    style="@style/seventy"/>
+                <Spinner android:id="@+id/AGSSISpinner" style="@style/thirty"/>
             </LinearLayout>
+                </LinearLayout>
 
-            <TextView android:text="@string/income_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"/>
-
+            <TextView android:text="@string/income_information_heading" android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_border"
+                android:padding="10dp">
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvEarnedIncome"/>
-                <EditText android:id="@+id/etEarnedIncome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
-            </LinearLayout>
-
-            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frequency"/>
-                <Spinner android:id="@+id/frequencyEarnedSpinner" android:layout_height="wrap_content" android:layout_width="wrap_content" />
-            </LinearLayout>
-
-            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvEarnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvHoursPerWeek"/>
-                <EditText android:id="@+id/etEarnedHoursPerWeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visible="false" android:inputType="numberDecimal"/>
-            </LinearLayout>
-
-            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvUnearnedIncome"/>
-                <EditText android:id="@+id/etUnearnedIncome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView
+                    style="@style/seventy"
+                    android:text="@string/tvEarnedIncome"/>
+                <EditText
+                    android:id="@+id/etEarnedIncome"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frequency"/>
-                <Spinner android:id="@+id/frequencyUnearnedSpinner" android:layout_height="wrap_content" android:layout_width="wrap_content" />
+                <TextView
+                    style="@style/seventy"
+                    android:text="@string/frequency"/>
+                <Spinner
+                    android:id="@+id/frequencyEarnedSpinner"
+                    style="@style/thirty"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvUnearnedHoursPerWeek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvHoursPerWeek"/>
-                <EditText android:id="@+id/etUnearnedHoursPerWeek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visible="false" android:inputType="numberDecimal"/>
+                <TextView
+                    android:id="@+id/tvEarnedHoursPerWeek"
+                    style="@style/seventy"
+                    android:visible="false"
+                    android:text="@string/tvHoursPerWeek"/>
+                <EditText
+                    android:id="@+id/etEarnedHoursPerWeek"
+                    style="@style/thirty"
+                    android:visible="false"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/seventy"
+                    android:text="@string/tvUnearnedIncome"/>
+                <EditText
+                    android:id="@+id/etUnearnedIncome"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/seventy"
+                    android:text="@string/frequency"/>
+                <Spinner
+                    android:id="@+id/frequencyUnearnedSpinner"
+                    style="@style/thirty" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvUnearnedHoursPerWeek"
+                    style="@style/seventy" android:visible="false" android:text="@string/tvHoursPerWeek"/>
+                <EditText android:id="@+id/etUnearnedHoursPerWeek" style="@style/thirty"
+                    android:visible="false" android:inputType="numberDecimal"/>
+            </LinearLayout>
+            </LinearLayout>
             <TextView android:text="@string/headingMonthlyExpenses" android:layout_height="wrap_content" android:layout_width="match_parent"/>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
@@ -100,27 +160,17 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/mini_fab"
         android:id="@+id/fsSubmit"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_width="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:src="@drawable/ic_action_done"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
+        fab:fab_icon="@drawable/ic_action_done"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         />
 
-    <ImageButton
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/mini_fab"
         android:id="@+id/fsReset"
-        android:src="@drawable/ic_action_discard"
-        android:layout_height="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:layout_width="@dimen/fab_diameter"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_alignParentRight="true"
+        fab:fab_icon="@drawable/ic_action_discard"
         android:layout_above="@id/fsSubmit"
         />
 </RelativeLayout>

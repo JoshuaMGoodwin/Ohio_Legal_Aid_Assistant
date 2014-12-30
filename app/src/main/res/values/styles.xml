@@ -1,4 +1,5 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res/joshuamgoodwin.gmail.com.ohiolegalaidassistant">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -6,7 +7,57 @@
         <item name="colorPrimaryDark">@color/dark_blue</item>
         <item name="colorAccent">@color/accent_blue</item>
         <item name="actionMenuTextColor">#ffffffff</item>
+        <item name="android:textColor">#000000</item>
+
         <!-- Customize your theme here. -->
     </style>
+    <style name="textview_theme">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="seventy">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">70</item>
+    </style>
+    <style name="thirty">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">30</item>
+    </style>
+    <style name="large_fab">
+        <item name="android:padding">@dimen/large_button_padding</item>
+        <item name="android:layout_marginBottom">@dimen/fab_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/fab_button</item>
+        <item name="android:layout_width">@dimen/fab_diameter_large</item>
+        <item name="android:layout_height">@dimen/fab_diameter_large</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="small_fab">
+        <item name="android:padding">@dimen/small_button_padding</item>
+        <item name="android:layout_marginBottom">@dimen/fab_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/fab_button</item>
+        <item name="android:layout_width">@dimen/fab_diameter</item>
+        <item name="android:layout_height">@dimen/fab_diameter</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="mini_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+    </style>
+
 
 </resources>
