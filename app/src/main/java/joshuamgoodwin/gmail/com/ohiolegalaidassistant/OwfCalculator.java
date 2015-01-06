@@ -21,7 +21,7 @@ import android.widget.*;
 public class OwfCalculator extends Fragment {
 
     private static final int[][] OWF_PAYMENT_STANDARD = {
-            //{282,386,473,582,682,759,848,940,1034,1127,1218,1312}, // January 2015
+            {282,386,473,582,682,759,848,940,1034,1127,1218,1312}, // January 2015
             {277,380,465,572,671,746,834,924,1017,1108,1198,1290} // July 2014
     };
 
@@ -81,6 +81,7 @@ public class OwfCalculator extends Fragment {
         etGrossEarnedIncome.setText("");
         etUnearnedIncome.setText("");
         spinner.setSelection(4);
+        versionSpinner.setSelection(0);
     }
 
     private void getInstanceState(Bundle savedInstanceState) {
@@ -176,7 +177,7 @@ public class OwfCalculator extends Fragment {
     }
 
     private void submitButton(View rootView) {
-        ImageButton button = (ImageButton) rootView.findViewById(R.id.OWFSubmit);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.submit);
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -209,7 +210,7 @@ public class OwfCalculator extends Fragment {
     }
 
     private void resetButton(View rootView) {
-        ImageButton button = (ImageButton) rootView.findViewById(R.id.OWFClear);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.clear);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 resetAll();

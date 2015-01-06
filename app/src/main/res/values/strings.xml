@@ -22,11 +22,13 @@
     <string name="tvDependentCare">Monthly dependent care costs:</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!\n\nCreated by Joshua M. Goodwin\n\nCopyright 2014\n\nCheck out the code at:\nhttps://github.com/JoshuaMGoodwin/Ohio_Legal_Aid_Assistant\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com\n\n</string>
+    <string name="welcome">Welcome to the Ohio Legal Aid Assistant!</string>
+    <string name="welcome_text">Created by Joshua M. Goodwin\n\nCopyright 2014\n\nCheck out the code at:\nhttps://github.com/JoshuaMGoodwin/Ohio_Legal_Aid_Assistant\n\nPlease send comments, suggestions, etc. to joshua.m.goodwin@gmail.com</string>
     <string name="about">The Ohio Legal Aid Assistant is a free app designed by Joshua Goodwin to assist Ohio\'s legal services attorneys.\n\nJoshua Goodwin is an attorney licensed to practice in the State of Ohio. However, this app is only meant to provide educational information. It is not meant to solicit business and is definitely not meant to give legal advice. All statements and opinions are Joshua Goodwin\'s alone and are not meant to be and should not be taken as the opinions of his employer. Different jurisdictions have different laws, and the information contained in this app might not apply to everyone that uses it. You should neither take nor refrain from taking any legal action based upon the information contained in this app without first seeking professional counsel. Your use of this app does not create an attorney-client relationship between you and Joshua Goodwin or his employer. </string>
     <string name="frequency">Frequency:</string>
     <string name="household_information_heading">HOUSEHOLD INFORMATION</string>
     <string name="tvAGDisabled">Are there disabled members in AG?</string>
+    <string name="results">RESULTS</string>
     <string name="tvAGSSI">Are there SSI, DFA, or PRC recipients in AG (categorical eligibility)? </string>
     <string name="income_information_heading">INCOME INFORMATION</string>
     <string name="tvEarnedIncome">Gross earned income of AG</string>
@@ -72,7 +74,7 @@
         <item>Ohio Rules of Juvenile Procedure</item>
     </string-array>
     <string-array name="owf_versions">
-        <!--<item>Current (1/1/15)</item>-->
+        <item>Current (1/1/15)</item>
         <item>7/1/14 to 1/1/15</item>
     </string-array>
     <string name="OWF_calculator">OWF</string>
@@ -96,7 +98,7 @@
         <item>Court Dockets</item>
         <item>Rules</item>
         <item>Forms</item>
-        <item>Negotiations</item>
+        <!--<item>Negotiations</item>-->
     </string-array>
 
     <string-array name="yes_no">

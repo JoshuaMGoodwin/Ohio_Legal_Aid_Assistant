@@ -9,16 +9,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
 
-    <ImageButton
-        android:layout_alignParentBottom="true"
-        android:id="@+id/edit"
-        android:src="@drawable/ic_action_edit"
-        style="@style/small_fab" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/edit_mini_fab"
+        android:id="@id/edit"/>
 
-    <ImageButton
-        android:layout_above="@id/edit"
-        android:id="@+id/delete"
-        android:src="@drawable/ic_action_discard"
-        style="@style/small_fab" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab"
+        android:layout_above="@id/edit"/>
 
 </RelativeLayout>

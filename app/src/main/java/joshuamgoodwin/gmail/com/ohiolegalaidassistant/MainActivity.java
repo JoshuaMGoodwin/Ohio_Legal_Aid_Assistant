@@ -37,6 +37,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -350,7 +351,7 @@ public class MainActivity extends ActionBarActivity {
 		setFragment(fragmentName, tag);
 		
         // update selected item and title, then close the drawer
-		RelativeLayout mDrawerContent = (RelativeLayout) findViewById(R.id.left_drawer);
+		LinearLayout mDrawerContent = (LinearLayout) findViewById(R.id.left_drawer);
         mDrawerList.setItemChecked(childPosition, true);
         if (groupName.equals("About")) {
             setTitle("About");
@@ -548,10 +549,10 @@ public class MainActivity extends ActionBarActivity {
          }
 
          // adding negotiations data
-         List<String> negotiations = new ArrayList<String>();
+/*         List<String> negotiations = new ArrayList<String>();
          NegotiationsDAO dao3 = new NegotiationsDAO(this);
          negotiations = dao3.getNegotiationsForDrawer();
-         negotiations.add(getString(R.string.add_negotiations));
+         negotiations.add(getString(R.string.add_negotiations));*/
 
 
 		 listDataChild.put(listDataHeader.get(0), calculators); // add calculators
@@ -559,7 +560,7 @@ public class MainActivity extends ActionBarActivity {
 		 listDataChild.put(listDataHeader.get(1), courtDockets); // add court dockets
          listDataChild.put(listDataHeader.get(2), rules); // add rules data
          listDataChild.put(listDataHeader.get(3), forms); // add forms data
-         listDataChild.put(listDataHeader.get(4), negotiations);
+         //listDataChild.put(listDataHeader.get(4), negotiations);
 	 }
 
   /*  @Override

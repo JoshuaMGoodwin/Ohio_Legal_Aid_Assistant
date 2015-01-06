@@ -118,7 +118,7 @@ public class FplCalculator extends Fragment {
 
 	private void clearButton(View rootView) {
 
-		ImageButton button = (ImageButton)rootView.findViewById(R.id.FPLClear);
+		ImageButton button = (ImageButton)rootView.findViewById(R.id.clear);
         //addShadow(button);
 
 		// set button's onClickListener
@@ -142,7 +142,7 @@ public class FplCalculator extends Fragment {
 
 	private void submitButton(View rootView) {
 
-		ImageButton button = (ImageButton) rootView.findViewById(R.id.FPLSubmit);
+		ImageButton button = (ImageButton) rootView.findViewById(R.id.submit);
 		button.setOnClickListener(new View.OnClickListener() {
 
 				public void onClick(View v) {

@@ -44,7 +44,7 @@ public class AddCourtWebsiteFragment extends Fragment {
 		// initialize the EditTexts and Buttons
 		etWebsiteName = (EditText) rootView.findViewById(R.id.etWebsiteName);
 		etWebsiteURL = (EditText) rootView.findViewById(R.id.etWebsiteURL);
-		buttonAdd = (ImageButton) rootView.findViewById(R.id.addEntry);
+		buttonAdd = (ImageButton) rootView.findViewById(R.id.edit);
 		buttonClear = (ImageButton) rootView.findViewById(R.id.clear);
         Bundle bundle = getArguments();
         newCourt = bundle.getBoolean("newCourt", false);

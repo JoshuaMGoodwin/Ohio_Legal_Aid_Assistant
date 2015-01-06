@@ -4,8 +4,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_border">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -13,13 +16,11 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/seventy"
                 android:text="Net Income" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/thirty"
                 android:id="@+id/net_income"/>
 
         </LinearLayout>
@@ -29,40 +30,21 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/seventy"
                 android:text="@string/frequency"/>
 
             <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/thirty"
                 android:id="@+id/frequency_spinner"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/submit"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_width="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:src="@drawable/ic_action_done"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"/>
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/submit_mini_fab"/>
 
-    <ImageButton
-        android:id="@+id/clear"
-        android:src="@drawable/ic_action_discard"
-        android:layout_height="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:layout_width="@dimen/fab_diameter"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_above="@id/submit"
-        android:layout_alignParentRight="true"
-        />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab"/>
 
 </RelativeLayout>

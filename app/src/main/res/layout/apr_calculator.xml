@@ -4,23 +4,24 @@
     android:layout_width="match_parent">
 <ScrollView
 	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+	android:layout_height="match_parent"
+    android:padding="10dp">
 <LinearLayout
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical" >
+	android:orientation="vertical"
+    android:background="@drawable/background_border"
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-	    	android:layout_height="wrap_content"
-	    	android:layout_width="wrap_content"
-	    	android:text="Amount Borrowed:" />
+	    	style="@style/seventy"
+            android:text="Amount Borrowed:" />
         <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            style="@style/thirty"
             android:id="@+id/amountBorrowed"
             android:inputType="numberDecimal" />
     </LinearLayout>
@@ -30,12 +31,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            style="@style/seventy"
             android:text="Number of Payments:" />
         <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            style="@style/thirty"
             android:id="@+id/numberOfPayments"
             android:inputType="number" />
     </LinearLayout>
@@ -45,12 +44,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            style="@style/seventy"
             android:text="Costs:" />
         <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            style="@style/thirty"
             android:id="@+id/costs"
             android:inputType="numberDecimal" />
     </LinearLayout>
@@ -60,12 +57,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            style="@style/seventy"
             android:text="Base Rate (ex. 4.25):" />
         <EditText
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            style="@style/thirty"
             android:id="@+id/baseRate"
             android:inputType="numberDecimal" />
     </LinearLayout>
@@ -73,16 +68,10 @@
 </LinearLayout>
 </ScrollView>
 
-    <ImageButton
-        android:id="@+id/clear"
-        android:src="@drawable/ic_action_discard"
-        android:layout_alignParentBottom="true"
-        style="@style/small_fab" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/submit_mini_fab"/>
 
-    <ImageButton
-        android:id="@+id/submit"
-        android:src="@drawable/ic_action_done"
-        android:layout_above="@id/clear"
-        style="@style/small_fab"
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab"
         />
 </RelativeLayout>

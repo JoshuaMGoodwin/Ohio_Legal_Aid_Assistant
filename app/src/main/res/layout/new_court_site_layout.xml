@@ -3,8 +3,11 @@
     android:layout_height="match_parent">
 <LinearLayout
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/background_border">
  
 	<TextView
 		android:layout_width="match_parent"
@@ -30,26 +33,11 @@
 
 </LinearLayout>
 
-    <ImageButton
-        android:layout_width="@dimen/fab_diameter"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:id="@+id/addEntry"
-        android:src="@drawable/ic_action_edit"
-        android:background="@drawable/fab_button" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/edit_mini_fab" />
 
-    <ImageButton
-        android:layout_width="@dimen/fab_diameter"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_above="@id/addEntry"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:id="@+id/clear"
-        android:src="@drawable/ic_action_discard"
-        android:background="@drawable/fab_button" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab"
+        android:layout_above="@id/edit"/>
 
 </RelativeLayout>

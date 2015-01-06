@@ -82,7 +82,7 @@ public class ShowFormsFragment extends ListFragment {
     }
 
     private void initializeDeleteButton(View view) {
-        ImageButton button = (ImageButton) view.findViewById(R.id.delete);
+        ImageButton button = (ImageButton) view.findViewById(R.id.clear);
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -4,4 +4,7 @@
     <item name="innerLL" type="id" />
     <item name="fab_expand_menu_button" type="id"/>
     <item name="fab_label" type="id"/>
+    <item name="submit" type="id"/>
+    <item name="clear" type="id"/>
+    <item name="edit" type="id"/>
 </resources>

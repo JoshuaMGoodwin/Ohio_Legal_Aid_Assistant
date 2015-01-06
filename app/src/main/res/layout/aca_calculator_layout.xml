@@ -255,7 +255,7 @@
                 android:layout_width="match_parent"
                 android:id="@+id/results_layout">
                 <TextView
-                    android:text="Results"
+                    android:text="@string/results"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:gravity="center_horizontal"
@@ -456,17 +456,11 @@
     </ScrollView>
 
     <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
-        android:id="@+id/submit"
-        fab:fab_icon="@drawable/ic_action_done"
-        android:layout_alignParentBottom="true" />
+        style="@style/submit_mini_fab" />
 
 
 
     <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
-        android:id="@+id/clear"
-        fab:fab_icon="@drawable/ic_action_discard"
-        android:layout_above="@id/submit" />
+        style="@style/clear_mini_fab" />
 
 </RelativeLayout>

@@ -5,12 +5,15 @@
 	
 	<ScrollView 
 	android:layout_height="match_parent"
-	android:layout_width="match_parent">
+	android:layout_width="match_parent"
+    android:padding="10dp">
 
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent" >
+		android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:padding="10dp">
 
 		<LinearLayout
 			android:orientation="horizontal"
@@ -18,15 +21,13 @@
 			android:layout_height="wrap_content" >
 
 			<TextView
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:text="@string/tvAGSize" />
+                style="@style/seventy"
+                android:text="@string/tvAGSize" />
 
 			<EditText
 				android:id="@+id/etAGSize"
-				android:layout_height="wrap_content"
-				android:layout_width="match_parent"
-				android:inputType="number"/>
+				style="@style/thirty"
+                android:inputType="number"/>
 
 		</LinearLayout>
 
@@ -36,15 +37,13 @@
 			android:orientation="horizontal">
 
 			<TextView
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:text="@string/tvGrossEarnedIncome" />
+				style="@style/seventy"
+                android:text="@string/tvGrossEarnedIncome" />
 
 			<EditText
 				android:id="@+id/etGrossEarnedIncome"
-				android:layout_height="wrap_content"
-				android:layout_width="match_parent"
-				android:inputType="numberDecimal"/>
+				style="@style/thirty"
+                android:inputType="numberDecimal"/>
 
 		</LinearLayout>
 
@@ -54,14 +53,12 @@
 			android:orientation="horizontal">		
 
 			<TextView
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:text="@string/frequency" />
+				style="@style/seventy"
+                android:text="@string/frequency" />
 
 			<Spinner
 				android:id="@+id/spinnerGrossPayFrequency"
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content" />
+				style="@style/thirty" />
 
 		</LinearLayout>
 
@@ -72,15 +69,13 @@
 
 			<TextView
 				android:id="@+id/tvHoursPerWeek"
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:text="@string/tvHoursPerWeek" />
+				style="@style/seventy"
+                android:text="@string/tvHoursPerWeek" />
 
 			<EditText
 				android:id="@+id/hoursPerWeek"
-				android:layout_height="wrap_content"
-				android:layout_width="match_parent"
-				android:inputType="numberDecimal" />
+				style="@style/thirty"
+                android:inputType="numberDecimal" />
 
 		</LinearLayout>
 
@@ -89,16 +84,10 @@
 
 </ScrollView>
 
-			<ImageButton
-				android:id="@+id/FPLClear"
-				android:src="@drawable/ic_action_discard"
-                android:layout_alignParentBottom="true"
-				style="@style/small_fab" />
+			<joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+                style="@style/submit_mini_fab"/>
 
-			<ImageButton
-				android:id="@+id/FPLSubmit"
-				android:src="@drawable/ic_action_done"
-				android:layout_above="@id/FPLClear"
-                style="@style/small_fab"
+			<joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+                style="@style/clear_mini_fab"
 				/>
 </RelativeLayout>

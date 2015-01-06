@@ -30,14 +30,8 @@
 			android:text="Choose Form"
 			android:layout_gravity="center_horizontal" />
 	</LinearLayout>
-	<ImageButton
-        android:id="@+id/submit"
-        android:src="@drawable/ic_action_done"
-        android:layout_alignParentBottom="true"
-        style="@style/small_fab" />
-    <ImageButton
-        android:id="@+id/clear"
-        android:src="@drawable/ic_action_discard"
-        android:layout_above="@id/submit"
-        style="@style/small_fab" />
+	<joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/submit_mini_fab" />
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab" />
 </RelativeLayout>

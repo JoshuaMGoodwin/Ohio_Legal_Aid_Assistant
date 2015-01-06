@@ -59,5 +59,74 @@
         <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
     </style>
 
+    <style name="submit_mini_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+        <item name="fab_icon">@drawable/ic_action_done</item>
+        <item name="android:id">@id/submit</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="clear_mini_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+        <item name="fab_icon">@drawable/ic_action_discard</item>
+        <item name="android:id">@id/clear</item>
+        <item name="android:layout_above">@id/submit</item>
+    </style>
+
+    <style name="edit_mini_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+        <item name="fab_icon">@drawable/ic_action_edit</item>
+        <item name="android:id">@id/edit</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="clear_normal_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">normal</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+        <item name="fab_icon">@drawable/ic_action_discard</item>
+        <item name="android:id">@id/clear</item>
+        <item name="android:layout_above">@id/submit</item>
+    </style>
+
+    <style name="submit_normal_fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/padding_bottom_mini</item>
+        <item name="fab_size">normal</item>
+        <item name="fab_colorNormal">@color/default_blue</item>
+        <item name="fab_colorPressed">@color/dark_blue</item>
+        <item name="android:layout_marginRight">@dimen/padding_right_mini</item>
+        <item name="fab_icon">@drawable/ic_action_done</item>
+        <item name="android:id">@id/submit</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
 
 </resources>

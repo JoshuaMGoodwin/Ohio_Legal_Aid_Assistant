@@ -221,7 +221,7 @@ public class FsCalculator extends Fragment {
      
     private void initializeClearButton(View rootView){
      
-        ImageButton button = (ImageButton) rootView.findViewById(R.id.fsReset);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.clear);
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -234,7 +234,7 @@ public class FsCalculator extends Fragment {
      
     private void initializeSubmitButton(View rootView) {
 
-        ImageButton button = (ImageButton) rootView.findViewById(R.id.fsSubmit);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.submit);
         button.setOnClickListener(new View.OnClickListener() {
          
             @Override

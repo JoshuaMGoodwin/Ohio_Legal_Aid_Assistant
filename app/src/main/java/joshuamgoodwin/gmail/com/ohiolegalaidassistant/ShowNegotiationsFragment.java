@@ -68,7 +68,7 @@ public class ShowNegotiationsFragment extends ListFragment {
     }
 
     private void initializeDeleteButton (View v) {
-        ImageButton button = (ImageButton) v.findViewById(R.id.delete);
+        ImageButton button = (ImageButton) v.findViewById(R.id.clear);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

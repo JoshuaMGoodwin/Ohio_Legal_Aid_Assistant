@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 <ScrollView
 	android:layout_width="match_parent"
-	android:layout_height="match_parent" >
+	android:layout_height="match_parent"
+    android:padding="10dp">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_border"
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -17,13 +20,11 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            style="@style/seventy"
             android:text="Calculator Version:" />
 
         <Spinner
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            style="@style/thirty"
             android:id="@+id/owf_version_spinner" />
 
     </LinearLayout>
@@ -35,14 +36,12 @@
 
         <TextView
             android:id="@+id/tvAGSize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvAGSize" />
 
         <EditText
             android:id="@+id/AGSize"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="number"	/>
 
     </LinearLayout>
@@ -54,14 +53,12 @@
 		
         <TextView
             android:id="@+id/tvGrossEarnedIncome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvGrossEarnedIncome" />
 
         <EditText
             android:id="@+id/grossEarnedIncome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="numberDecimal" />
 
         </LinearLayout>
@@ -72,15 +69,12 @@
             android:orientation="horizontal" >
 
 		<TextView
-			
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/frequency" />
+			style="@style/seventy"
+            android:text="@string/frequency" />
 
 		<Spinner
 			android:id="@+id/spinnerGrossPayFrequency"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content" />
+			style="@style/thirty" />
 
 	</LinearLayout>
 
@@ -91,15 +85,13 @@
 
         <TextView
             android:id="@+id/tvHoursPerWeek"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvHoursPerWeek"
             android:visible="false" />
 
         <EditText
             android:id="@+id/hoursPerWeek"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="numberDecimal"
             android:visible="false" />
 
@@ -112,14 +104,12 @@
 
         <TextView
             android:id="@+id/tvDependentCare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvDependentCare" />
 
         <EditText
             android:id="@+id/dependentCare"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="numberDecimal"	/>
 
     </LinearLayout>
@@ -131,14 +121,12 @@
 
         <TextView
             android:id="@+id/tvDeemedIncome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvDeemedIncome" />
 
         <EditText
             android:id="@+id/deemedIncome"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="numberDecimal"	/>
     </LinearLayout>
 
@@ -149,48 +137,23 @@
 
         <TextView
             android:id="@+id/tvUnearnedIncome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/seventy"
             android:text="@string/tvUnearnedIncome" />
 
         <EditText
             android:id="@+id/unearnedIncome"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/thirty"
             android:inputType="numberDecimal"	/>
     </LinearLayout>
 
 </LinearLayout>
 </ScrollView>
 
-<RelativeLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="bottom|right"
-android:layout_marginBottom="@dimen/fab_margin"
-android:layout_marginRight="@dimen/fab_margin">
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/submit_mini_fab"/>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
-    <ImageButton
-        android:id="@+id/OWFSubmit"
-        android:layout_height="@dimen/fab_diameter"
-        android:layout_width="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:src="@drawable/ic_action_done"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin" />
-
-    <ImageButton
-        android:id="@+id/OWFClear"
-        android:src="@drawable/ic_action_discard"
-        android:layout_height="@dimen/fab_diameter"
-        android:background="@drawable/fab_button"
-        android:layout_width="@dimen/fab_diameter"
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_mini_fab"
         />
-</LinearLayout>
-</RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>

@@ -47,7 +47,7 @@
                 android:gravity="center_horizontal" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/background_border"
                 android:padding="10dp">
@@ -116,36 +116,70 @@
                     android:visible="false" android:inputType="numberDecimal"/>
             </LinearLayout>
             </LinearLayout>
+
             <TextView android:text="@string/headingMonthlyExpenses" android:layout_height="wrap_content" android:layout_width="match_parent"/>
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_border"
+                android:orientation="vertical"
+                android:padding="10dp">
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvRent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvRent"/>
-                <EditText android:id="@+id/etRent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvRent"
+                    style="@style/seventy"
+                    android:text="@string/tvRent"/>
+                <EditText android:id="@+id/etRent"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvPropertyTaxes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvPropertyTaxes"/>
-                <EditText android:id="@+id/etPropertyTaxes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvPropertyTaxes"
+                    style="@style/seventy"
+                    android:text="@string/tvPropertyTaxes"/>
+
+                <EditText android:id="@+id/etPropertyTaxes"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvPropertyInsurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvPropertyInsurance"/>
-                <EditText android:id="@+id/etPropertyInsurance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvPropertyInsurance"
+                    style="@style/seventy"
+                    android:text="@string/tvPropertyInsurance"/>
+                <EditText android:id="@+id/etPropertyInsurance"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvDependentCare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvDependentCare"/>
-                <EditText android:id="@+id/etDependentCare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvDependentCare"
+                    style="@style/seventy"
+                    android:text="@string/tvDependentCare"/>
+                <EditText android:id="@+id/etDependentCare"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvChildSupportNonAG" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tvChildSupportNonAG"/>
-                <EditText android:id="@+id/etChildSupport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvChildSupportNonAG"
+                    style="@style/seventy"
+                    android:text="@string/tvChildSupportNonAG"/>
+                <EditText android:id="@+id/etChildSupport"
+                    style="@style/thirty"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
 
             <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-                <TextView android:id="@+id/tvMedicalExpenses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visible="false" android:text="@string/tvMedicalExpenses"/>
-                <EditText android:id="@+id/etMedicalExpenses" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visible="false" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvMedicalExpenses"
+                    style="@style/seventy"
+                    android:visible="false"
+                    android:text="@string/tvMedicalExpenses"/>
+                <EditText android:id="@+id/etMedicalExpenses"
+                    style="@style/thirty"
+                    android:visible="false"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
             </LinearLayout>
 
             <TextView android:text="@string/headingUtilities" android:layout_height="wrap_content" android:layout_width="match_parent"/>
@@ -161,16 +195,10 @@
     </ScrollView>
 
     <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
-        android:id="@+id/fsSubmit"
-        fab:fab_icon="@drawable/ic_action_done"
-        android:layout_alignParentBottom="true"
+        style="@style/submit_mini_fab"
         />
 
     <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
-        style="@style/mini_fab"
-        android:id="@+id/fsReset"
-        fab:fab_icon="@drawable/ic_action_discard"
-        android:layout_above="@id/fsSubmit"
+        style="@style/clear_mini_fab"
         />
 </RelativeLayout>
