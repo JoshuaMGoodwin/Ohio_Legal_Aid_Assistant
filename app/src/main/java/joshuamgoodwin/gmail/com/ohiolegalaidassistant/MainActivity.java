@@ -206,11 +206,10 @@ public class MainActivity extends ActionBarActivity {
                 fragmentName = new FsCalculator();
                 tag = "FS_CALCULATOR";
             } else if (childName.equals(getString(R.string.child_support))) {
-                fragmentName = new WebViewFragment();
-                tag = "WEBVIEW";
-                bundle = new Bundle();
-                bundle.putString("address", "https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en");
-                fragmentName.setArguments(bundle);
+                String url = "https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             } else if (childName.equals(getString(R.string.APR))) {
                 fragmentName = new APRCalculator();
                 tag = "APR";

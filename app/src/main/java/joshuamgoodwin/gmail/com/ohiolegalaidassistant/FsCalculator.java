@@ -1,22 +1,20 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
  
 import android.support.v4.app.Fragment;
-import android.view.*;
-import android.os.*;
+import android.view.ViewGroup;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.os.Bundle;
 import android.app.AlertDialog;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.Spinner.*;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.CheckBox;
 import android.widget.ArrayAdapter;
-import android.widget.ArrayAdapter.*;
 import android.widget.AdapterView;
-import android.widget.Button;
- 
+
  
  
 public class FsCalculator extends Fragment {
@@ -38,20 +36,11 @@ public class FsCalculator extends Fragment {
     private static final int STANDARD_TELEPHONE_ALLOWANCE = 39;
     private static final int LIMIT_ON_SHELTER_DEDUCTION = 490;
     
-	private boolean isAged;
-	private boolean isDisabled;
+	private boolean isAged, isDisabled;
 	 
-    private CheckBox cbElectricGasOil;
-    private CheckBox cbGarbageTrash;
-    private CheckBox cbHeatingCooling;
-    private CheckBox cbHomeless;
-    private CheckBox cbPhone;
-    private CheckBox cbWaterSewer;
+    private CheckBox cbElectricGasOil, cbGarbageTrash, cbHeatingCooling, cbHomeless, cbPhone, cbWaterSewer;
      
-    private double earnedIncome;
-    private double earnedHoursPerWeek;
-    private double unearnedHoursPerWeek;
-    private double unearnedIncome;
+    private double earnedIncome, earnedHoursPerWeek, unearnedHoursPerWeek, unearnedIncome;
      
     private EditText etAGsize;
     private EditText etChildSupport;
@@ -91,15 +80,11 @@ public class FsCalculator extends Fragment {
         initializeViews(rootView);
         populateFrequencySpinners(rootView);
         populateAGSpinners(rootView);
-        initializeHomelessCheck(rootView);
+        initializeHomelessCheck();
         initializeClearButton(rootView);
         initializeSubmitButton(rootView);
         // if (savedInstanceState != null) restoreState(savedInstanceState);
         return rootView;
-    }
-     
-    public void FsCalculator(){
-         
     }
  
     private void initializeViews(View rootView){
@@ -392,9 +377,9 @@ public class FsCalculator extends Fragment {
 		
 		finalNetIncome -= calculateShelterDeduction();
 		
-		boolean result = finalNetIncome > NET_STANDARD[AGSize - 1] ? false : true;
-		
-		result = AGSSISpinner.getSelectedItemPosition() == 0 ? true : result;
+		boolean result = finalNetIncome <= NET_STANDARD[AGSize - 1];
+
+		result = AGSSISpinner.getSelectedItemPosition() == 0 || result;
 		
 		return result;
 	
@@ -439,11 +424,7 @@ public class FsCalculator extends Fragment {
          
         String test = etAGsize.getText().toString();
         AGSize = test.equals("") ? 0 : Integer.parseInt(test);
-        if (AGSize <= 0) {
-            return false;
-        } else {
-            return true;
-        }
+        return AGSize > 0;
          
     } 
      
@@ -454,9 +435,9 @@ public class FsCalculator extends Fragment {
      
     if (frequencyEarnedSpinner.getSelectedItemPosition() == 0 && earnedHoursPerWeek <= 0) return false;
     if (frequencyUnearnedSpinner.getSelectedItemPosition() == 0 && unearnedHoursPerWeek <= 0) return false;
-     
+
     return true;
-     
+
     }
      
     private void getVariables() {
@@ -539,13 +520,13 @@ public class FsCalculator extends Fragment {
 		Except for AGs containing at least one member who is elderly or disabled as defined in rule 5101:4-1-03 of the Administrative Code, or considered categorically eligible, all AGs shall be subject to the gross income eligibility standard for the appropriate AG size. To determine the AG's total gross income, add the gross monthly income earned by all AG members and the total monthly unearned income of all AG members, minus income exclusions. If an AG has income from a farming operation (with gross proceeds of more than one thousand dollars per year) which operates at a loss, see rule 5101:4-6-11 of the Administrative Code. The total gross income is compared to the gross income eligibility standard for the appropriate AG size. If the total gross income is less than the standard, proceed with calculating the adjusted net income as described in paragraph (S) of this rule. If the total gross income is more than the standard, the AG is ineligible for program benefits and the case is either denied or terminated at this point. */
 		
         totalGrossIncome = finalEarnedIncome + finalUnearnedIncome;
-        boolean results = totalGrossIncome > grossIncomeAmount ? false : true;
+        boolean results = totalGrossIncome <= grossIncomeAmount;
 		if (isAged || isDisabled) results = true;
         return results;
      
     }
      
-    private void initializeHomelessCheck(View rootView) {
+    private void initializeHomelessCheck() {
      
         cbHomeless.setOnClickListener(new View.OnClickListener() {
          

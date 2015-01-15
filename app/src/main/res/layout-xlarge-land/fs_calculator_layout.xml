@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="50" >
+                <TextView
+                    android:text="@string/household_information_heading"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="@string/tvAGSize"
+                            style="@style/seventy"/>
+                        <EditText
+                            android:id="@+id/etAGSize"
+                            android:inputType="number"
+                            style="@style/thirty"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+                        <TextView android:text="@string/tvAGaged"
+                            style="@style/seventy"/>
+                        <Spinner android:id="@+id/AGagedSpinner"
+                            style="@style/thirty"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:text="@string/tvAGSSI"
+                            style="@style/seventy"/>
+                        <Spinner android:id="@+id/AGSSISpinner" style="@style/thirty"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:text="@string/income_information_heading"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_border"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/seventy"
+                            android:text="@string/tvEarnedIncome"/>
+                        <EditText
+                            android:id="@+id/etEarnedIncome"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/seventy"
+                            android:text="@string/frequency"/>
+                        <Spinner
+                            android:id="@+id/frequencyEarnedSpinner"
+                            style="@style/thirty"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvEarnedHoursPerWeek"
+                            style="@style/seventy"
+                            android:visible="false"
+                            android:text="@string/tvHoursPerWeek"/>
+                        <EditText
+                            android:id="@+id/etEarnedHoursPerWeek"
+                            style="@style/thirty"
+                            android:visible="false"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/seventy"
+                            android:text="@string/tvUnearnedIncome"/>
+                        <EditText
+                            android:id="@+id/etUnearnedIncome"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/seventy"
+                            android:text="@string/frequency"/>
+                        <Spinner
+                            android:id="@+id/frequencyUnearnedSpinner"
+                            style="@style/thirty" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvUnearnedHoursPerWeek"
+                            style="@style/seventy"
+                            android:visible="false"
+                            android:text="@string/tvHoursPerWeek"/>
+                        <EditText
+                            android:id="@+id/etUnearnedHoursPerWeek"
+                            style="@style/thirty"
+                            android:visible="false"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="50" >
+                <TextView
+                    android:text="@string/headingMonthlyExpenses"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvRent"
+                            style="@style/seventy"
+                            android:text="@string/tvRent"/>
+                        <EditText
+                            android:id="@+id/etRent"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvPropertyTaxes"
+                            style="@style/seventy"
+                            android:text="@string/tvPropertyTaxes"/>
+
+                        <EditText
+                            android:id="@+id/etPropertyTaxes"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvPropertyInsurance"
+                            style="@style/seventy"
+                            android:text="@string/tvPropertyInsurance"/>
+                        <EditText
+                            android:id="@+id/etPropertyInsurance"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvDependentCare"
+                            style="@style/seventy"
+                            android:text="@string/tvDependentCare"/>
+                        <EditText
+                            android:id="@+id/etDependentCare"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvChildSupportNonAG"
+                            style="@style/seventy"
+                            android:text="@string/tvChildSupportNonAG"/>
+                        <EditText
+                            android:id="@+id/etChildSupport"
+                            style="@style/thirty"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                        <TextView android:id="@+id/tvMedicalExpenses"
+                            style="@style/seventy"
+                            android:visible="false"
+                            android:text="@string/tvMedicalExpenses"/>
+                        <EditText android:id="@+id/etMedicalExpenses"
+                            style="@style/thirty"
+                            android:visible="false"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:text="@string/headingUtilities"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_border"
+                    android:padding="10dp">
+                    <CheckBox
+                        android:id="@+id/clientHomeless"
+                        android:text="@string/clHomeless"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/heatingCooling"
+                        android:text="@string/heatingCooling"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/electricGasOil"
+                        android:text="@string/electricGasOil"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/waterSewer"
+                        android:text="@string/waterSewer"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/garbageTrash"
+                        android:text="@string/garbageTrash"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/phone"
+                        android:text="@string/phone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/submit_normal_fab"
+        />
+
+    <joshuamgoodwin.gmail.com.ohiolegalaidassistant.FloatingButton
+        style="@style/clear_normal_fab"
+        />
+</RelativeLayout>

@@ -2,16 +2,18 @@ package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
 import android.support.v4.app.Fragment;
 import android.app.AlertDialog;
-import android.os.*;
+import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ArrayAdapter;
 import android.widget.AdapterView;
 import android.widget.Toast;
-import android.view.*;
+import android.view.ViewGroup;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.app.ActionBarDrawerToggle;
 import android.widget.ListView;
 import android.widget.AdapterView.*;
 import android.widget.*;
@@ -245,7 +247,7 @@ public class OwfCalculator extends Fragment {
         String test = etAGSize.getText().toString();
         if (test.equals("") || test.equals("0")) {
             Toast toast = Toast.makeText(getActivity(), "Assistance group size must be 1 or larger", Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
+            toast.setGravity(Gravity.CENTER_VERTICAL| Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
             return true;
         } else {
@@ -393,20 +395,11 @@ public class OwfCalculator extends Fragment {
 
     }
 
-
-
-
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
-
     private double mDeemedIncome;
     private double mDependentCare;
-    private double mFrequency;
     private double mGrossEarnedIncomeRaw;
     private double mGrossEarnedIncomeFinal;
     private double mUnearnedIncome;
-
-    private DrawerLayout mDrawerLayout;
 
     private int mAGSize;
     private int countableIncome;
@@ -419,11 +412,7 @@ public class OwfCalculator extends Fragment {
     private EditText etHoursPerWeek;
     private EditText etUnearnedIncome;
 
-    private ListView mDrawerList;
-
     private Spinner spinner;
     private Spinner versionSpinner;
-
-    private String[] mDrawerItems;
 
 }

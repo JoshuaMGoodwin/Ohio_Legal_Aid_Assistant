@@ -6,39 +6,28 @@ import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
-import android.util.Log;
 import android.app.AlertDialog;
-import android.app.AlertDialog.*;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.GestureDetector;
-import android.view.GestureDetector.OnGestureListener;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.View;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
-import android.view.View.OnTouchListener;
-import android.view.View.OnClickListener;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.MotionEvent;
-import android.widget.*;
-import android.support.v7.internal.view.menu.*;
-import android.widget.AdapterView.*;
+import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
-/**
- * Created by Goodwin on 11/10/2014.
- */
 public class RulesFragment extends Fragment {
     private GestureDetector gesture;
     private boolean firstTime = true;
@@ -67,7 +56,6 @@ public class RulesFragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
-		// TODO: Implement this method
 		super.onCreate(savedInstanceState);
 		setHasOptionsMenu(true);
 	}
@@ -310,7 +298,7 @@ public class RulesFragment extends Fragment {
 				// go through each line of the rule
 				boolean answerFound = false;
 				// only return one example per rule
-				while (answerFound == false) {
+				while (!answerFound) {
 					for (int k = 0; k < ruleList.length; k++) {
 						String test = ruleList[k];
 						String changedCase = search.substring(0, 1).toUpperCase() + search.substring(1);
@@ -335,11 +323,11 @@ public class RulesFragment extends Fragment {
 	}
 	
 	private void searchList(ArrayList<String[]> incomingList) {
-		ArrayList<String[]> list = incomingList;
+
 		// remove all views from rules area
 		ll.removeAllViews();
 		ListView lv = new ListView(getActivity());
-		final SearchAdapter adapter = new SearchAdapter(getActivity(), list);
+		final SearchAdapter adapter = new SearchAdapter(getActivity(), incomingList);
 		lv.setAdapter(adapter);
 		
 		lv.setLayoutParams(new ViewGroup.LayoutParams(

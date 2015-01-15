@@ -1,11 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import android.annotation.TargetApi;
-import android.graphics.Outline;
-import android.os.Build;
 import android.support.v4.app.Fragment;
-import android.view.ViewOutlineProvider;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.view.View;
@@ -14,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Spinner;
 import android.widget.EditText;
 import android.widget.ArrayAdapter;
-import android.widget.AdapterView.*;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
 import android.widget.Toast;
 import android.os.Bundle;
@@ -101,20 +96,6 @@ public class FplCalculator extends Fragment {
 		etAGSize = (EditText)rootView.findViewById(R.id.etAGSize);
 		etGrossEarnedIncome = (EditText)rootView.findViewById(R.id.etGrossEarnedIncome);
 	}
-
-    @TargetApi(21)
-    private void addShadow(ImageButton button) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ViewOutlineProvider vop = new ViewOutlineProvider() {
-                @Override
-                public void getOutline(View view, Outline outline) {
-                    int diameter = getResources().getDimensionPixelSize(R.dimen.fab_diameter);
-                    outline.setOval(0, 0, diameter, diameter);
-                }
-            };
-            button.setOutlineProvider(vop);
-        }
-    }
 
 	private void clearButton(View rootView) {
 
