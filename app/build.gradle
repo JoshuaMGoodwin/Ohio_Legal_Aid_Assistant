@@ -8,8 +8,8 @@ android {
         applicationId "joshuamgoodwin.gmail.com.ohiolegalaidassistant"
         minSdkVersion 7
         targetSdkVersion 21
-        versionCode 17
-        versionName "0.7"
+        versionCode 18
+        versionName "0.8"
     }
     buildTypes {
         release {

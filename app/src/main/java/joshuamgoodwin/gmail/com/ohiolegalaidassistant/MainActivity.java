@@ -125,6 +125,14 @@ public class MainActivity extends ActionBarActivity {
                 selectItem("About", 0, 0, "");
             }
         });
+
+        TextView license = (TextView) findViewById(R.id.license_drawer);
+        license.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectItem("License", 0, 0, "");
+            }
+        });
 			
 			
 		//	mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
@@ -262,6 +270,9 @@ public class MainActivity extends ActionBarActivity {
         } else if (groupName.equals("About")) {
             fragmentName = new AboutFragment();
             tag = "ABOUT";
+        } else if (groupName.equals("License")) {
+            fragmentName = new LicenseFragment();
+            tag = "LICENSE";
         } else if (groupName.equals("Forms")) {
             if (childName.equals("Exemption List")) {
                 CopyAssets("exemption.pdf");
@@ -354,6 +365,8 @@ public class MainActivity extends ActionBarActivity {
         mDrawerList.setItemChecked(childPosition, true);
         if (groupName.equals("About")) {
             setTitle("About");
+        } else if (groupName.equals("License")) {
+            setTitle("License");
         } else {
             setTitle(listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
         }

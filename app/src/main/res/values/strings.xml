@@ -54,7 +54,7 @@
     <string name="ACACalculator">ACA Calculator</string>
     <string name="add_negotiations">Add/Edit Negotiations</string>
     <!--<string name="child_support_address">"https://www.lawhelpinteractive.org/login_form?template_id=template.2014-06-05.4419790386&set_language=en"</string>-->
-
+    <string name="license">Ohio Legal Aid Assistant\n\nCopyright (C) 2014-2015  Joshua M. Goodwin\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.</string>
 
     <string-array name="frequency">
         <item>per hour</item>

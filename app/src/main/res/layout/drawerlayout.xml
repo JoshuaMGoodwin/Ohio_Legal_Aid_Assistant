@@ -37,8 +37,16 @@
 					android:text="About"
 					android:padding="10dp"
 					android:id="@+id/about_drawer"
-					android:textSize="17dip"
+					android:textSize="15dip"
 					android:gravity="center_horizontal|center_vertical"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Licenses"
+               android:padding="10dp"
+               android:id="@+id/license_drawer"
+               android:textSize="15dip"
+               android:gravity="center_horizontal|center_vertical"/>
        			
 
 	   </LinearLayout>
