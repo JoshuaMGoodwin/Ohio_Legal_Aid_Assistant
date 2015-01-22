@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="tvAGaged">Are there any AG members over 65, blind, or disabled?</string>
+    <string name="tvAGaged">Are there any AG members over 60, blind, or disabled?</string>
     <string name="app_name">Ohio Legal Aid Assistant</string>
     <string name="add_cm">Add new case management site</string>
     <string name="edit_cm">Edit case management sites</string>

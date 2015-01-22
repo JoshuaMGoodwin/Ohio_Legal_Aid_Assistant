@@ -292,7 +292,7 @@ public class FsCalculator extends Fragment {
         }
 		
 		if (!checkNetIncome()) {
-			String results = "The total net income of $" + finalNetIncome + " exceeds the net income limit of $" + NET_STANDARD[AGSize - 1] + "by $" + (finalNetIncome - NET_STANDARD[AGSize -1]);
+			String results = "The total net income of $" + finalNetIncome + " exceeds the net income limit of $" + NET_STANDARD[AGSize - 1] + " by $" + (finalNetIncome - NET_STANDARD[AGSize -1]);
 			ineligibleDialog("Ineligible", results);
 			return;
 		}
@@ -380,7 +380,9 @@ public class FsCalculator extends Fragment {
 		boolean result = finalNetIncome <= NET_STANDARD[AGSize - 1];
 
 		result = AGSSISpinner.getSelectedItemPosition() == 0 || result;
-		
+
+        if (totalGrossIncome <= GROSS_INCOME_200[AGSize - 1] && (isAged || isDisabled)) return true;
+
 		return result;
 	
 	}
