@@ -19,8 +19,8 @@ import java.util.zip.Inflater;
  * Created by Goodwin on 12/13/2014.
  */
 public class ACACalculator extends Fragment {
-    private static final int FPL_START = 11670;
-    private static final int FPL_INCREMENT = 4060;
+    private static final int FPL_START = 11770;
+    private static final int FPL_INCREMENT = 4160;
     private static final int PERSONAL_EXEMPTION = 3950;
     private static final int[] STANDARD_DEDUCTION = {6200, 12400, 6200, 9100};
     private static final int[] SINGLE_AMOUNTS = {9075, 36900, 89350, 186350, 405100, 406750, 9999999};

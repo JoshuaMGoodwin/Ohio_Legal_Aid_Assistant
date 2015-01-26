@@ -18,8 +18,8 @@ import android.app.AlertDialog;
 
 public class FplCalculator extends Fragment {
 
-	public final static double POVERTY_START = 11670.0;
-	public final static double POVERTY_INCREMENT = 4060.0;
+	public final static double POVERTY_START = 11770.0;
+	public final static double POVERTY_INCREMENT = 4160.0;
 
 	private Bundle savedInstanceState;
 
