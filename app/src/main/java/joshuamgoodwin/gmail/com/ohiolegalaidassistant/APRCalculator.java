@@ -1,5 +1,6 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
+import android.util.Log;
 import android.widget.EditText;
 import android.view.View;
 import android.support.v4.app.Fragment;
@@ -95,6 +96,7 @@ public class APRCalculator extends Fragment {
 		while (iteration <= 100) {
 			testresult = ((testrate * Math.pow(1 + testrate, numberOfPayments)) / (Math.pow(1 + testrate, numberOfPayments) - 1)) - (monthlyPayment / amountBorrowed);
 			if (Math.abs(testresult) < 0.0000001) break;
+            Log.d("testresult", Double.toString(Math.abs(testresult)));
 			if (testresult < 0) testrate += testdiff;
 			else testrate -= testdiff;
 			testdiff = testdiff / 2;
