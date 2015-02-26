@@ -12,15 +12,18 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.FederalPovertyCalculator;
+
+import java.util.Calendar;
 import java.util.zip.Inflater;
 
 /**
  * Created by Goodwin on 12/13/2014.
  */
 public class ACACalculator extends Fragment {
-    private static final int FPL_START = 11770;
-    private static final int FPL_INCREMENT = 4160;
+
     private static final int PERSONAL_EXEMPTION = 3950;
     private static final int[] STANDARD_DEDUCTION = {6200, 12400, 6200, 9100};
     private static final int[] SINGLE_AMOUNTS = {9075, 36900, 89350, 186350, 405100, 406750, 9999999};
@@ -59,6 +62,7 @@ public class ACACalculator extends Fragment {
     private Spinner father_filing;
     private Spinner mother_dependents;
     private Spinner father_dependents;
+
 
 
     @Override
@@ -179,6 +183,7 @@ public class ACACalculator extends Fragment {
         DisplayTax();
         DisplayDeductionExemptions();
         DisplayHealthcareOutcome();
+        Toast.makeText(getActivity(), "Scroll to bottom for results", Toast.LENGTH_LONG).show();
 
     }
 
@@ -288,8 +293,12 @@ public class ACACalculator extends Fragment {
 
     private double DetermineFpl(int HouseholdSize, int filingStatus, double Agi) {
 
-        double fpl = FPL_START + ((HouseholdSize - 1) * FPL_INCREMENT);
-        return Math.floor(((Agi / fpl) * 100) * 100) / 100;
+        FederalPovertyCalculator calc = new FederalPovertyCalculator();
+        String year = Integer.toString(Calendar.getInstance().get(Calendar.YEAR));
+        calc.setYear(year);
+        calc.setAnnualIncome(Agi);
+        calc.setSize(HouseholdSize);
+        return calc.getResults();
 
     }
 

@@ -4,22 +4,18 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Locale;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -27,31 +23,19 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v7.internal.view.menu.ActionMenuItemView;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.*;
-import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 import android.graphics.Typeface;
-import android.widget.Toast;
-
-import joshuamgoodwin.gmail.com.*;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -168,7 +152,7 @@ public class MainActivity extends ActionBarActivity {
         }*/
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-        boolean test = prefs.getBoolean("second", true);
+        boolean test = prefs.getBoolean("third", true);
 
         if (test) {
 
@@ -182,7 +166,7 @@ public class MainActivity extends ActionBarActivity {
 
             // make sure it only runs first time
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("second", false);
+            editor.putBoolean("third", false);
             editor.commit();
         }
         getSupportActionBar().setTitle(R.string.app_name);
@@ -208,7 +192,7 @@ public class MainActivity extends ActionBarActivity {
                 fragmentName = new OwfCalculator();
                 tag = "OWF_CALCULATOR";
             } else if (childName.equals(getString(R.string.federal_poverty))) {
-                fragmentName = new FplCalculator();
+                fragmentName = new FplCalculatorController();
                 tag = "FPL_CALCULATOR";
             } else if (childName.equals(getString(R.string.food_stamps))) {
                 fragmentName = new FsCalculator();

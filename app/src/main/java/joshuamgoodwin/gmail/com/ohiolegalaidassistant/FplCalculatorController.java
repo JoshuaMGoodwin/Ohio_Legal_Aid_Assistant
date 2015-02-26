@@ -14,12 +14,15 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 import android.os.Bundle;
 import android.app.AlertDialog;
+import joshuamgoodwin.gmail.com.ohiolegalaidassistant.FederalPovertyCalculator;
 
 
-public class FplCalculator extends Fragment {
+public class FplCalculatorController extends Fragment {
 
 	public final static double POVERTY_START = 11770.0;
 	public final static double POVERTY_INCREMENT = 4160.0;
+
+    public final static String[] VERSION_ARRAY = {"2015", "2014"};
 
 	private Bundle savedInstanceState;
 
@@ -27,34 +30,37 @@ public class FplCalculator extends Fragment {
 	private EditText etGrossEarnedIncome;
 	private EditText etHoursPerWeek;
 
-	private Spinner spinner;
+	private Spinner frequencySpinner, versionSpinner;
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle instanceState){
 
-	savedInstanceState = instanceState;
-	// get view
-	View rootView = inflater.inflate(R.layout.fpl_calculator_layout, container, false);
+        savedInstanceState = instanceState;
+        // get view
+        View rootView = inflater.inflate(R.layout.fpl_calculator_layout, container, false);
 
-	// populate the spinner
-	populateSpinner(rootView);
+        // populate the frequency spinner
+        populateSpinner(rootView);
 
-	// set up the edittexts
-	initializeViews(rootView);
+        // populate the version spinner
+        populateFrequencySpinner(rootView);
 
-	// set up the clear button
-	clearButton(rootView);
+        // set up the edittexts
+        initializeViews(rootView);
 
-	// set up the submit button
-	submitButton(rootView);
+        // set up the clear button
+        clearButton(rootView);
 
-	//return view
-	return rootView;
+        // set up the submit button
+        submitButton(rootView);
+
+        //return view
+        return rootView;
 	}
 
 	private void populateSpinner(View rootView) {
 
 		// populate the frequency spinner with a string array
-		spinner = (Spinner) rootView.findViewById(R.id.spinnerGrossPayFrequency);
+		frequencySpinner = (Spinner) rootView.findViewById(R.id.spinnerGrossPayFrequency);
 
 		// create array adapter
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
@@ -64,13 +70,13 @@ public class FplCalculator extends Fragment {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 		// apply adapter to spinner
-		spinner.setAdapter(adapter);
+		frequencySpinner.setAdapter(adapter);
 
 		// set spinner default to monthly
-		spinner.setSelection(4);
+		frequencySpinner.setSelection(4);
 
 		// set spinner listener to change layout if hourly chosen
-		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+		frequencySpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 
 				@Override
 				public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id){
@@ -92,9 +98,27 @@ public class FplCalculator extends Fragment {
 			});
 	}
 
+    private void populateFrequencySpinner(View v) {
+        versionSpinner = (Spinner) v.findViewById(R.id.version_spinner);
+
+        // create array adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, VERSION_ARRAY);
+
+        // set layout for when dropdown shown
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // apply adapter to spinner
+        versionSpinner.setAdapter(adapter);
+
+        // set spinner default to current year
+        frequencySpinner.setSelection(4);
+    }
+
 	private void initializeViews(View rootView) {
 		etAGSize = (EditText)rootView.findViewById(R.id.etAGSize);
 		etGrossEarnedIncome = (EditText)rootView.findViewById(R.id.etGrossEarnedIncome);
+        etHoursPerWeek = (EditText)rootView.findViewById(R.id.hoursPerWeek);
+        etHoursPerWeek.setVisibility(View.INVISIBLE);
 	}
 
 	private void clearButton(View rootView) {
@@ -114,10 +138,11 @@ public class FplCalculator extends Fragment {
 	private void resetAll() {
 
 		// reset the spinner and edit texts
-		spinner.setSelection(4);
+		frequencySpinner.setSelection(4);
 		etAGSize.setText("");
 		etHoursPerWeek.setText("");
 		etGrossEarnedIncome.setText("");
+        etHoursPerWeek.setVisibility(View.INVISIBLE);
 
 	}
 
@@ -140,11 +165,13 @@ public class FplCalculator extends Fragment {
 
 					double annualIncome = calculateAnnualIncome(earnedIncomeRaw);
 
-					double fpl = ((getAGSize() - 1) * POVERTY_INCREMENT) + POVERTY_START;
+                    FederalPovertyCalculator calc = new FederalPovertyCalculator();
 
-					double results = Math.floor(((annualIncome / fpl) * 100) * 100) / 100;
+                    calc.setSize(getAGSize());
+                    calc.setAnnualIncome(annualIncome);
+                    calc.setYear(versionSpinner.getSelectedItem().toString());
 
-					showResults(results);
+					showResults(calc.getResults());
 
 				}
 
@@ -194,7 +221,7 @@ public class FplCalculator extends Fragment {
 		double hours = etHoursPerWeek.isShown() ? 
 			Double.parseDouble(etHoursPerWeek.getText().toString()): 0.0;
 
-		switch (spinner.getSelectedItemPosition()) {
+		switch (frequencySpinner.getSelectedItemPosition()) {
 
 			case(0): //hourly
 				return hours * rawIncome * 52;
@@ -238,8 +265,8 @@ public class FplCalculator extends Fragment {
 			etAGSize.setText(savedInstanceState.getString("AGSize"));
 			etHoursPerWeek.setText(savedInstanceState.getString("etHoursPerWeek"));
 			etGrossEarnedIncome.setText(savedInstanceState.getString("etGrossEarnedIncome"));
-			spinner.setSelection(savedInstanceState.getInt("spinner"));
-			if (spinner.getSelectedItemPosition() == 0) {
+			frequencySpinner.setSelection(savedInstanceState.getInt("spinner"));
+			if (frequencySpinner.getSelectedItemPosition() == 0) {
 				etHoursPerWeek.setVisibility(View.VISIBLE);
 				tvHoursPerWeek.setVisibility(View.VISIBLE);
 			} else {
@@ -258,7 +285,7 @@ public class FplCalculator extends Fragment {
 		outState.putString("AGSize", etAGSize.getText().toString());
 		outState.putString("etGrossEarnedIncome", etGrossEarnedIncome.getText().toString());
 		outState.putString("etHoursPerWeek", etHoursPerWeek.getText().toString());
-		outState.putInt("spinner", spinner.getSelectedItemPosition());
+		outState.putInt("spinner", frequencySpinner.getSelectedItemPosition());
 	}
 
 }
