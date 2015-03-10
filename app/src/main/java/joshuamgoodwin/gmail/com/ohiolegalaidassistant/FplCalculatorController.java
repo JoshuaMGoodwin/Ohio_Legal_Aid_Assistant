@@ -125,6 +125,8 @@ public class FplCalculatorController extends Fragment {
 			@Override
 			public void onClick(View v) {
 				((MainActivity)getActivity()).showIncomeDialog();
+                String results = Double.toString(((MainActivity)getActivity()).getAnnualIncome());
+                etGrossEarnedIncome.setText(results);
 			}
 		});
 	}

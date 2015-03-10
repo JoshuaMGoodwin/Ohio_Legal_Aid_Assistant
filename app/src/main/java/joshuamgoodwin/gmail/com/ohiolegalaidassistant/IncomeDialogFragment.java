@@ -1,16 +1,17 @@
 package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 
-import android.app.DialogFragment;
+import android.support.v4.app.DialogFragment;
 import android.app.Activity;
 import android.app.*;
 import android.os.*;
 import android.view.*;
 import android.content.*;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
 
-public class IncomeDialogFragment extends DialogFragment
-{
+public class IncomeDialogFragment extends DialogFragment {
 	
 	public interface IncomeDialogListener {
 		public void onDialogPositiveClick(DialogFragment dialog);
@@ -33,10 +34,11 @@ public class IncomeDialogFragment extends DialogFragment
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		LayoutInflater inflater = getActivity().getLayoutInflater();
-		builder.setView(inflater.inflate(R.layout.dialog_frequency_layout, null));
+
 		final View v = inflater.inflate(R.layout.dialog_frequency_layout, null);
 		Spinner s = (Spinner)v.findViewById(R.id.frequency_spinner);
-		setSpinner(s);
+		EditText hours = (EditText)v.findViewById(R.id.hours);
+        setSpinner(s, hours);
 		builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
 			public void onClick(DialogInterface dialog, int id){
 				mListener.onDialogPositiveClick(IncomeDialogFragment.this);
@@ -47,12 +49,13 @@ public class IncomeDialogFragment extends DialogFragment
 					mListener.onDialogNegativeClick(IncomeDialogFragment.this);
 				}
 		})
-			.setTitle("Income Information");
+			.setTitle("Income Information")
+            .setView(v);
 		return builder.create();
 	}
 	
-	private void setSpinner(Spinner s) {
-		Spinner versionSpinner = s;
+	private void setSpinner(Spinner s, final EditText hours) {
+		final Spinner frequencySpinner = s;
 
         // create array adapter
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
@@ -62,10 +65,27 @@ public class IncomeDialogFragment extends DialogFragment
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // apply adapter to spinner
-        versionSpinner.setAdapter(adapter);
+        frequencySpinner.setAdapter(adapter);
 
-        // set spinner default to current year
-        versionSpinner.setSelection(4);
+        // set spinner default to monthly
+        frequencySpinner.setSelection(4);
+
+        frequencySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (frequencySpinner.getSelectedItemPosition() == 0) {
+                    hours.setVisibility(View.VISIBLE);
+                } else {
+                    hours.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 	}
 
 	

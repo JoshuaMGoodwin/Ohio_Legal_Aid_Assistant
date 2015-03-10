@@ -17,6 +17,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentManager.*;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.DialogFragment;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -31,17 +32,20 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.*;
 import android.widget.TextView;
+import android.widget.Spinner;
 import android.graphics.Typeface;
 import android.app.*;
 
 
 public class MainActivity extends ActionBarActivity implements IncomeDialogFragment.IncomeDialogListener {
 
+    private Double results;
     private int lastExpanded = -1;
 	private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
@@ -177,14 +181,52 @@ public class MainActivity extends ActionBarActivity implements IncomeDialogFragm
 	
 	public void showIncomeDialog() {
 		DialogFragment dialog = new IncomeDialogFragment();
-		dialog.show(this.getFragmentManager(), "");
+		dialog.show(this.getSupportFragmentManager(), "IncomeDialogFragment");
 	}
 
 	@Override
 	public void onDialogPositiveClick(DialogFragment dialog)
 	{
 		// TODO: Implement this method
+        Dialog dv = dialog.getDialog();
+        EditText income = (EditText) dv.findViewById(R.id.base_amount);
+        Spinner spinner = (Spinner) dv.findViewById(R.id.frequency_spinner);
+        EditText hours = (EditText) dv.findViewById(R.id.hours);
+        switch (spinner.getSelectedItemPosition()) {
+            case 0:
+                // hourly
+                results = Double.parseDouble(hours.getText().toString()) * Double.parseDouble(income.getText().toString()) * 52;
+                break;
+            case 1:
+                // weekly
+                results = Double.parseDouble(income.getText().toString()) * 52;
+                break;
+            case 2:
+                // every other week
+                results = Double.parseDouble(income.getText().toString()) * 26;
+                break;
+            case 3:
+                // twice per month
+                results = Double.parseDouble(income.getText().toString()) * 24;
+                break;
+            case 4:
+                // monthly
+                results = Double.parseDouble(income.getText().toString()) * 12;
+                break;
+            case 5:
+                // annual
+                results = Double.parseDouble(income.getText().toString());
+                break;
+        }
 	}
+
+    public double getAnnualIncome() {
+        return (double)Math.round((results) * 100) / 100;
+    }
+
+    public double getMonthlyIncome() {
+        return (double)Math.round((results / 12.0) * 100) / 100;
+    }
 
 	@Override
 	public void onDialogNegativeClick(DialogFragment dialog)
