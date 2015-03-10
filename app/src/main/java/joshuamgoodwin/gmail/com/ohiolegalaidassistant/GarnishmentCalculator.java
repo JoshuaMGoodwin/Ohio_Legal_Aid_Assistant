@@ -67,36 +67,34 @@ public class GarnishmentCalculator extends Fragment {
         });
     }
 
+	private int getMultiplier() {
+	
+		switch (frequencySpinner.getSelectedItemPosition()) {
+				// multiplier based on RC 2923.66(A)(13)
+			case 0:
+				return 30;
+			case 1:
+				return 60;
+			case 2:
+				return 65;
+			case 3:
+				return 130;
+			default:
+				return 60;
+		}
+	}
+	
     private void setSubmit() {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int frequency = frequencySpinner.getSelectedItemPosition();
-                int multiplier;
-                switch (frequency) {
-                    // multiplier based on RC 2923.66(A)(13)
-                    case 0:
-                        multiplier = 30;
-                        break;
-                    case 1:
-                        multiplier = 60;
-                        break;
-                    case 2:
-                        multiplier = 65;
-                        break;
-                    case 3:
-                        multiplier = 130;
-                        break;
-                    default:
-                        multiplier = 60;
-                        break;
-                }
-
+              
+                int multiplier = getMultiplier();
                 double minWageAmount = FEDERAL_HOURLY_MIN_WAGE * multiplier;
                 double income = Double.parseDouble(netIncome.getText().toString());
                 double exemptPercent = income * 0.75;
-                double exempt = minWageAmount > exemptPercent ? minWageAmount : exemptPercent;
-                double garnishable = exempt > 0 ? income - exempt : 0;
+                double exempt = Math.max(minWageAmount, exemptPercent);
+                double garnishable = Math.max(income - exempt, 0);
                 displayResults(exempt, garnishable);
             }
         });

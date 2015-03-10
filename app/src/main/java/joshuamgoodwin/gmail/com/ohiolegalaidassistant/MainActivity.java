@@ -15,6 +15,7 @@ import android.content.res.AssetManager;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentManager.*;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -36,8 +37,10 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.*;
 import android.widget.TextView;
 import android.graphics.Typeface;
+import android.app.*;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends ActionBarActivity implements IncomeDialogFragment.IncomeDialogListener {
 
     private int lastExpanded = -1;
 	private List<String> listDataHeader;
@@ -171,6 +174,23 @@ public class MainActivity extends ActionBarActivity {
         }
         getSupportActionBar().setTitle(R.string.app_name);
     }
+	
+	public void showIncomeDialog() {
+		DialogFragment dialog = new IncomeDialogFragment();
+		dialog.show(this.getFragmentManager(), "");
+	}
+
+	@Override
+	public void onDialogPositiveClick(DialogFragment dialog)
+	{
+		// TODO: Implement this method
+	}
+
+	@Override
+	public void onDialogNegativeClick(DialogFragment dialog)
+	{
+		// TODO: Implement this method
+	}
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {

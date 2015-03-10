@@ -346,8 +346,7 @@ public class OwfCalculator extends Fragment {
         // calculate countable income from OAC 5101:1-23-20(H)(2)(a)-(b)
 
         // make sure earnedincome isn't negative
-        int adjustedEarnedIncome = (int)Math.floor((mGrossEarnedIncomeFinal - 250) / 2);
-        if (adjustedEarnedIncome <= 0) adjustedEarnedIncome = 0;
+        int adjustedEarnedIncome = Math.max((int)Math.floor((mGrossEarnedIncomeFinal - 250) / 2), 0);
         countableIncome = (int)Math.floor(adjustedEarnedIncome - mDependentCare + mUnearnedIncome + mDeemedIncome);
 
         // compare countable income against payment standard

@@ -58,7 +58,8 @@
 			<EditText
 				android:id="@+id/etGrossEarnedIncome"
 				style="@style/thirty"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+				android:focusable="false"/>
 
 		</LinearLayout>
 

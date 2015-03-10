@@ -15,6 +15,7 @@ import android.widget.Toast;
 import android.os.Bundle;
 import android.app.AlertDialog;
 import joshuamgoodwin.gmail.com.ohiolegalaidassistant.FederalPovertyCalculator;
+import android.view.View.*;
 
 
 public class FplCalculatorController extends Fragment {
@@ -119,6 +120,13 @@ public class FplCalculatorController extends Fragment {
 		etGrossEarnedIncome = (EditText)rootView.findViewById(R.id.etGrossEarnedIncome);
         etHoursPerWeek = (EditText)rootView.findViewById(R.id.hoursPerWeek);
         etHoursPerWeek.setVisibility(View.INVISIBLE);
+		
+		etGrossEarnedIncome.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				((MainActivity)getActivity()).showIncomeDialog();
+			}
+		});
 	}
 
 	private void clearButton(View rootView) {

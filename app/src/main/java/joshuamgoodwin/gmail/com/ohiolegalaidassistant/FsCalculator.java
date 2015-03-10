@@ -308,7 +308,7 @@ public class FsCalculator extends Fragment {
 		*	(d) Round the product up to the next whole dollar if it ends in one cent 
 		*	through ninety-nine cents */
 		
-		finalNetIncome = finalNetIncome < 0 ? 0 : finalNetIncome;
+		finalNetIncome = Math.max(0, finalNetIncome);
 		
 		int benefitAmount = FA_ALLOTMENT[AGSize - 1] - (int)Math.ceil(finalNetIncome * 0.3);
 		
@@ -317,8 +317,7 @@ public class FsCalculator extends Fragment {
 		*	computation results in a benefit of less than the minimum benefit 
 		*	allotment, round up to the minimum benefit amount. */
 		
-		if (isDisabled || isAged || AGSize <= 3) benefitAmount = benefitAmount < MINNIMUM_MONTHLY_ALLOTMENT ? MINNIMUM_MONTHLY_ALLOTMENT : benefitAmount;
-        
+		if (isDisabled || isAged || AGSize <= 3) benefitAmount = Math.max(benefitAmount,MINNIMUM_MONTHLY_ALLOTMENT);
 		String results = "Eligible for food stamps in the amount of $" + benefitAmount + " per month";
 		ineligibleDialog("Eligible", results);
 		
@@ -342,8 +341,7 @@ public class FsCalculator extends Fragment {
 		*	medical deduction, determine if total medical expenses exceed 
 		*	thirty-five dollars. If so, subtract that portion which exceeds 
 		*	thirty-five dollars. */
-		
-		medicalExpenses = medicalExpenses - EXCESS_MEDICAL_DEDUCTION <= 0 ? 0 : medicalExpenses - EXCESS_MEDICAL_DEDUCTION;
+		medicalExpenses = Math.max(0, medicalExpenses - EXCESS_MEDICAL_DEDUCTION);
 		finalNetIncome -= medicalExpenses;
 		
 		/* (5) Dependent care deduction: Subtract monthly dependent care expenses, if any. */
@@ -400,13 +398,10 @@ public class FsCalculator extends Fragment {
 		
 		int shelterExpenses = utilityAllowance + rent + propertyInsurance + propertyTaxes;
 		shelterExpenses -= (finalNetIncome / 2);
+		shelterExpenses = Math.max(0, shelterExpenses);
 		
-		if (isAged) {
-			shelterExpenses = shelterExpenses <= 0 ? 0 : shelterExpenses;
-		} else {
-		
-			shelterExpenses = shelterExpenses <= 0 ? 0 : shelterExpenses;
-			shelterExpenses = shelterExpenses > LIMIT_ON_SHELTER_DEDUCTION ? LIMIT_ON_SHELTER_DEDUCTION : shelterExpenses;
+		if (!isAged) {
+			shelterExpenses = Math.min(shelterExpenses, LIMIT_ON_SHELTER_DEDUCTION);
 		}
 	
 		return shelterExpenses;

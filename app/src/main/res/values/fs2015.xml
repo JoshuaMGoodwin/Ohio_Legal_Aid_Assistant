@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<string-array name="fa_allotment">
+			<item>194</item>
+			<item>357</item>
+			<item>511</item>
+			<item>649</item>
+			<item>771</item>
+			<item>925</item>
+			<item>1022</item>
+			<item>1169</item>
+			<item>1315</item>
+			<item>1461</item>
+			<item>1607</item>
+			<item>1753</item>
+		</string-array>
+		<string-array name="standard_dededuction">
+			<item>155</item>
+			<item>155</item>
+			<item>155</item>
+			<item>165</item>
+			<item>193</item>
+			<item>221</item>
+			<item>221</item>
+			<item>221</item>
+			<item>221</item>
+			<item>221</item>
+			<item>221</item>
+			<item>221</item>
+		</string-array>
+		<string-array name="net_standard">
+			<item>973</item>
+			<item>1311</item>
+			<item>1650</item>
+			<item>1988</item>
+			<item>2326</item>
+			<item>2665</item>
+			<item>3003</item>
+			<item>3341</item>
+			<item>3680</item>
+			<item>4019</item>
+			<item>4358</item>
+			<item>4697</item>
+		</string-array>
+		<string-array name="gross_income_limit">
+			<item>1265</item>
+			<item>1705</item>
+			<item>2144</item>
+			<item>2584</item>
+			<item>3024</item> 
+			<item>3464</item>
+			<item>3904</item>
+			<item>4344</item>
+			<item>4784</item>
+			<item>5224</item>
+			<item>5664</item>
+			<item>6104</item>
+		</string-array>
+		<string-array name="gross_income_200">
+			<item>1945</item>
+			<item>2622</item>
+			<item>3299</item>
+			<item>3975</item>
+			<item>4652</item>
+			<item>5329</item>
+			<item>6005</item>
+			<item>6682</item>
+			<item>7359</item>
+			<item>8035</item>
+			<item>8712</item>
+			<item>9389</item>
+		</string-array>
+		<string name="standard_shelter_homeless">143</string>
+		<string name="excess_incoe_deduction">20</string>
+		<string name="excess_medical_deduction">35</string>
+		
+	</resources>
