@@ -3,6 +3,7 @@ package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 import android.support.v4.app.Fragment;
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.view.Gravity;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -20,7 +21,7 @@ import android.widget.*;
 
 
 
-public class OwfCalculator extends Fragment {
+public class OwfCalculator extends Fragment implements IncomeDialogFragment.OnUpdateIncomeListener {
 
     private static final int[][] OWF_PAYMENT_STANDARD = {
             {282,386,473,582,682,759,848,940,1034,1127,1218,1312}, // January 2015
@@ -38,7 +39,6 @@ public class OwfCalculator extends Fragment {
 
         View rootView = inflater.inflate(R.layout.owf_calculator, container, false);
         savedInstanceState = instanceState;
-        populateFrequencySpinner(rootView);
         populateVersionSpinner(rootView);
         resetButton(rootView);
         submitButton(rootView);
@@ -68,21 +68,47 @@ public class OwfCalculator extends Fragment {
 
     private void initializeVariables(View rootView){
         etAGSize = (EditText)rootView.findViewById(R.id.AGSize);
+
         etDeemedIncome = (EditText)rootView.findViewById(R.id.deemedIncome);
+        addListeners(etDeemedIncome, getString(R.string.tvDeemedIncome));
+
         etDependentCare = (EditText)rootView.findViewById(R.id.dependentCare);
-        etHoursPerWeek = (EditText)rootView.findViewById(R.id.hoursPerWeek);
+        addListeners(etDependentCare, getString(R.string.tvDependentCare));
+
         etGrossEarnedIncome = (EditText)rootView.findViewById(R.id.grossEarnedIncome);
+        addListeners(etGrossEarnedIncome, getString(R.string.tvGrossEarnedIncome));
+
         etUnearnedIncome = (EditText)rootView.findViewById(R.id.unearnedIncome);
+        addListeners(etUnearnedIncome, getString(R.string.tvUnearnedIncome));
+    }
+
+    private void addListeners(EditText et, String title) {
+        final String text = title;
+        final EditText editText = et;
+        et.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requestingET = editText;
+                showIncomeDialog(text);
+            }
+        });
+        et.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    requestingET = editText;
+                    showIncomeDialog(text);
+                }
+            }
+        });
     }
 
     private void resetAll(){
         etAGSize.setText("");
         etDeemedIncome.setText("");
         etDependentCare.setText("");
-        etHoursPerWeek.setText("");
         etGrossEarnedIncome.setText("");
         etUnearnedIncome.setText("");
-        spinner.setSelection(4);
         versionSpinner.setSelection(0);
     }
 
@@ -92,59 +118,7 @@ public class OwfCalculator extends Fragment {
         etDeemedIncome.setText(savedInstanceState.getString("etDeemedIncome"));
         etDependentCare.setText(savedInstanceState.getString("etDependentCare"));
         etGrossEarnedIncome.setText(savedInstanceState.getString("etGrossEarnedIncome"));
-        etHoursPerWeek.setText(savedInstanceState.getString("etHoursPerWeek"));
         etUnearnedIncome.setText(savedInstanceState.getString("etUnearnedIncome"));
-        int spinnerPosition = savedInstanceState.getInt("spinner");
-        spinner.setSelection(spinnerPosition);
-        if (spinnerPosition == 0) {
-            etHoursPerWeek.setVisibility(View.VISIBLE);
-            TextView tvHoursPerWeek = (TextView)getView().findViewById(R.id.tvHoursPerWeek);
-            tvHoursPerWeek.setVisibility(View.VISIBLE);
-        }
-    }
-
-    private void populateFrequencySpinner(View rootView) {
-
-        // populate the frequency spinner with string-array
-
-        spinner = (Spinner) rootView.findViewById(R.id.spinnerGrossPayFrequency);
-
-        // Create array adapter  using string-array
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.frequency, android.R.layout.simple_spinner_dropdown_item);
-
-        // set layout for when dropdown shown
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // apply adapter to spinner
-        spinner.setAdapter(adapter);
-
-        // set default to monthly
-        spinner.setSelection(4);
-
-        // set listener to change visibility of hours per week as needed
-        spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-                // if frequency spinner = hourly, show hours per week fields, otherwise hide them
-                if (position == 0) {
-                    etHoursPerWeek = (EditText)getView().findViewById(R.id.hoursPerWeek);
-                    etHoursPerWeek.setVisibility(View.VISIBLE);
-                    TextView tvHoursPerWeek = (TextView)getView().findViewById(R.id.tvHoursPerWeek);
-                    tvHoursPerWeek.setVisibility(View.VISIBLE);
-                } else {
-                    etHoursPerWeek = (EditText)getView().findViewById(R.id.hoursPerWeek);
-                    etHoursPerWeek.setVisibility(View.GONE);
-                    TextView tvHoursPerWeek = (TextView)getView().findViewById(R.id.tvHoursPerWeek);
-                    tvHoursPerWeek.setVisibility(View.GONE);
-                }
-
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?>arg0){}
-
-        });
 
     }
 
@@ -225,22 +199,8 @@ public class OwfCalculator extends Fragment {
         etAGSize = (EditText)getView().findViewById(R.id.AGSize);
         etDeemedIncome = (EditText)getView().findViewById(R.id.deemedIncome);
         etDependentCare = (EditText)getView().findViewById(R.id.dependentCare);
-        etHoursPerWeek = (EditText)getView().findViewById(R.id.hoursPerWeek);
         etGrossEarnedIncome = (EditText)getView().findViewById(R.id.grossEarnedIncome);
         etUnearnedIncome = (EditText)getView().findViewById(R.id.unearnedIncome);
-
-        // check to see if earned income is null, and if so, set to 0
-        mGrossEarnedIncomeRaw = etGrossEarnedIncome.getText().toString().equals("") ? 0 :
-                Double.parseDouble(etGrossEarnedIncome.getText().toString());
-
-        // check to see if hours is null and needs to be filled
-        if (etHoursPerWeek.getText().toString().equals("0") || etHoursPerWeek.getText().toString().equals("")) {
-            if (etHoursPerWeek.isShown() && mGrossEarnedIncomeRaw != 0) {
-                Toast toast = Toast.makeText(getActivity(), "Input the number of hours per week being worked", Toast.LENGTH_LONG);
-                toast.show();
-                return true;
-            }
-        }
 
         // check AGSize to make sure it is > 0
 
@@ -261,7 +221,8 @@ public class OwfCalculator extends Fragment {
     private void setVariables() {
 
         // get values from edit texts (AG Size set in error check)
-        mGrossEarnedIncomeFinal = getGrossIncome();
+        mGrossEarnedIncomeFinal = etGrossEarnedIncome.getText().toString().equals("") ?
+                0 : Double.parseDouble(etGrossEarnedIncome.getText().toString());
 
         mDeemedIncome = etDeemedIncome.getText().toString().equals("") ?
                 0 : Double.parseDouble(etDeemedIncome.getText().toString());
@@ -278,35 +239,6 @@ public class OwfCalculator extends Fragment {
         mDeemedIncome = Math.floor(mDeemedIncome);
         mDependentCare = Math.floor(mDependentCare);
         mUnearnedIncome = Math.floor(mUnearnedIncome);
-
-    }
-
-    private double getGrossIncome(){
-
-        Double hoursPerWeek = 0.0;
-
-        if (etHoursPerWeek.isShown()) {
-            hoursPerWeek = Double.parseDouble(etHoursPerWeek.getText().toString());
-        }
-
-
-        switch (spinner.getSelectedItemPosition()){
-
-            case(0): // hourly
-                return hoursPerWeek * mGrossEarnedIncomeRaw * 4.3;
-            case(1): // weekly
-                return mGrossEarnedIncomeRaw * 4.3;
-            case(2): // every other week
-                return mGrossEarnedIncomeRaw * 2.15;
-            case(3): // twice per month
-                return mGrossEarnedIncomeRaw * 2;
-            case(4): // monthly
-                return mGrossEarnedIncomeRaw;
-            case(5): // annual
-                return mGrossEarnedIncomeRaw / 12;
-            default:
-                return 0;
-        }
 
     }
 
@@ -388,15 +320,28 @@ public class OwfCalculator extends Fragment {
         outState.putString("etDeemedIncome", etDeemedIncome.getText().toString());
         outState.putString("etDependentCare", etDependentCare.getText().toString());
         outState.putString("etGrossEarnedIncome", etGrossEarnedIncome.getText().toString());
-        outState.putString("etHoursPerWeek", etHoursPerWeek.getText().toString());
         outState.putString("etUnearnedIncome", etUnearnedIncome.getText().toString());
-        outState.putInt("spinner", spinner.getSelectedItemPosition());
 
+    }
+
+    private void showIncomeDialog(String title) {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        Bundle args = new Bundle();
+        args.putString("title", title);
+        IncomeDialogFragment dialog = new IncomeDialogFragment();
+        dialog.setTargetFragment(this, 0);
+        dialog.setArguments(args);
+        dialog.show(fm, "IncomeDialog");
+    }
+
+    public void onIncomeSubmit(String annualIncome) {
+        Double monthlyIncome = Double.parseDouble(annualIncome);
+        monthlyIncome = (double)Math.round((monthlyIncome / 12.0) * 100 / 100);
+        requestingET.setText("" + monthlyIncome);
     }
 
     private double mDeemedIncome;
     private double mDependentCare;
-    private double mGrossEarnedIncomeRaw;
     private double mGrossEarnedIncomeFinal;
     private double mUnearnedIncome;
 
@@ -408,10 +353,9 @@ public class OwfCalculator extends Fragment {
     private EditText etDeemedIncome;
     private EditText etDependentCare;
     private EditText etGrossEarnedIncome;
-    private EditText etHoursPerWeek;
     private EditText etUnearnedIncome;
+    private EditText requestingET;
 
-    private Spinner spinner;
     private Spinner versionSpinner;
 
 }

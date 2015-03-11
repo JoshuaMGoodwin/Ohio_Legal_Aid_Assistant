@@ -61,40 +61,6 @@
             style="@style/thirty"
             android:inputType="numberDecimal" />
 
-        </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-		<TextView
-			style="@style/seventy"
-            android:text="@string/frequency" />
-
-		<Spinner
-			android:id="@+id/spinnerGrossPayFrequency"
-			style="@style/thirty" />
-
-	</LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/tvHoursPerWeek"
-            style="@style/seventy"
-            android:text="@string/tvHoursPerWeek"
-            android:visible="false" />
-
-        <EditText
-            android:id="@+id/hoursPerWeek"
-            style="@style/thirty"
-            android:inputType="numberDecimal"
-            android:visible="false" />
-
     </LinearLayout>
 
     <LinearLayout
