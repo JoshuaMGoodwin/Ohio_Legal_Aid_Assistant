@@ -160,7 +160,7 @@ public class MainActivity extends ActionBarActivity {
         }*/
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-        boolean test = prefs.getBoolean("third", true);
+        boolean test = prefs.getBoolean("fourth", true);
 
         if (test) {
 
@@ -174,7 +174,7 @@ public class MainActivity extends ActionBarActivity {
 
             // make sure it only runs first time
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("third", false);
+            editor.putBoolean("fourth", false);
             editor.commit();
         }
         getSupportActionBar().setTitle(R.string.app_name);
@@ -268,11 +268,13 @@ public class MainActivity extends ActionBarActivity {
         } else if (groupName.equals("Forms")) {
             if (childName.equals("Exemption List")) {
                 CopyAssets("exemption.pdf");
-            } else if (childName.equals("Standards Help Sheet")) {
+            } else if (childName.equals("Public Benefits Standards Help Sheet")) {
                 CopyAssets("standards_help_sheet.pdf");
             } else if (childName.equals("Edit/Add Forms")) {
                 fragmentName = new ShowFormsFragment();
                 tag = "ADD FORMS";
+            } else if (childName.equals("Medicaid Standards Help Sheet")) {
+                CopyAssets("medicaid_help_sheet.pdf");
             } else {
                 FormsDAO formsDao = new FormsDAO(this);
                 String fileName = formsDao.addressFromName(childName);
@@ -542,7 +544,8 @@ public class MainActivity extends ActionBarActivity {
 		 FormsDAO formsDao = new FormsDAO(this);
          forms = formsDao.formNamesList();
          forms.add("Exemption List");
-         forms.add("Standards Help Sheet");
+         forms.add("Medicaid Standards Help Sheet");
+         forms.add("Public Benefits Standards Help Sheet");
          forms.add("Edit/Add Forms");
 
          // Adding data for rules

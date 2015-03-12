@@ -4,6 +4,7 @@ import android.support.v4.app.DialogFragment;
 import android.app.Activity;
 import android.app.*;
 import android.os.*;
+import android.util.Log;
 import android.view.*;
 import android.content.*;
 import android.widget.AdapterView;
@@ -53,12 +54,18 @@ public class IncomeDialogFragment extends DialogFragment {
                         EditText hours = (EditText) v.findViewById(R.id.hours);
                         if (income.getText().toString().equals("")) {
                             callback.onIncomeSubmit("0.00");
+                            return;
                         }
                         String result = "";
                         switch (spinner.getSelectedItemPosition()) {
                             case 0:
                                 // hourly
-                                result = String.valueOf(Double.parseDouble(hours.getText().toString()) * Double.parseDouble(income.getText().toString()) * 52);
+                                if (hours.getText().toString().equals("")) {
+                                    Toast.makeText(getActivity(), "If putting in income hourly, you have to enter the number of hours", Toast.LENGTH_LONG).show();
+                                    callback.onIncomeSubmit("0.00");
+                                    return;
+                                } else {
+                                result = String.valueOf(Double.parseDouble(hours.getText().toString()) * Double.parseDouble(income.getText().toString()) * 52); }
                                 break;
                             case 1:
                                 // weekly

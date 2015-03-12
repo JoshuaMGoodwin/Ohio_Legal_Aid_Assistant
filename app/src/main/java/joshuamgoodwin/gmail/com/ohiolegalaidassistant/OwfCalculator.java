@@ -336,7 +336,7 @@ public class OwfCalculator extends Fragment implements IncomeDialogFragment.OnUp
 
     public void onIncomeSubmit(String annualIncome) {
         Double monthlyIncome = Double.parseDouble(annualIncome);
-        monthlyIncome = (double)Math.round((monthlyIncome / 12.0) * 100 / 100);
+        monthlyIncome = (double)Math.round((monthlyIncome / 12.0) * 1000 / 1000);
         requestingET.setText("" + monthlyIncome);
     }
 
