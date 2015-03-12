@@ -3,6 +3,7 @@ package joshuamgoodwin.gmail.com.ohiolegalaidassistant;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import java.io.FileNotFoundException;
 
-public class GarnishmentCalculator extends Fragment {
+public class GarnishmentCalculator extends Fragment implements IncomeDialogFragment.OnUpdateIncomeListener{
 
     private EditText netIncome;
     private Spinner frequencySpinner;
@@ -31,10 +32,37 @@ public class GarnishmentCalculator extends Fragment {
 
     private void initializeViews(View rootView){
         netIncome = (EditText) rootView.findViewById(R.id.net_income);
-        frequencySpinner = (Spinner) rootView.findViewById(R.id.frequency_spinner);
+        netIncome.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                displayIncomeDialog("Net Income");
+            }
+        });
+        netIncome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayIncomeDialog("Net Income");
+            }
+        });
+
         submit = (ImageButton) rootView.findViewById(R.id.submit);
         clear = (ImageButton) rootView.findViewById(R.id.clear);
-		// submit.setElevation(4);
+    }
+
+    public void onIncomeSubmit(String results) {
+        netIncome.setText(results + " per month");
+    }
+
+    private void displayIncomeDialog(String title) {
+
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        Bundle args = new Bundle();
+        args.putString("title", title);
+        IncomeDialogFragment dialog = new IncomeDialogFragment();
+        dialog.setTargetFragment(this, 0);
+        dialog.setArguments(args);
+        dialog.show(fm, "IncomeDialog");
+
     }
 
     private void setSpinner(){
