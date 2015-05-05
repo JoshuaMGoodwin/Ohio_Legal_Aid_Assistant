@@ -32,37 +32,13 @@ public class GarnishmentCalculator extends Fragment implements IncomeDialogFragm
 
     private void initializeViews(View rootView){
         netIncome = (EditText) rootView.findViewById(R.id.net_income);
-        netIncome.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                displayIncomeDialog("Net Income");
-            }
-        });
-        netIncome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                displayIncomeDialog("Net Income");
-            }
-        });
-
+        frequencySpinner = (Spinner) rootView.findViewById(R.id.frequency_spinner);
         submit = (ImageButton) rootView.findViewById(R.id.submit);
         clear = (ImageButton) rootView.findViewById(R.id.clear);
     }
 
     public void onIncomeSubmit(String results) {
         netIncome.setText(results + " per month");
-    }
-
-    private void displayIncomeDialog(String title) {
-
-        FragmentManager fm = getActivity().getSupportFragmentManager();
-        Bundle args = new Bundle();
-        args.putString("title", title);
-        IncomeDialogFragment dialog = new IncomeDialogFragment();
-        dialog.setTargetFragment(this, 0);
-        dialog.setArguments(args);
-        dialog.show(fm, "IncomeDialog");
-
     }
 
     private void setSpinner(){
