@@ -160,7 +160,7 @@ public class MainActivity extends ActionBarActivity {
         }*/
         // changelog on start
         SharedPreferences prefs = getPreferences(MODE_PRIVATE);
-        boolean test = prefs.getBoolean("fourth", true);
+        boolean test = prefs.getBoolean("fifth", true);
 
         if (test) {
 
@@ -174,7 +174,7 @@ public class MainActivity extends ActionBarActivity {
 
             // make sure it only runs first time
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("fourth", false);
+            editor.putBoolean("fifth", false);
             editor.commit();
         }
         getSupportActionBar().setTitle(R.string.app_name);
