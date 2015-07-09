@@ -74,7 +74,7 @@
         <item>40. Pre-recorded testimony</item>
         <item>41. Dismissal of actions</item>
         <item>42. Consolidation; separate trials</item>
-        <item>43. [Reserved]</item>
+        <item>43. Taking Testimony</item>
         <item>44. Proof of official record</item>
         <item>44.1. Judicial notice of certain law; determination of foreign law</item>
         <item>45. Subpoena</item>
@@ -569,7 +569,7 @@ that are each treated as a class under this rule.</item>
         <item>4(i) the work counsel has done in identifying or investigating potential claims in the action;</item>
         <item>4(ii) counsel\'s experience in handling class actions, other complex litigation, and the types of claims asserted in the action;</item>
         <item>4(iii) counsel\'s knowledge of the applicable law; and</item>
-        <item>(iv) the resources that counsel will commit to representing the class;</item>
+        <item>4(iv) the resources that counsel will commit to representing the class;</item>
         <item>3(b) may consider any other matter pertinent to counsel\'s ability to fairly and adequately represent the interests of the class;</item>
         <item>3(c) may order potential class counsel to provide information on any subject pertinent to the appointment and to propose terms for attorney\'s fees and nontaxable costs;</item>
         <item>3(d) may include in the appointing order provisions about the award of attorney\'s fees or nontaxable costs under Civ.R. 23(G); and</item>
@@ -883,7 +883,7 @@ that are each treated as a class under this rule.</item>
     <string-array name="ohio_rules_cp_606">
         <item>1&lt;b>RULE 43. Taking Testimony&lt;/>b></item>
         <item>1&lt;b>(A) In open court.&lt;/b> At trial or hearing, the witnesses’ testimony shall be taken in open court unless a statute, the Rules of Evidence, these rules, or other rules adopted by the Supreme Court provide otherwise. For good cause in compelling circumstances and with appropriate safeguards, the court may permit testimony in open court by contemporaneous transmission from a different location.</item>
-        <item>&lt;b>(B) Evidence on a motion.&lt;b/> When a motion relies on facts outside the record, the court may hear the matter on affidavits or may hear it wholly or partly on oral testimony or on depositions.&lt;/b></item>
+        <item>1&lt;b>(B) Evidence on a motion.&lt;b/> When a motion relies on facts outside the record, the court may hear the matter on affidavits or may hear it wholly or partly on oral testimony or on depositions.&lt;/b></item>
         <item>2[Effective: July 1, 1970]</item>
     </string-array>
     <string-array name="ohio_rules_cp_607">
