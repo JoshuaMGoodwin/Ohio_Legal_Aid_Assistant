@@ -691,7 +691,9 @@
 <item>2[Effective: July 1, 1972; amended effective July 1, 1975; July 1, 1985; July 1, 1992; July 1, 1995; July 1, 1998; July 1, 2001; July 1, 2003; July 1, 2006; July 1, 2011; July 1, 2014.]</item>
 </string-array>
 <string-array name="ohio_rules_juvenile_141">
-<item>1&lt;b>RULE 41. [RESERVED]&lt;/b></item>
+<item>1&lt;b>RULE 41. Taking Testimony&lt;/b></item>
+    <item>1At trial or hearing, the witnesses’ testimony shall be taken in open court unless a statute, the Rules of Evidence, these rules, or other rules adopted by the Supreme Court provide otherwise. In all juvenile matters, except adjudicatory hearings in delinquency, unruly, and juvenile traffic cases and adult criminal trials, the juvenile court, with appropriate safeguards, may permit testimony in open court by contemporaneous transmission from a different location either with the agreement of the parties or for good cause shown.</item>
+    <item>2[Effective: July 1, 2015]</item>
 </string-array>
 <string-array name="ohio_rules_juvenile_142">
 <item>1&lt;b>RULE 42. Consent to Marry&lt;/b></item>
@@ -762,6 +764,7 @@
 <item>1&lt;b>(U) Effective date of amendments.&lt;/b> The amendments to Juvenile Rules 3, 5, 22, and 47 filed by the Supreme Court with the General Assembly on January 13, 2012 and revised and refiled on April 30, 2012 shall take effect on July 1, 2012. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
 <item>1&lt;b>(V) Effective date of amendments.&lt;/b> The amendments to Juvenile Rules 16 and 47 filed by the Supreme Court with the General Assembly on January 15, 2013 and revised and refiled on April 29, 2013 shall take effect on July 1, 2013. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
 <item>1&lt;b>(W) Effective date of amendments.&lt;/b> The amendments to Juvenile Rules 40 and 47 filed by the Supreme Court with the General Assembly on January 15, 2014 and refiled on April 30, 2014 shall take effect on July 1, 2014. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
+    <item>1&lt;b>(X) Effective date of amendments.&lt;/b> The amendments to Juvenile Rules 41 and 47 filed by the Supreme Court with the General Assembly on January 15, 2015 and refiled on April 30, 2015 shall take effect on July 1, 2015. They govern all proceedings in actions brought after they take effect and also all further proceedings in actions then pending, except to the extent that their application in a particular action pending when the amendments take effect would not be feasible or would work injustice, in which event the former procedure applies.</item>
 </string-array>
 <string-array name="ohio_rules_juvenile_148">
 <item>1&lt;b>RULE 48. Title&lt;/b></item>
